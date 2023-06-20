@@ -7,7 +7,7 @@ const App = ({ store }) => {
 	return (
 		<div className="wrapper">
 			
-		</div>
+		</div>		
 	)
 }
 
