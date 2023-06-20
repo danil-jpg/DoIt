@@ -29,23 +29,3 @@
 	}
 }
 
-.btn {
-	padding: 12px 30px;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.18;
-	text-align: center;
-	color: #F5F5F5;
-	background: #1A222D;
-	border-radius: 2px;
-	margin: 0 8px 0 0;
-	&:last-child {
-		margin: 0;
-	}
-	&.blue {
-		background: linear-gradient(180deg, #2788F6 0%, #0960E0 100%);
-	}
-	&:hover {
-		box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-	}
-}

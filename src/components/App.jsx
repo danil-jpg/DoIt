@@ -10,7 +10,6 @@ const App = ({ store }) => {
 	return (
 		<div className="wrapper">
 			<Main/>
-			
 		</div>		
 	)
 }

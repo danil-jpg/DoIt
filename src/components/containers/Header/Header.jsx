@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import s from './Header.module.scss';
 import { headerData } from "../../../store/store";
+import HeaderButtons from "../../universal/Buttons/HeaderButtons/HeaderButtons";
 
 const Header = (props) => {
 	let [state, setState] = useState(headerData);
@@ -30,8 +31,7 @@ const Header = (props) => {
 					</ul>
 
 					<div className={s.userBlock}>
-						<Link className={s.btn}>Login</Link>
-						<Link className={`${s.btn} ${s.blue}`}>Sign up</Link>
+						<HeaderButtons/>
 					</div>
 				</div>
 
