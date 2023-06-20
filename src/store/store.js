@@ -1,6 +1,6 @@
 import { v1 } from "uuid";
 
-import logo from './assets/icons/logo.svg';
+import logo from '../assets/icons/logo.svg';
 
 export const headerData = {
 	logo: logo,
@@ -33,4 +33,6 @@ export const headerData = {
 	]
 }
 
-export const store = {}
+export const store = {
+	headerData: headerData
+}

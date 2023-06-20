@@ -1,7 +1,8 @@
 import React from "react";
 import './App.scss';
-import Main from "./Main/Main";
-import Navbar from "./Navbar/Navbar";
+import Main from "./containers/Main/Main"
+import Navbar from "./containers/Navbar/Navbar";
+
 
 const App = ({ store }) => {
 

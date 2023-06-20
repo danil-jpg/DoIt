@@ -8,11 +8,6 @@ const Main = (props) => {
 	return (
 		<main className={s.main}>
 			<Header />
-			{/* <div className={s.body}>
-				<div className={s.content}>
-
-				</div>
-			</div> */}
 			<Container>
 				
 			</Container>

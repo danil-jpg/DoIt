@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import s from './Header.module.scss';
-import { headerData } from "../../store";
+import { headerData } from "../../../store/store";
 
 const Header = (props) => {
 	let [state, setState] = useState(headerData);
