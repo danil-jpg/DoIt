@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Container from "../Container/Container";
 import Picture from "../../universal/Picture/Picture";
 import { test } from "../../../store/store";
+import Navbar from "../Navbar/Navbar";
 
 const Main = (props) => {
 
@@ -11,19 +12,24 @@ const Main = (props) => {
 		<main className={s.main}>
 			<Header />
 			<Container>
-				<Picture
-					img={test.img.img}
-					web={test.img.webp}
-					imgMob={test.img.img}
-					webMob={test.img.webp}
-					widthMob='768'
-					widthTab='768'
-					lazy={true}
-					alt=''
-				/>
 			</Container>
+			<Navbar/>
+			
 		</main>
 	)
 }
 
 export default Main;
+
+
+
+	// <Picture
+	// 				img={test.img.img}
+	// 				web={test.img.webp}
+	// 				imgMob={test.img.img}
+	// 				webMob={test.img.webp}
+	// 				widthMob='768'
+	// 				widthTab='768'
+	// 				lazy={true}
+	// 				alt=''
+	// 			/>
