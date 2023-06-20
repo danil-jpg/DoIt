@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IconCommunity, IconCup, IconHorse, IconMegaphone, IconRating, IconTarget } from "../../universal/SVGIcons/SVGIcons";
 import s from './Navbar.module.scss';
+import { test } from "../../../store/store";
 
 const Navbar = (props) => {
 
