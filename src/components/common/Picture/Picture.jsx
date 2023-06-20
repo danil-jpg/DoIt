@@ -43,7 +43,7 @@ function Picture({ img, webp, ...rest }) {
 			}
 			<source srcSet={webp} type='image/webp' />
 			{/* <source srcSet={img} type={type} /> */}
-			<img className={rest.className} src={img} alt={alt}
+			<img className={className ? className : ''} src={img} alt={alt}
 				loading={rest.lazy ? 'lazy' : 'auto'} />
 		</picture>
 	)
