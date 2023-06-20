@@ -1,6 +1,8 @@
 import { v1 } from "uuid";
 
 import logo from '../assets/icons/logo.svg';
+import image from '../assets/images/1.png';
+import imageWebp from '../assets/images/1.png?as=webp';
 
 export const headerData = {
 	logo: logo,
@@ -31,6 +33,13 @@ export const headerData = {
 			link: ''
 		},
 	]
+}
+
+export const test = {
+	img: {
+		img: image,
+		webp: imageWebp
+	}
 }
 
 export const store = {
