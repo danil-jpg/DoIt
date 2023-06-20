@@ -1,12 +1,6 @@
-.wrapper {
+.wrapper{
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	position: relative;
 }
-
-.container {
-	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 1158px;
-}
-
