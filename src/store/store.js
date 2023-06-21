@@ -1,9 +1,13 @@
 import { v1 } from "uuid";
 
 import logo from '../assets/images/logo.png';
+import logoWebp from '../assets/images/logo.png?as=webp';
 
 export const headerData = {
-	logo: logo,
+	logo: {
+		img: logo,
+		logoWebp: logoWebp
+	},
 	links: [
 		{
 			id: v1(),

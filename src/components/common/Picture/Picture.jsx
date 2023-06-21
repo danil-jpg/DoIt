@@ -1,6 +1,6 @@
 import React from "react";
 
-function Picture({className, img, webp, ...rest }) {
+function Picture({ className, img, webp, ...rest }) {
 	let imageExt = (img.slice(-7).split('.')[1]).trim();
 	let type = 'image/' + imageExt;
 	if (imageExt != 'png') {
@@ -43,8 +43,14 @@ function Picture({className, img, webp, ...rest }) {
 			}
 			<source srcSet={webp} type='image/webp' />
 			{/* <source srcSet={img} type={type} /> */}
-			<img className={className ? className : ''} src={img} alt={alt}
-				loading={rest.lazy ? 'lazy' : 'auto'} />
+			<img
+				className={className ? className : ''}
+				src={img}
+				alt={alt ? alt : ''}
+				loading={rest.lazy ? 'lazy' : 'auto'}
+				width={rest.width ? rest.width : ''}
+				height={rest.height ? rest.height : ''}
+			/>
 		</picture>
 	)
 }
