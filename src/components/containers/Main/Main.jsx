@@ -1,11 +1,15 @@
 import React from "react";
 import s from './Main.module.scss';
 import Header from '../Header/Header';
+<<<<<<< HEAD
 import Container from "../Container/Container";
 import Picture from "../../common/Picture/Picture";
 import { test } from "../../../store/store";
 import Navbar from "../Navbar/Navbar";
 import Home from "../../pages/Home/Home";
+=======
+import Container from "../Container/Container";;
+>>>>>>> dev-maks
 
 const Main = (props) => {
 
@@ -13,6 +17,7 @@ const Main = (props) => {
 		<main className={s.main}>
 			{/* <Header />
 			<Container>
+<<<<<<< HEAD
 <<<<<<< HEAD
 				<Home/>
 =======
@@ -28,6 +33,9 @@ const Main = (props) => {
 				/>
 				<div className={`${s.title} title`}>hello</div>
 >>>>>>> dev-max
+=======
+
+>>>>>>> dev-maks
 			</Container>
 			<Navbar/> */}
 			<Home/>

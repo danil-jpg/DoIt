@@ -1,49 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { IconCommunity, IconCup, IconHorse, IconMegaphone, IconRating, IconTarget } from "../../common/SVGIcons/SVGIcons";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import s from './Navbar.module.scss';
-import { test } from "../../../store/store";
+import { navbar } from "../../../store/store";
+import { IconRenderer } from "../../UI/IconRenderer/IconRenderer";
 
 const Navbar = (props) => {
+	const [active, setActive] = useState(false);
+;
+	const onBtnClickHandler = () => setActive(!active);
+	const isActive = () => active ? s.active : '';
 
 	return (
-		<nav className={s.wrap}>
+		<nav className={`${s.wrap} ${isActive()}`}>
+			<div onClick={onBtnClickHandler}
+				className={`${s.btn} ${isActive()}`}>
+				<span></span>
+			</div>
 			<ul className={s.list}>
-				<li className={s.item}>
-					<Link className={s.link}>
-						<IconHorse/>
-					</Link>
-				</li>
-
-				<li className={s.item}>
-					<Link className={s.link}>
-						<IconCup/>
-					</Link>
-				</li>
-
-				<li className={s.item}>
-					<Link className={s.link}>
-						<IconRating/>
-					</Link>
-				</li>
-
-				<li className={s.item}>
-					<Link className={s.link}>
-						<IconCommunity/>
-					</Link>
-				</li>
-
-				<li className={s.item}>
-					<Link className={s.link}>
-						<IconTarget/>
-					</Link>
-				</li>
-
-				<li className={s.item}>
-					<Link className={s.link}>
-						<IconMegaphone/>
-					</Link>
-				</li>
+				{navbar.list.map(el => (
+					<li className={s.item} key={el.id}>
+						<NavLink to={el.link} className={s.link}>
+							<IconRenderer id={el.iconId} className={s.icon}></IconRenderer>
+						</NavLink>
+					</li>
+				))}
 			</ul>
 		</nav>
 	)

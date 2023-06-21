@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import s from './Header.module.scss';
 import { headerData } from "../../../store/store";
+<<<<<<< HEAD
 import HeaderButtons from "../../universal/Buttons/HeaderButtons/HeaderButtons";
+=======
+import Picture from '../../common/Picture/Picture';
+import Button from "../../UI/buttons/Button/Button";
+>>>>>>> dev-maks
 
 const Header = (props) => {
 	let [state, setState] = useState(headerData);
@@ -11,13 +16,15 @@ const Header = (props) => {
 	return (
 		<header className={s.wrap}>
 			<Container className={s.container}>
-				<Link to="/" className={s.logoWtap}>
-					<img
+				<Link to="/" className={s.logoWrap}>
+					<Picture
+						img={state.logo.img}
+						webp={state.logo.webp}
+						alt="logo"
+						className={s.logo}
 						width='72px'
 						height='64px'
-						src={state.logo}
-						alt="Logo"
-						className={s.logo} />
+					/>
 				</Link>
 				<div className={s.body}>
 					<ul className={s.list}>
@@ -31,7 +38,16 @@ const Header = (props) => {
 					</ul>
 
 					<div className={s.userBlock}>
+<<<<<<< HEAD
 						<HeaderButtons/>
+=======
+						
+
+						<div className={s.buttonList}>
+							<Button>Login</Button>
+							<Button color={'blue'}>Sign up</Button>
+						</div>
+>>>>>>> dev-maks
 					</div>
 				</div>
 
