@@ -25,5 +25,14 @@
 	width: 100%;
 	&:hover {
 		background: rgba(159, 177, 204, 0.1);
+		fill: #9FB1CC;
 	}
+	&.active {
+		fill: #cbd0d8;
+	}
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
 }

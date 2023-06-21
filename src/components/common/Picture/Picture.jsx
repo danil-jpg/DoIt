@@ -1,6 +1,6 @@
 import React from "react";
 
-function Picture({ img, webp, ...rest }) {
+function Picture({className, img, webp, ...rest }) {
 	let imageExt = (img.slice(-7).split('.')[1]).trim();
 	let type = 'image/' + imageExt;
 	if (imageExt != 'png') {
