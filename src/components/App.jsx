@@ -9,6 +9,7 @@ const App = ({ store }) => {
 
 	return (
 		<div className="wrapper">
+			<Navbar/>
 			<Main/>
 		</div>		
 	)

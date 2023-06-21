@@ -1,8 +1,7 @@
 import React from "react";
 import s from "./HeroBlock.module.scss"
-import Picture from "../../../universal/Picture/Picture";
 import { homeHero } from "../../../../store/store";
-
+import Picture from "../../../common/Picture/Picture";
 
 const HeroBlock = (props) => {
     return ( 

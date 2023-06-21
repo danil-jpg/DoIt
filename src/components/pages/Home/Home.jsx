@@ -1,6 +1,5 @@
 import Container from "../../containers/Container/Container";
 import React from "react";
-import { TriangleBig } from "../../universal/SVGIcons/SVGIcons";
 import s from "./Home.module.scss"
 import HeroBlock from "./HeroBlock/HeroBlock";
 const Home = (props) => {
