@@ -53,3 +53,15 @@ export const IconMegaphone = () => (
 		<path fillRule="evenodd" clipRule="evenodd" d="M14.096 19.3721H7.36914L8.45703 23.4319C8.65747 24.1797 9.14404 24.7769 9.76709 25.1367C10.3916 25.4973 11.1523 25.6206 11.8997 25.4204L12.7446 25.1938C13.4927 24.9934 14.0898 24.5068 14.4497 23.8838L14.448 23.8828L14.4497 23.8801C14.8098 23.2563 14.9331 22.4968 14.7334 21.7512L14.096 19.3721Z" />
 	</svg>
 );
+
+export const TriangleBig =()=>(
+	<svg width="1008" height="760" viewBox="0 0 1008 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M504 758.191L1.86307 1L1006.14 1L504 758.191Z" stroke="url(#paint0_linear_511_161)" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_511_161" x1="504" y1="0" x2="504" y2="760" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3ABEFF"/>
+<stop offset="1" stop-color="#095FE0"/>
+</linearGradient>
+</defs>
+</svg>
+)

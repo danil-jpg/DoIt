@@ -1,0 +1,57 @@
+.main__block{
+    width: 1008px;
+    position: relative;
+}
+.main__triangle{
+    position: absolute;
+    }
+.triangle{
+    
+    &__first{
+        animation: rotate 2s infinite alternate ease-in-out;
+       
+    }
+    &__second{
+        animation: second 2s infinite alternate ease-in-out;
+        
+    }
+    &__three{
+        animation: three 2s infinite alternate ease-in-out;
+        
+    }
+}
+.small__triangle{
+    max-width: 634px;
+    position: absolute;
+    left: 18%;
+    top: 87px;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(3deg);
+    }
+  
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+@keyframes second {
+    0% {
+        transform: rotate(-3deg);
+      }
+    
+      100% {
+        transform: rotate(6deg);
+      }
+}
+    @keyframes three{
+        0% {
+            transform: rotate(-4deg);
+        }
+        
+        100% {
+            transform: rotate(5deg);
+        }
+    }
+

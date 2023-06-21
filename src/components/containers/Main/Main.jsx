@@ -11,11 +11,12 @@ const Main = (props) => {
 
 	return (
 		<main className={s.main}>
-			<Header />
+			{/* <Header />
 			<Container>
 				<Home/>
 			</Container>
-			<Navbar/>
+			<Navbar/> */}
+			<Home/>
 
 		</main>
 	)

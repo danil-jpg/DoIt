@@ -3,7 +3,8 @@ import { v1 } from "uuid";
 import logo from '../assets/icons/logo.svg';
 import image from '../assets/images/1.png';
 import imageWebp from '../assets/images/1.png?as=webp';
-
+import triangleBig from "../assets/images/homePage/triangleBig.svg"
+import triangleSmall from "../assets/images/homePage/triangleSmall.svg"
 export const headerData = {
 	logo: logo,
 	links: [
@@ -44,4 +45,11 @@ export const test = {
 
 export const store = {
 	headerData: headerData
+}
+
+export const homeHero ={
+	img:{
+		triangleBig:triangleBig,
+		triangleSmall:triangleSmall
+	}
 }
