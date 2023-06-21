@@ -1,11 +1,13 @@
 import { v1 } from "uuid";
 
-import logo from '../assets/icons/logo.svg';
-import image from '../assets/images/1.png';
-import imageWebp from '../assets/images/1.png?as=webp';
+import logo from '../assets/images/logo.png';
+import logoWebp from '../assets/images/logo.png?as=webp';
 
 export const headerData = {
-	logo: logo,
+	logo: {
+		img: logo,
+		logoWebp: logoWebp
+	},
 	links: [
 		{
 			id: v1(),
@@ -35,11 +37,39 @@ export const headerData = {
 	]
 }
 
-export const test = {
-	img: {
-		img: image,
-		webp: imageWebp
-	}
+export const navbar = {
+	list: [
+		{
+			id: v1(),
+			iconId: 'horse',
+			link: ''
+		},
+		{
+			id: v1(),
+			iconId: 'cup',
+			link: ''
+		},
+		{
+			id: v1(),
+			iconId: 'rating',
+			link: ''
+		},
+		{
+			id: v1(),
+			iconId: 'community',
+			link: ''
+		},
+		{
+			id: v1(),
+			iconId: 'target',
+			link: ''
+		},
+		{
+			id: v1(),
+			iconId: 'megaphone',
+			link: ''
+		},
+	]
 }
 
 export const store = {
