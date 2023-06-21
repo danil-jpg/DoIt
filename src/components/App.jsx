@@ -1,17 +1,15 @@
 import React from "react";
 import "./App.scss";
-import Main from "./containers/Main/Main";
+import { Route, Routes } from "react-router-dom";
+import Header from "./containers/Header/Header";
 import Navbar from "./containers/Navbar/Navbar";
-import { IconRenderer } from "./utils/IconRenderer/Icon";
+import Main from "./containers/Main/Main";
 
 const App = ({ store }) => {
   return (
-    <div className="wrapper title234">
-      <div className="container">
-        <Navbar />
-        <Main />
-        <IconRenderer id={"board"} />
-      </div>
+    <div className="wrapper">
+      <Navbar />
+      <Main />
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import { v1 } from "uuid";
-
+import triangleBig from "../assets/images/homePage/triangleBig.svg"
+import triangleSmall from "../assets/images/homePage/triangleSmall.svg"
 import logo from "../assets/images/logo.png";
 import logoWebp from "../assets/images/logo.png?as=webp";
-
 export const headerData = {
 	logo: {
 		img: logo,
@@ -74,4 +74,11 @@ export const navbar = {
 
 export const store = {
 	headerData: headerData
+}
+
+export const homeHero = {
+	img: {
+		triangleBig: triangleBig,
+		triangleSmall: triangleSmall
+	}
 }

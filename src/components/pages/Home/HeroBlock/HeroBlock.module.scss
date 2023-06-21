@@ -1,0 +1,73 @@
+.main__block{
+    width: 1008px;
+    position: relative;
+}
+.main__triangle{
+    position: absolute;
+    }
+.triangle{
+    
+    &__first{
+        animation: rotate 2s infinite alternate ease-in-out;
+       
+    }
+    &__second{
+        animation: second 5s infinite alternate ease-in-out;
+        
+    }
+    &__three{
+        animation: three 2s infinite alternate ease-in-out;
+        
+    }
+}
+.small__triangle{
+    max-width: 634px;
+    position: absolute;
+    left: 19%;
+    top: 87px;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(3deg);
+    }
+  
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+@keyframes second {
+    0% {
+        transform: rotate(-5deg);
+      }
+    
+      100% {
+        transform: rotate(6deg);
+      }
+}
+    @keyframes three{
+        0% {
+            transform: rotate(-4deg);
+        }
+        
+        100% {
+            transform: rotate(5deg);
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .main__block{
+            width: 900px;
+        }
+        .triangle{
+            max-width: 600px;
+        }
+        .small__triangle{
+            max-width: 400px;
+            top: 40px;
+            left: 12%
+        }
+      }
+      @media (max-width:768px) {
+        
+      }
