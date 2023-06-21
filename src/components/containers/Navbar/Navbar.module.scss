@@ -21,6 +21,9 @@
 	left: 0;
 	top: 0;
 	min-height: 100vh;
+	display: flex;
+	// flex-direction: column;
+	// justify-content: center;
 }
 
 .btn {
@@ -50,7 +53,7 @@
 	span::before,
 	span::after {
 		content: "";
-		background: #fff;
+		background: #9FB1CC;
 	}
 	span::before {
 		top: -3px;
@@ -74,8 +77,8 @@
 }
 
 .list {
-	width: 110px;
 	flex-direction: column;
+	width: 110px;
 }
 
 .link {
