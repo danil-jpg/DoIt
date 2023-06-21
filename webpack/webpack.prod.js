@@ -1,16 +1,16 @@
-const path = require("path")
-const CssMin = require("css-minimizer-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const path = require('path')
+const CssMin = require('css-minimizer-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  mode: "production",
+  mode: 'production',
 
   output: {
-    path: path.resolve(__dirname, "..", "docs/"),
-    filename: "scripts/bundle[hash].js",
+    path: path.resolve(__dirname, '..', 'docs/'),
+    filename: 'scripts/bundle[hash].js',
     clean: true,
-    publicPath: "/"
+    publicPath: '/'
   },
 
   plugins: [
@@ -18,15 +18,15 @@ module.exports = {
       minimizer: {
         implementation: ImageMinimizerPlugin.imageminMinify,
         options: {
-          plugins: [["mozjpeg", { quality: 85 }]],
+          plugins: [['mozjpeg', { quality: 85 }]],
         },
       },
       generator: [
         {
-          preset: "webp",
+          preset: 'webp',
           implementation: ImageMinimizerPlugin.imageminGenerate,
           options: {
-            plugins: ["imagemin-webp"]
+            plugins: ['imagemin-webp']
           }
         }
       ]
@@ -36,39 +36,39 @@ module.exports = {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|webp)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "[path]/[name][hash][ext]"
+          filename: '[path]/[name][hash][ext]'
         }
       },
       {
         test: /\.module\.scss$/,
         generator: {
-          filename: "styles/[name][hash][ext]"
+          filename: 'styles/[name][hash][ext]'
         },
-        use: ["style-loader", {
-          loader: "css-loader",
+        use: ['style-loader', {
+          loader: 'css-loader',
           options: {
             modules: {
-              localIdentName: "[local]__[hash:base64:5]"
+              localIdentName: '[local]__[hash:base64:5]'
             }
           }
-        }, "sass-loader"]
+        }, 'sass-loader']
       },
       {
         test: /\.(css|sass|scss)$/,
         exclude: /\.module\.scss$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               sourceMap: true,
             },
           },
-          "sass-loader",
+          'sass-loader',
           {
-            loader: "postcss-loader"
+            loader: 'postcss-loader'
           }
         ],
       },

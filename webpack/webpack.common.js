@@ -1,11 +1,11 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const postcss 
 
 module.exports = {
-  entry: path.resolve(__dirname, "../src/index.jsx"),
+  entry: path.resolve(__dirname, '../src/index.jsx'),
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".jsx"]
+    extensions: ['.tsx', '.ts', '.js', '.jsx']
   },
   cache: false,
   module: {
@@ -15,7 +15,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader"
+            loader: 'babel-loader'
           }
         ]
       },
@@ -38,16 +38,16 @@ module.exports = {
       // },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "fonts/[name][hash][ext]"
+          filename: 'fonts/[name][hash][ext]'
         }
       },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "..", "./src/index.html")
+      template: path.resolve(__dirname, '..', './src/index.html')
     }),
 
   ]

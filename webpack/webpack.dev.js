@@ -1,9 +1,9 @@
-const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   devServer: {
     hot: true,
     open: true,
@@ -13,50 +13,50 @@ module.exports = {
   module: {
     rules: [{
       test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
-      type: "asset/resource"
+      type: 'asset/resource'
     },
     {
       test: /\.module\.scss$/,
       generator: {
-        filename: "styles/[name][hash][ext]"
+        filename: 'styles/[name][hash][ext]'
       },
-      use: ["style-loader", {
-        loader: "css-loader",
+      use: ['style-loader', {
+        loader: 'css-loader',
         options: {
           modules: {
-            localIdentName: "[local]__[hash:base64:5]"
+            localIdentName: '[local]__[hash:base64:5]'
           }
         }
-      }, "sass-loader"]
+      }, 'sass-loader']
     },
     {
       test: /\.(css|sass|scss)$/,
       exclude: /\.module\.scss$/,
       use: [
-        "style-loader",
+        'style-loader',
         {
-          loader: "css-loader",
+          loader: 'css-loader',
           options: {
             sourceMap: true,
           },
         },
-        "sass-loader",
+        'sass-loader',
       ],
     },
     ]
   },
 
-  devtool: "cheap-module-source-map",
+  devtool: 'cheap-module-source-map',
   plugins: [
     new ReactRefreshWebpackPlugin(),
     new ImageminWebpWebpackPlugin(),
     new ImageMinimizerPlugin({
       generator: [
         {
-          preset: "webp",
+          preset: 'webp',
           implementation: ImageMinimizerPlugin.imageminGenerate,
           options: {
-            plugins: ["imagemin-webp"]
+            plugins: ['imagemin-webp']
           }
         }
       ]
