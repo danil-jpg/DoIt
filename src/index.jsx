@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import App from "./components/App.jsx";
-import './styles/index.scss';
+import "./styles/index.scss";
 import { BrowserRouter } from "react-router-dom";
 import { store } from "./store/store.js";
 
-ReactDOM.createRoot(document.getElementById('root'))
+ReactDOM.createRoot(document.getElementById("root"))
 	.render(
 		<BrowserRouter>
 			<App store={store} />

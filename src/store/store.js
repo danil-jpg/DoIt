@@ -1,36 +1,36 @@
 import { v1 } from "uuid";
 
-import logo from '../assets/icons/logo.svg';
-import image from '../assets/images/1.png';
-import imageWebp from '../assets/images/1.png?as=webp';
+import logo from "../assets/icons/logo.svg";
+import image from "../assets/images/1.png";
+import imageWebp from "../assets/images/1.png?as=webp";
 
 export const headerData = {
 	logo: logo,
 	links: [
 		{
 			id: v1(),
-			title: 'Play',
-			link: ''
+			title: "Play",
+			link: ""
 		},
 		{
 			id: v1(),
-			title: 'News',
-			link: ''
+			title: "News",
+			link: ""
 		},
 		{
 			id: v1(),
-			title: 'Games',
-			link: ''
+			title: "Games",
+			link: ""
 		},
 		{
 			id: v1(),
-			title: 'Shop',
-			link: ''
+			title: "Shop",
+			link: ""
 		},
 		{
 			id: v1(),
-			title: 'Sponsorship',
-			link: ''
+			title: "Sponsorship",
+			link: ""
 		},
 	]
 }

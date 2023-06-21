@@ -6,7 +6,7 @@ import { IconRenderer } from "./utils/IconRenderer/Icon";
 
 const App = ({ store }) => {
   return (
-    <div className="wrapper">
+    <div className="wrapper title234">
       <div className="container">
         <Navbar />
         <Main />
