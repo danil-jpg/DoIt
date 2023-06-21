@@ -1,3 +1,11 @@
 .main__hero{
- 
+ margin-top: 64px;
+ padding-left: 80px;
+
+}
+@media (max-width:1800px) {
+    .main__hero{
+        margin-top: 70px;
+        padding-left: 250px;
+    }
 }

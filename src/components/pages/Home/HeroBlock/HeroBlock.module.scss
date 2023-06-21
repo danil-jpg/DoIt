@@ -12,7 +12,7 @@
        
     }
     &__second{
-        animation: second 2s infinite alternate ease-in-out;
+        animation: second 5s infinite alternate ease-in-out;
         
     }
     &__three{
@@ -23,7 +23,7 @@
 .small__triangle{
     max-width: 634px;
     position: absolute;
-    left: 18%;
+    left: 19%;
     top: 87px;
 }
 
@@ -38,7 +38,7 @@
   }
 @keyframes second {
     0% {
-        transform: rotate(-3deg);
+        transform: rotate(-5deg);
       }
     
       100% {
@@ -55,3 +55,19 @@
         }
     }
 
+    @media (max-width: 1440px) {
+        .main__block{
+            width: 900px;
+        }
+        .triangle{
+            max-width: 600px;
+        }
+        .small__triangle{
+            max-width: 400px;
+            top: 40px;
+            left: 12%
+        }
+      }
+      @media (max-width:768px) {
+        
+      }
