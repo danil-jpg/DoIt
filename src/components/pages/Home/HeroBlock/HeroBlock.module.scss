@@ -13,11 +13,11 @@
     }
     &__second{
         animation: second 5s infinite alternate ease-in-out;
-        
+        opacity: 0.7;
     }
     &__three{
         animation: three 2s infinite alternate ease-in-out;
-        
+        opacity: 0.5;
     }
 }
 .small__triangle{
@@ -69,5 +69,7 @@
         }
       }
       @media (max-width:768px) {
-        
+        .main__block{
+            width: 700px;
+        }
       }
