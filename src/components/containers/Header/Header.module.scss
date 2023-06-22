@@ -49,6 +49,7 @@
 
 .burger {
 	display: none;
+	
 }
 
 @media (max-width: 1220px) {
@@ -89,6 +90,7 @@
 	.body,
 	.list {
 		flex-direction: column;
+		
 	}
 
 	.body,
@@ -97,6 +99,7 @@
 	.burger span::after {
 		position: absolute;
 		transition: all .2s;
+		
 	}
 
 	.body {
@@ -107,6 +110,7 @@
 		z-index: 9;
 		transform: translateY(-200%);
 		padding: 0 23px;
+		z-index: 50;
 		&.active {
 			transform: translateY(0);
 		}

@@ -4,3 +4,9 @@
     line-height: 1;
     color: #F5F5F5;
 }
+@media (max-width:768px) {
+    .title{
+        font-weight: 500;
+        font-size: 30px;
+    }
+}

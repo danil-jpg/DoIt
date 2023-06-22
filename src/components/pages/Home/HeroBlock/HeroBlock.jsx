@@ -7,7 +7,6 @@ const HeroBlock = (props) => {
     return (
         <div className={s.main}>
             <div className={s.main__block}>
-<<<<<<< HEAD
                 
                 <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__first}`}
                  img={homeHero.img.triangleBig}
@@ -33,31 +32,6 @@ const HeroBlock = (props) => {
                                     <Button color={'blue'}>Sign up</Button>
                                     </div>
                                 </div>
-=======
-
-                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__first}`}
-                    img={homeHero.img.triangleBig}
-                    imgMob={homeHero.img.triangleSmall}
-                    widthMob='375' /
-                >
-
-                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__second}`}
-                    img={homeHero.img.triangleBig}
-                    imgMob={homeHero.img.triangleSmall}
-                    widthMob='375' /
-                >
-                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__three}`}
-                    img={homeHero.img.triangleBig}
-                    imgMob={homeHero.img.triangleSmall}
-                    widthMob='375' /
-                >
-                <Picture className={s.small__triangle}
-                    img={homeHero.img.triangleBig}
-                    imgMob={homeHero.img.triangleSmall}
-                    widthMob='375' /
-
-                >
->>>>>>> dev-maks
             </div>
         </div>
     );

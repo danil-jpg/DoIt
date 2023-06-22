@@ -1,0 +1,11 @@
+.main__top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+@media (max-width:375px) {
+    .main__actions{
+        display: none;
+    }
+}
