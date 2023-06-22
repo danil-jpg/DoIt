@@ -4,35 +4,35 @@ import { homeHero } from "../../../../store/store";
 import Picture from "../../../common/Picture/Picture";
 
 const HeroBlock = (props) => {
-    return ( 
+    return (
         <div className={s.main}>
             <div className={s.main__block}>
-                
-                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__first}`}
-                 img={homeHero.img.triangleBig}
-                         imgMob={homeHero.img.triangleSmall}
-                         widthMob='375'/
-                         >
-                    
-                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__second}`}
-                 img={homeHero.img.triangleBig}
-                         imgMob={homeHero.img.triangleSmall}
-                         widthMob='375'/
-                         >
-                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__three}`}
-                          img={homeHero.img.triangleBig}
-                          imgMob={homeHero.img.triangleSmall}
-                          widthMob='375'/
-                         >
-                 <Picture className={s.small__triangle}
-                          img={homeHero.img.triangleBig}
-                          imgMob={homeHero.img.triangleSmall}
-                          widthMob='375'/
 
-                         >
+                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__first}`}
+                    img={homeHero.img.triangleBig}
+                    imgMob={homeHero.img.triangleSmall}
+                    widthMob='375' /
+                >
+
+                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__second}`}
+                    img={homeHero.img.triangleBig}
+                    imgMob={homeHero.img.triangleSmall}
+                    widthMob='375' /
+                >
+                <Picture className={`${s.main__triangle} ${s.triangle} ${s.triangle__three}`}
+                    img={homeHero.img.triangleBig}
+                    imgMob={homeHero.img.triangleSmall}
+                    widthMob='375' /
+                >
+                <Picture className={s.small__triangle}
+                    img={homeHero.img.triangleBig}
+                    imgMob={homeHero.img.triangleSmall}
+                    widthMob='375' /
+
+                >
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default HeroBlock;

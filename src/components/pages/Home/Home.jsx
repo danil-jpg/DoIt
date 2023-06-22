@@ -7,7 +7,9 @@ const Home = (props) => {
         <div className={s.main}>
             <div className={s.main__wrapper}>
                 <div className={s.main__hero}>
-                    <HeroBlock/>
+                   <Container>
+                  <HeroBlock/>
+                   </Container>
                 </div>
             </div>
         </div>

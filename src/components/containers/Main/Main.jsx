@@ -11,7 +11,7 @@ const Main = (props) => {
     <main className={s.main}>
       <Header />
       <Container>
-	<Home/>
+	      <Home/>
       </Container>
     </main>
   )
