@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import sprites from "./sprites.svg";
+import sprites from './sprites.svg';
 
 export const IconRenderer = ({ id, ...props }) => {
-	return (
-		<svg {...props}>
-			<use href={`${sprites}#${id}`} />
-		</svg>
-	);
+  return (
+    <svg {...props}>
+      <use href={`${sprites}#${id}`} />
+    </svg>
+  );
 };

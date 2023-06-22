@@ -3,6 +3,10 @@ import triangleBig from '../assets/images/homePage/triangleBig.svg'
 import triangleSmall from '../assets/images/homePage/triangleSmall.svg'
 import logo from '../assets/images/logo.png';
 import logoWebp from '../assets/images/logo.png?as=webp';
+// profile
+import avatarProfile from '../assets/images/Profile/avatar.png'
+import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp'
+
 export const headerData = {
 	logo: {
 		img: logo,
@@ -84,5 +88,12 @@ export const homeHero = {
 	info: {
 		title: 'DOIT',
 		descr: 'Prepare for your esports career and get ready for awesome tournaments with big prize pools and many fun! \n Register Now!'
+	}
+}
+
+export const profile = {
+	img: {
+		avatar: avatarProfile,
+		avatarW: avatarProfileWebp
 	}
 }
