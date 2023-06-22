@@ -6,7 +6,12 @@
 }
 @media (max-width:768px) {
     .title{
-        font-weight: 500;
+       
+        font-size: 30px;
+    }
+}
+@media (max-width:375px) {
+    .title{
         font-size: 30px;
     }
 }

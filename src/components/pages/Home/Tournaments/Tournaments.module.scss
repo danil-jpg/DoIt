@@ -1,11 +1,31 @@
-.main__top{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+.main{
+    &__top{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 23px;
+    }
+    &__bottom{
+        margin-top: 40px;
+    }
 }
+
 @media (max-width:375px) {
     .main__actions{
         display: none;
+        padding-left: 0px;
+    }
+    .main__bottom{
+        margin-top: 30px;
+        padding-left: 0px;
+    }
+    .main__top{
+        padding-left: 7px;
+    }
+}
+@media (max-width:768px) {
+    .main__bottom{
+        padding-left: 15px;
     }
 }

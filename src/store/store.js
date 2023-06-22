@@ -112,5 +112,18 @@ export const sliderCards ={
 		dotaMobWebp:dotaMobWebp,
 		csgoMob:csgoMob,
 		csgoMobWebp:csgoMobWebp
-	}
+	},
+	title:{
+		title:'Tournament’s name will be here, maybe, in two lines',
+		title2:'Fortnitity evolution X',
+		title3:'CS:GO Mirageby tournament'
+	},
+	subtitle1:'Start',
+	subtitle2:'Mode',
+	subtitle3:'Slots',
+	subtitle4:'Pool',
+	number1:'07/06',
+	number2:'5v5',
+	number3:'16/30',
+	number4:'$ 1500'
 }

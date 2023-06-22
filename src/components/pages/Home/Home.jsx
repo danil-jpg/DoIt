@@ -12,10 +12,10 @@ const Home = (props) => {
                   <div className={s.main__doit}>
                   <HeroBlock/>
                   </div>
-                    <div className={s.main__tournaments}>
-                        <Tournaments/>
-                    </div>
                    </Container>
+                   <div className={s.main__tournaments}>
+                   <Tournaments/>
+                      </div>
                 </div>
             </div>
         </div>

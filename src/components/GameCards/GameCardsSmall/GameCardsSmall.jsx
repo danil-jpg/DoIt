@@ -11,8 +11,11 @@ const GameCardsSmall = (props) => {
                  alt={props.alt} 
                  width={props.width}
                  height={props.height}
-                 imgMob={props.imgMob} 
-                 widthMob='375'/>
+                 imgMob={props.imgMob}
+                 webpMob={props.webpMob} 
+                 widthMob='375'
+                 className={s.card__picture}
+                 />
                 
             </div>
             <div className={s.card__bottom}>
@@ -20,20 +23,20 @@ const GameCardsSmall = (props) => {
                     </div> 
                     <div className={s.card__descr}>
                     <div className={s.card__info}>
-                    <span className={s.card__subtitle}>{props.subtitle}</span>
-                    <span className={s.card__status}>{props.status}</span>
+                    <span className={s.card__subtitle}>{props.subtitle1}</span>
+                    <span className={s.card__status}>{props.status1}</span>
                     </div>
                     <div className={s.card__info}>
-                    <span className={s.card__subtitle}>{props.subtitle}</span>
-                    <span className={s.card__status}>{props.status}</span>
+                    <span className={s.card__subtitle}>{props.subtitle2}</span>
+                    <span className={s.card__status}>{props.status2}</span>
                     </div>
                     <div className={s.card__info}>
-                    <span className={s.card__subtitle}>{props.subtitle}</span>
-                    <span className={s.card__status}>{props.status}</span>
+                    <span className={s.card__subtitle}>{props.subtitle3}</span>
+                    <span className={s.card__status}>{props.status3}</span>
                     </div>
                     <div className={s.card__info}>
-                    <span className={s.card__subtitle}>{props.subtitle}</span>
-                    <span className={s.card__status}>{props.status}</span>
+                    <span className={s.card__subtitle}>{props.subtitle4}</span>
+                    <span className={s.card__status}>{props.status4}</span>
                     </div>
                     </div>
             </div>
