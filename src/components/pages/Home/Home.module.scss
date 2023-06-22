@@ -3,9 +3,26 @@
  padding-left: 80px;
 
 }
+.main__doit{
+    
+}
 @media (max-width:1440px) {
     .main__hero{
         margin-top: 70px;
         padding-left: 250px;
+    }
+}
+
+@media (max-width:768px) {
+    .main__hero{
+        padding-left: 80px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:375px) {
+    .main__hero{
+        padding-left: 0px;
+        margin-top: 168px;
+        margin-left: -15px;
     }
 }

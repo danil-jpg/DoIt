@@ -1,0 +1,14 @@
+.btn{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #A0A5AD;
+    background: #14191F;
+    padding: 16px;
+    &:hover{
+        background: #D8DFEB;
+        border: 1px solid #20252B;
+        
+        color: #0F1215;
+    }
+}
