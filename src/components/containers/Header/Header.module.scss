@@ -83,7 +83,7 @@
 		margin: 0 0 0 auto;
 		position: relative;
 		z-index: 12;
-		flex: 0 0 56px;
+		flex: 0 0 54px;
 		height: 48px;
 	}
 	.body,
@@ -138,10 +138,10 @@
 			left: 4px;
 		}
 		span::before {
-			top: -8px;
+			top: -6px;
 		}
 		span::after {
-			top: 8px;
+			top: 6px;
 		}
 		&.active {
 			span::before,
