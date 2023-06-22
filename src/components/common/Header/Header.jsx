@@ -15,7 +15,7 @@ const Header = (props) => {
 
   return (
     <header className={s.header}>
-      <Container className={s.container}>
+      <Container className={s.header__container}>
         <div className={`${s.burger} ${isBurger(s.active)}`}
           onClick={onBurgerClickHandler}>
           <span></span>
