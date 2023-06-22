@@ -80,5 +80,9 @@ export const homeHero ={
 	img:{
 		triangleBig:triangleBig,
 		triangleSmall:triangleSmall
-	}
+	},
+  info:{
+    title:'DOIT',
+    descr:`Prepare for your esports career and get ready for awesome tournaments with big prize pools and many fun! \n Register Now!`
+  }
 }

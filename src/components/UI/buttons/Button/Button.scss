@@ -13,3 +13,9 @@
 		box-shadow: 0 0 10px rgba(255, 255, 255, .3);
 	}
 }
+@media (max-width:768px) {
+	.button{
+		padding: 8px 15px;
+		font-size: 14px;
+	}
+}
