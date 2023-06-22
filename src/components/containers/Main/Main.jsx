@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import s from './Main.module.scss';
-import Header from '../Header/Header';
-import Container from "../Container/Container";
 import { Route, Routes } from "react-router-dom";
+import Header from "../../common/Header/Header";
+import Container from "../Container/Container";
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 
