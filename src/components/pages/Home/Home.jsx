@@ -10,7 +10,7 @@ const Home = (props) => {
             <div className={s.main__wrapper}>
                 <div className={s.main__hero}>
                    <Container>
-                    <div className={s.main__doit}><HeroBlock/></div>
+                  <HeroBlock/>
                    </Container>
                 </div>
             </div>

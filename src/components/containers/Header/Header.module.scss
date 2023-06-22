@@ -1,3 +1,5 @@
+@import '../../../styles/vars.scss';
+
 .container,
 .body,
 .list {
@@ -5,8 +7,9 @@
 	align-items: center;
 }
 
-.wrap {
+.header {
 	padding: 32px 0 0;
+	background: $bgBase;
 }
 
 .body {
@@ -17,6 +20,8 @@
 .logoWrap {
 	margin: 0 56px 0 0;
 	flex: 0 0 72px;
+	position: relative;
+	z-index: 12;
 }
 
 .logo {
@@ -42,9 +47,8 @@
 	}
 }
 
-.buttonList {
-	display: flex;
-	column-gap: 8px;
+.burger {
+	display: none;
 }
 
 @media (max-width: 1220px) {
@@ -58,17 +62,105 @@
 }
 
 @media (max-width: 992px) {
-	.list {
-		display: none;
+	.header {
+		padding: 15px 0;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: $bgBase;
+			z-index: 11;
+		}
 	}
-	.buttonList {
-		display: none;
-	}
-	.wrap {
-		padding: 7px 0 0;
-	}
-	.logo {
-		width: 56px;
+	.logoWrap {
+		margin: 0 0 0 auto;
+		position: relative;
+		z-index: 12;
+		flex: 0 0 54px;
 		height: 48px;
+	}
+	.body,
+	.list {
+		flex-direction: column;
+	}
+
+	.body,
+	.burger span,
+	.burger span::before,
+	.burger span::after {
+		position: absolute;
+		transition: all .2s;
+	}
+
+	.body {
+		background: $bgBase;
+		top: 78px;
+		left: 0;
+		width: 100%;
+		z-index: 9;
+		transform: translateY(-200%);
+		padding: 0 23px;
+		&.active {
+			transform: translateY(0);
+		}
+	}
+
+	.burger {
+		position: relative;
+		display: block;
+		width: 32px;
+		height: 32px;
+		z-index: 12;
+		overflow: hidden;
+		transition: all .2s;
+		span,
+		span::before,
+		span::after {
+			width: 24px;
+			height: 3px;
+			background: #F5F5F5;
+			opacity: 1;
+		}
+		span::before,
+		span::after {
+			content: "";
+		}
+		span {
+			top: 50%;
+			transform: translateY(-50%);
+			left: 4px;
+		}
+		span::before {
+			top: -6px;
+		}
+		span::after {
+			top: 6px;
+		}
+		&.active {
+			span::before,
+			span::after {
+				opacity: 0;
+			}
+		}
+	}
+	.list,
+	.item {
+		margin: 0;
+		width: 100%;
+	}
+	.list {
+		margin: 0 0 69px;
+	}
+	.link {
+		display: block;
+		padding: 15px 0;
+		text-align: center;
 	}
 }

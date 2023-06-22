@@ -15,6 +15,7 @@ const Button = ({ to, style, children, onClick, color }) => {
 
 	return (
 		<Link to={to}
+			style={style ? style: {}}
 			className={`button ${getColor(color)}`}
 			onClick={onClick ? onClick : () => { }}
 		>

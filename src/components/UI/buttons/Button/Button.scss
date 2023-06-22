@@ -6,6 +6,8 @@
 	background: #1A222D;
 	border-radius: 2px;
 	color: #F5F5F5;
+	display: block;
+	text-align: center;
 	&.blue {
 		background: linear-gradient(180deg, #2788F6 0%, #0960E0 100%);
 	}

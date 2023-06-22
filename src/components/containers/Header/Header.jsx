@@ -4,14 +4,22 @@ import Container from "../Container/Container";
 import s from './Header.module.scss';
 import { headerData } from "../../../store/store";
 import Picture from '../../common/Picture/Picture';
-import Button from "../../UI/buttons/Button/Button";
+import UserBlockHeader from "../../common/UserBlockHeader/UserBlockHeader";
 
 const Header = (props) => {
-  let [state, setState] = useState(headerData);
+  const [state, setState] = useState(headerData);
+  const [activeBurger, setActiveBurger] = useState(false);
+
+  const isBurger = (selector) => activeBurger ? selector : '';
+  const onBurgerClickHandler = () => setActiveBurger(!activeBurger);
 
   return (
-    <header className={s.wrap}>
+    <header className={s.header}>
       <Container className={s.container}>
+        <div className={`${s.burger} ${isBurger(s.active)}`}
+          onClick={onBurgerClickHandler}>
+          <span></span>
+        </div>
         <Link to="/" className={s.logoWrap}>
           <Picture
             img={state.logo.img}
@@ -22,7 +30,7 @@ const Header = (props) => {
             height='64px'
           />
         </Link>
-        <div className={s.body}>
+        <div className={`${s.body} ${isBurger(s.active)}`}>
           <ul className={s.list}>
             {state.links.map(el => (
               <li className={s.item} key={el.id}>
@@ -33,18 +41,11 @@ const Header = (props) => {
             ))}
           </ul>
 
-          <div className={s.userBlock}>
-            
-
-            <div className={s.buttonList}>
-              <Button>Login</Button>
-              <Button color={'blue'}>Sign up</Button>
-            </div>
-          </div>
+          <UserBlockHeader />
         </div>
 
       </Container>
-    </header>
+    </header >
   )
 }
 
