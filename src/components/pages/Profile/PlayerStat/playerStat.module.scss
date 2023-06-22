@@ -1,0 +1,115 @@
+.plus {
+  width: 25px;
+  height: 25px;
+  stroke: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    stroke: aqua;
+  }
+}
+
+.mail {
+  width: 25px;
+  height: 25px;
+  stroke: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    stroke: aqua;
+  }
+}
+
+// <div>
+//           <div className={s.profileLeft}>
+//             <Picture img={profile.img.avatar} webp={profile.img.avatarW} />
+//             <div className={s.profileLeftImgDescr}>
+//               <p>Nikodem Świder</p>
+//               <p>BlacerLordTV </p>
+//               <p>Blacer team</p>
+//               <div className={s.profileLeftIconsWr}>
+//                 <IconRenderer id={'plusProfile'} className={s.plus} />
+//                 <IconRenderer id={'mailProfile'} className={s.mail} />
+//               </div>
+//               <ul className={s.profileLeftUl}>
+//                 <li className={s.profileLeftLi}>Profile</li>
+//                 <li className={s.profileLeftLi}>Number two</li>
+//                 <li className={s.profileLeftLi}>About me</li>
+//                 <li className={s.profileLeftLi}>Number four</li>
+//                 <li className={s.profileLeftLi}>Awards and medals</li>
+//                 <li className={s.profileLeftLi}>Number six</li>
+//                 <li className={s.profileLeftLi}>Number seven</li>
+//                 <li className={s.profileLeftLi}>Number eight</li>
+//                 <li className={s.profileLeftLi}>Number nine</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.profileLeft {
+}
+
+.avatar {
+}
+
+.profileLeftImgDescr {
+}
+.name {
+  color: #909aa3;
+  font-size: 16px;
+  line-height: 130%;
+  margin-top: 22px;
+}
+.chanel {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-top: 6px;
+}
+
+.team {
+  color: #37b7fa;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.profileLeftIconsWr {
+  margin-top: 11px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 43%;
+}
+
+.profileLeftUl {
+  margin-top: 66px;
+  padding-left: 19px;
+}
+
+.profileLeftLi {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Rubik;
+  line-height: 100%;
+  transition: 0.3s;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -18px;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    border: 1px solid #fff;
+    background: #151a1f;
+  }
+  &:hover {
+    color: #37b7fa;
+  }
+}
