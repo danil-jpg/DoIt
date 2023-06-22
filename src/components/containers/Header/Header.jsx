@@ -3,41 +3,50 @@ import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import s from './Header.module.scss';
 import { headerData } from "../../../store/store";
+import Picture from '../../common/Picture/Picture';
+import UserBlockHeader from "../../common/UserBlockHeader/UserBlockHeader";
 
 const Header = (props) => {
-	let [state, setState] = useState(headerData);
+  const [state, setState] = useState(headerData);
+  const [activeBurger, setActiveBurger] = useState(false);
 
-	return (
-		<header className={s.wrap}>
-			<Container className={s.container}>
-				<Link to="/" className={s.logoWtap}>
-					<img
-						width='72px'
-						height='64px'
-						src={state.logo}
-						alt="Logo"
-						className={s.logo} />
-				</Link>
-				<div className={s.body}>
-					<ul className={s.list}>
-						{state.links.map(el => (
-							<li className={s.item} key={el.id}>
-								<Link to={el.link} className={s.link}>
-									{el.title}
-								</Link>
-							</li>
-						))}
-					</ul>
+  const isBurger = (selector) => activeBurger ? selector : '';
+  const onBurgerClickHandler = () => setActiveBurger(!activeBurger);
 
-					<div className={s.userBlock}>
-						<Link className={s.btn}>Login</Link>
-						<Link className={`${s.btn} ${s.blue}`}>Sign up</Link>
-					</div>
-				</div>
+  return (
+    <header className={s.header}>
+      <Container className={s.container}>
+        <div className={`${s.burger} ${isBurger(s.active)}`}
+          onClick={onBurgerClickHandler}>
+          <span></span>
+        </div>
+        <Link to="/" className={s.logoWrap}>
+          <Picture
+            img={state.logo.img}
+            webp={state.logo.webp}
+            alt="logo"
+            className={s.logo}
+            width='72px'
+            height='64px'
+          />
+        </Link>
+        <div className={`${s.body} ${isBurger(s.active)}`}>
+          <ul className={s.list}>
+            {state.links.map(el => (
+              <li className={s.item} key={el.id}>
+                <Link to={el.link} className={s.link}>
+                  {el.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-			</Container>
-		</header>
-	)
+          <UserBlockHeader />
+        </div>
+
+      </Container>
+    </header >
+  )
 }
 
 export default Header;
