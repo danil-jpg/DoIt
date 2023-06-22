@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import s from './Main.module.scss';
 import Header from '../Header/Header';
 import Container from "../Container/Container";
-import Home from "../../pages/Home/Home";
-;
+import { Route, Routes } from "react-router-dom";
+
+const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 
 const Main = (props) => {
 
@@ -11,7 +12,11 @@ const Main = (props) => {
     <main className={s.main}>
       <Header />
       <Container>
-	      <Home/>
+        <Suspense fallback={<>Loading</>}>
+          <Routes>
+            <Route index element={<Home />} />
+          </Routes>
+        </Suspense>
       </Container>
     </main>
   )
