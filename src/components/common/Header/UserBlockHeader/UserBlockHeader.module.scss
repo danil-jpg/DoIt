@@ -8,6 +8,8 @@
 		&__buttonList {
 			flex-direction: column;
 			gap: 12px;
+			max-width: 400px;
+			margin: 0 auto;
 		}
 	}
 }

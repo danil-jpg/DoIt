@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./GameCardsBig.module.scss"
-import Picture from "../../common/Picture/Picture";
+import Picture from "../../UI/Picture/Picture";
 const GameCardsBig = (props) => {
     return ( 
         <div className={s.card}>

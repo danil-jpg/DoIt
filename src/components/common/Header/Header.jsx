@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Container from "../Container/Container";
 import s from './Header.module.scss';
 import { headerData } from "../../../store/store";
-import Picture from '../../common/Picture/Picture';
-import UserBlockHeader from "../../common/UserBlockHeader/UserBlockHeader";
+import Picture from '../../UI/Picture/Picture';
+import UserBlockHeader from "./UserBlockHeader/UserBlockHeader";
+import Container from "../../containers/Container/Container";
 
 const Header = (props) => {
   const [state, setState] = useState(headerData);
@@ -15,7 +15,7 @@ const Header = (props) => {
 
   return (
     <header className={s.header}>
-      <Container className={s.container}>
+      <Container className={s.header__container}>
         <div className={`${s.burger} ${isBurger(s.active)}`}
           onClick={onBurgerClickHandler}>
           <span></span>
@@ -45,7 +45,7 @@ const Header = (props) => {
         </div>
 
       </Container>
-    </header >
+    </header>
   )
 }
 

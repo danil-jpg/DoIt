@@ -53,6 +53,27 @@ import youtubeMob from "../assets/images/homePage/Partners/youtubeMob.png"
 import youtubeMobWebp from "../assets/images/homePage/Partners/youtubeMob.png?as=webp"
 import be from "../assets/images/homePage/Partners/be.png"
 import beWebp from "../assets/images/homePage/Partners/be.png?=webp"
+import menVr from "../assets/images/NewsPage/menVr.png"
+import menVrWebp from "../assets/images/NewsPage/menVr.png?as=webp"
+import menVrMob from "../assets/images/NewsPage/menVrMob.png"
+import menVrMobWebp from "../assets/images/NewsPage/menVrMob.png?as=webp"
+import watch from "../assets/images/NewsPage/watch.png"
+import watchWebp from "../assets/images/NewsPage/watch.png?as=webp"
+import woomenNews from "../assets/images/NewsPage/women.png"
+import woomenNewsWebp from "../assets/images/NewsPage/women.png?as=webp"
+import woomenNewsMob from "../assets/images/NewsPage/womenMob.png"
+import woomenNewsMobWebp from "../assets/images/NewsPage/womenMob.png?as-webp"
+import laptopNews from "../assets/images/NewsPage/laptop.png"
+import laptopNewsWebp from "../assets/images/NewsPage/laptop.png?as=webp"
+import laptopNewsMob from "../assets/images/NewsPage/laptopMob.png"
+import laptopNewsMobWebp from "../assets/images/NewsPage/laptopMob.png?as=webp"
+import blackMen from "../assets/images/NewsPage/blackMen.png"
+import blackMenWebp from "../assets/images/NewsPage/blackMen.png?as=webp"
+import blackMenMob from "../assets/images/NewsPage/blackMenMob.png"
+import blackMenMobWebp from "../assets/images/NewsPage/blackMenMob.png?as=webp"
+import woomenNews2 from "../assets/images/NewsPage/women2.png"
+import woomenNews2Webp from "../assets/images/NewsPage/women2.png?as=webp"
+
 
 export const headerData = {
 	logo: {
@@ -220,5 +241,35 @@ export const partnersIcon ={
 		youtubeMobWebp:youtubeMobWebp,
 		be:be,
 		beWebp:beWebp
+	}
+}
+export const newsData ={
+	img:{
+		menVr:menVr,
+		menVrWebp:menVrWebp,
+		menVrMob:menVrMob,
+		menVrMobWebp:menVrMobWebp,
+		watch:watch,
+		watchWebp:watchWebp,
+		woomenNews:woomenNews,
+		woomenNewsWebp:woomenNewsWebp,
+		woomenNewsMob:woomenNewsMob,
+		woomenNewsMobWebp:woomenNewsMobWebp,
+		laptopNews:laptopNews,
+		laptopNewsWebp:laptopNewsWebp,
+		laptopNewsMob:laptopNewsMob,
+		laptopNewsMobWebp:laptopNewsMobWebp,
+		blackMen:blackMen,
+		blackMenWebp:blackMenWebp,
+		blackMenMob:blackMenMob,
+		blackMenMobWebp:blackMenMobWebp,
+		woomenNews2:woomenNews2,
+		woomenNews2Webp:woomenNews2Webp
+	},
+	title:{
+		title:`Brazil end 12-year wait for Copa America`
+	},
+	subtitle:{
+		subtitle:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.'
 	}
 }

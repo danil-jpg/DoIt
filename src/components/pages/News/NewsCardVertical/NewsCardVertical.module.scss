@@ -1,0 +1,24 @@
+.card{
+    max-width: 600px;
+    &__wrapper{
+        display: flex;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 24px 78px 34px 34px;
+        background: #10171F;
+    }
+    &__title{
+        color: #F5F5F5;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+    &__descr{
+        font-size: 16px;
+        color: #67707A;
+        line-height: 1.5;
+    }
+}
