@@ -20,34 +20,12 @@
   }
 }
 
-// <div>
-//           <div className={s.profileLeft}>
-//             <Picture img={profile.img.avatar} webp={profile.img.avatarW} />
-//             <div className={s.profileLeftImgDescr}>
-//               <p>Nikodem Świder</p>
-//               <p>BlacerLordTV </p>
-//               <p>Blacer team</p>
-//               <div className={s.profileLeftIconsWr}>
-//                 <IconRenderer id={'plusProfile'} className={s.plus} />
-//                 <IconRenderer id={'mailProfile'} className={s.mail} />
-//               </div>
-//               <ul className={s.profileLeftUl}>
-//                 <li className={s.profileLeftLi}>Profile</li>
-//                 <li className={s.profileLeftLi}>Number two</li>
-//                 <li className={s.profileLeftLi}>About me</li>
-//                 <li className={s.profileLeftLi}>Number four</li>
-//                 <li className={s.profileLeftLi}>Awards and medals</li>
-//                 <li className={s.profileLeftLi}>Number six</li>
-//                 <li className={s.profileLeftLi}>Number seven</li>
-//                 <li className={s.profileLeftLi}>Number eight</li>
-//                 <li className={s.profileLeftLi}>Number nine</li>
-//               </ul>
-//             </div>
-//           </div>
-//         </div>
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.profileStat {
+  border-right: 1px solid #1a1f24;
 }
 .profileLeft {
 }
