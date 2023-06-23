@@ -10,6 +10,10 @@
     padding-left: 23px;
     
 }
+.main__news{
+    margin-top: 147px;
+    padding-left: 23px;
+}
 
 @media (max-width:1440px) {
     .main__hero{
@@ -42,5 +46,8 @@
     .main__tournaments{
         padding-left: 0;
         padding-right: 0;
+    }
+    .main__news{
+        padding-left: 0px;
     }
 }

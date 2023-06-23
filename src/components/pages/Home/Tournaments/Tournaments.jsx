@@ -5,7 +5,6 @@ import ButtonSliderAll from "../ButtonSlider/ButtonSliderAll/ButtonSliderAll";
 import { sliderCards } from "../../../../store/store";
 import GameCardsSmall from "../../../GameCards/GameCardsSmall/GameCardsSmall";
 import CustomSwiper from "../CustomSwiper/CustomSwiper";
-import Test from "./test";
 const Tournaments = (props) => {
     const slide =[<GameCardsSmall 
                    img={sliderCards.img.dotaImg} 

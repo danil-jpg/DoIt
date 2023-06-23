@@ -15,6 +15,19 @@ import dotaMob from '../assets/images/homePage/sliderCards/dotaMob.png'
 import dotaMobWebp from '../assets/images/homePage/sliderCards/dotaMob.png?as=webp'
 import csgoMob from '../assets/images/homePage/sliderCards/csMob.png'
 import csgoMobWebp from '../assets/images/homePage/sliderCards/csMob.png?as=webp'
+import witcher from '../assets/images/homePage/sliderCards/witcher.png'
+import witcherWebp from '../assets/images/homePage/sliderCards/witcher.png?as=webp'
+import witcherMob from "../assets/images/homePage/sliderCards/witcherMob.png"
+import witcherMobWebp from "../assets/images/homePage/sliderCards/witcherMob.png?as=webp"
+import dast from "../assets/images/homePage/sliderCards/dast2.png"
+import dastWebp from "../assets/images/homePage/sliderCards/dast2.png?as=webp"
+import dastMob from "../assets/images/homePage/sliderCards/dast2Mob.png"
+import dastMobWebp from "../assets/images/homePage/sliderCards/dast2Mob.png?as=webp"
+import mafia from '../assets/images/homePage/sliderCards/mafia.png'
+import mafiaWebp from '../assets/images/homePage/sliderCards/mafia.png?as=webp'
+import mafiaMob from "../assets/images/homePage/sliderCards/mafiaMob.png"
+import mafiaMobWebp from "../assets/images/homePage/sliderCards/mafiaMob.png?as=webp"
+
 export const headerData = {
 	logo: {
 		img: logo,
@@ -126,4 +139,30 @@ export const sliderCards ={
 	number2:'5v5',
 	number3:'16/30',
 	number4:'$ 1500'
+}
+export const newsCard={
+	img:{
+		witcher:witcher,
+		witcherWebp:witcherWebp,
+		witcherMob:witcherMob,
+		witcherMobWebp:witcherMobWebp,
+		dast:dast,
+		dastWebp:dastWebp,
+		dastMob:dastMob,
+		dastMobWebp:dastMobWebp,
+		mafia:mafia,
+		mafiaWebp:mafiaWebp,
+		mafiaMob:mafiaMob,
+		mafiaMobWebp:mafiaMobWebp
+	},
+	title:{
+		title1:`Fortnite map makers recreate Counter-Strike's Dust 2`,
+		title2:'Your Witcher 3 saves from Steam and GOG will now work on the Nintendo Switch',
+		title3:'Empire of Sin has been delayed until autumn 2020'
+	},
+	subtitle:{
+		subtitle1:`Team Evolve, a collective of players who create and share impressive maps using Fortnite's in-game Creative mode...`,
+		subtitle2:'If you played The Witcher 3: Wild Hunt when it was new but not the Hearts of Stone...',
+		subtitle3:`Drink up, folks, there's been a change of plans. Prohibition-era gangster tactics game Empire of Sin will no longer be...`
+	}
 }

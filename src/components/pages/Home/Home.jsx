@@ -3,6 +3,7 @@ import React from "react";
 import s from "./Home.module.scss"
 import HeroBlock from "./HeroBlock/HeroBlock";
 import Tournaments from "./Tournaments/Tournaments";
+import News from "./News/News";
 const Home = (props) => {
     return ( 
         <div className={s.main}>
@@ -15,6 +16,9 @@ const Home = (props) => {
                    </Container>
                    <div className={s.main__tournaments}>
                    <Tournaments/>
+                      </div>
+                      <div className={s.main__news}>
+                      <News/>
                       </div>
                 </div>
             </div>
