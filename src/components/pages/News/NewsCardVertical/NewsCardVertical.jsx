@@ -13,7 +13,6 @@ const NewsCardVertical = (props) => {
                  imgMob={props.imgMob}
                  webpMob={props.webpMob} 
                  widthMob='375'
-                 className={s.card__picture}
                  />
                 </div>
                 <div className={s.card__info}>
@@ -21,7 +20,7 @@ const NewsCardVertical = (props) => {
                         <span className={s.card__title}>{props.title}</span>
                     </div>
                     <div className={s.card__bottom}>
-                        <p className={s.card__descr}>{props.descr}</p>
+                        <p className={`${s.card__descr} ${s.card__descr_disable}`}>{props.descr}</p>
                         <p className={s.card__descr}>{props.descr}</p>
                     </div>
                 </div>

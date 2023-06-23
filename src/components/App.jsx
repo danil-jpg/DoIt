@@ -6,7 +6,7 @@ import Main from "./containers/Main/Main";
 const App = ({ store }) => {
   return (
     <div className="wrapper">
-      {/* <Navbar /> */}
+      <Navbar />
       <Main />
     </div>
   );
