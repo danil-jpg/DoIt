@@ -56,7 +56,7 @@
     .card{
         min-width: 325px;
         &__picture{
-            min-width: 325px;
+            min-width: 330px;
         }
         &__title{
             font-size: 16px;
@@ -67,6 +67,7 @@
         &__bottom{
             padding-left: 16px;
             min-height: 152px;
+            min-width: 330px;
         }
     }
     

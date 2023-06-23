@@ -4,6 +4,7 @@ import s from "./Home.module.scss"
 import HeroBlock from "./HeroBlock/HeroBlock";
 import Tournaments from "./Tournaments/Tournaments";
 import News from "./News/News";
+import Partners from "./Partners/Partners";
 const Home = (props) => {
     return ( 
         <div className={s.main}>
@@ -19,6 +20,10 @@ const Home = (props) => {
                       </div>
                       <div className={s.main__news}>
                       <News/>
+                      </div>
+                      <div className={s.partners}>
+                       <Container>
+                       </Container>
                       </div>
                 </div>
             </div>

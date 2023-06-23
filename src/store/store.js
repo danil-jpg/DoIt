@@ -27,6 +27,32 @@ import mafia from '../assets/images/homePage/sliderCards/mafia.png'
 import mafiaWebp from '../assets/images/homePage/sliderCards/mafia.png?as=webp'
 import mafiaMob from "../assets/images/homePage/sliderCards/mafiaMob.png"
 import mafiaMobWebp from "../assets/images/homePage/sliderCards/mafiaMob.png?as=webp"
+import google from "../assets/images/homePage/Partners/google.png"
+import googleWebp from "../assets/images/homePage/Partners/google.png?as=webp"
+import googleMob from "../assets/images/homePage/Partners/googleMob.png"
+import googleMobWebp from "../assets/images/homePage/Partners/googleMob.png?as=webp"
+import nasa from "../assets/images/homePage/Partners/nasa.png"
+import nasaWebp from "../assets/images/homePage/Partners/nasa.png?as=webp"
+import nasaMob from "../assets/images/homePage/Partners/nasaMob.png"
+import nasaMobWebp from "../assets/images/homePage/Partners/nasaMob.png?as=webp"
+import navi from "../assets/images/homePage/Partners/navi.png"
+import naviWebp from "../assets/images/homePage/Partners/navi.png?as=webp"
+import naviMob from "../assets/images/homePage/Partners/naviMob.png"
+import naviMobWebp from "../assets/images/homePage/Partners/naviMob.png?as=webp"
+import airbnb from "../assets/images/homePage/Partners/airbnb.png"
+import airbnbWebp from "../assets/images/homePage/Partners/airbnb.png?as=webp"
+import airbnbMob from "../assets/images/homePage/Partners/airbnbMob.png"
+import airbnbMobWebp from "../assets/images/homePage/Partners/airbnbMob.png?as=webp"
+import telegram from "../assets/images/homePage/Partners/telegram.png"
+import telegramWebp from "../assets/images/homePage/Partners/telegram.png?as=webp"
+import telegramMob from "../assets/images/homePage/Partners/telegramMob.png"
+import telegramMobWebp from "../assets/images/homePage/Partners/telegramMob.png?as=webp"
+import youtube from "../assets/images/homePage/Partners/youtube.png"
+import youtubeWebp from "../assets/images/homePage/Partners/youtube.png?as=webp"
+import youtubeMob from "../assets/images/homePage/Partners/youtubeMob.png"
+import youtubeMobWebp from "../assets/images/homePage/Partners/youtubeMob.png?as=webp"
+import be from "../assets/images/homePage/Partners/be.png"
+import beWebp from "../assets/images/homePage/Partners/be.png?=webp"
 
 export const headerData = {
 	logo: {
@@ -164,5 +190,35 @@ export const newsCard={
 		subtitle1:`Team Evolve, a collective of players who create and share impressive maps using Fortnite's in-game Creative mode...`,
 		subtitle2:'If you played The Witcher 3: Wild Hunt when it was new but not the Hearts of Stone...',
 		subtitle3:`Drink up, folks, there's been a change of plans. Prohibition-era gangster tactics game Empire of Sin will no longer be...`
+	}
+}
+export const partnersIcon ={
+	img:{
+		google:google,
+		googleWebp:googleWebp,
+		googleMob:googleMob,
+		googleMobWebp:googleMobWebp,
+		nasa:nasa,
+		nasaWebp:nasaWebp,
+		nasaMob:nasaMob,
+		nasaMobWebp:nasaMobWebp,
+		navi:navi,
+		naviWebp:naviWebp,
+		naviMob:naviMob,
+		naviMobWebp:naviMobWebp,
+		airbnb:airbnb,
+		airbnbWebp:airbnbWebp,
+		airbnbMob:airbnbMob,
+		airbnbMobWebp:airbnbMobWebp,
+		telegram:telegram,
+		telegramWebp:telegramWebp,
+		telegramMob:telegramMob,
+		telegramMobWebp:telegramMobWebp,
+		youtube:youtube,
+		youtubeWebp:youtubeWebp,
+		youtubeMob:youtubeMob,
+		youtubeMobWebp:youtubeMobWebp,
+		be:be,
+		beWebp:beWebp
 	}
 }

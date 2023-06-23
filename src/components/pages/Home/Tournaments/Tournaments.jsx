@@ -6,6 +6,7 @@ import { sliderCards } from "../../../../store/store";
 import GameCardsSmall from "../../../GameCards/GameCardsSmall/GameCardsSmall";
 import CustomSwiper from "../CustomSwiper/CustomSwiper";
 const Tournaments = (props) => {
+    
     const slide =[<GameCardsSmall 
                    img={sliderCards.img.dotaImg} 
                    img__webp={sliderCards.img.dotaImgWebp} 
@@ -77,7 +78,7 @@ const Tournaments = (props) => {
             </div>
             <div className={s.main__bottom}>
                 <div className={s.main__slider}>
-                    <CustomSwiper slides={slide}/>
+                    <CustomSwiper  slides={slide}/>
                 </div>
             </div>
         </div>

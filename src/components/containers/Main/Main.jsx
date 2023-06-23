@@ -5,7 +5,7 @@ import Container from "../Container/Container";
 import { Route, Routes } from "react-router-dom";
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
-
+const News = React.lazy(()=> import('../../pages/News/News.jsx'))
 const Main = (props) => {
 
   return (
@@ -15,6 +15,7 @@ const Main = (props) => {
         <Suspense fallback={<>Loading</>}>
           <Routes>
             <Route index element={<Home />} />
+            <Route path="/news" element={<News/>}/>
           </Routes>
         </Suspense>
       </Container>
