@@ -91,3 +91,19 @@
     color: #37b7fa;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .profileLeftImgDescr {
+    margin-top: -23px;
+  }
+  .profileLeftIconsWr {
+    width: 73%;
+  }
+  .profileLeftUl {
+    display: none;
+  }
+  .profileStat {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+  }
+}

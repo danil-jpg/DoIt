@@ -11,14 +11,12 @@ const Main = (props) => {
   return (
     <main className={s.main}>
       <Header />
-      <Container>
-        <Suspense fallback={<>Loading</>}>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path='Profile' element={<Profile />} />
-          </Routes>
-        </Suspense>
-      </Container>
+      <Suspense fallback={<>Loading</>}>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='Profile' element={<Profile />} />
+        </Routes>
+      </Suspense>
     </main>
   );
 };

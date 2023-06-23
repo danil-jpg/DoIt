@@ -35,3 +35,12 @@
   line-height: 100%;
   margin-bottom: 18px;
 }
+
+@media screen and (max-width: 992px) {
+  .data {
+    margin-top: 47px;
+    grid-template-rows: 37px;
+    grid-template-columns: 1fr 50%;
+    column-gap: 34px;
+  }
+}
