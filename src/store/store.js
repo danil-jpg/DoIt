@@ -3,6 +3,9 @@ import triangleBig from "../assets/images/homePage/triangleBig.svg"
 import triangleSmall from "../assets/images/homePage/triangleSmall.svg"
 import logo from "../assets/images/logo.png";
 import logoWebp from "../assets/images/logo.png?as=webp";
+import headerAvatar from '../assets/images/header/header_avatar.jpg';
+import headerAvatarWebp from '../assets/images/header/header_avatar.jpg?as=webp';
+
 export const headerData = {
 	logo: {
 		img: logo,
@@ -34,7 +37,67 @@ export const headerData = {
 			title: "Sponsorship",
 			link: ""
 		},
-	]
+	],
+	user: {
+		name: 'JohnsonBaby2020',
+		money: '160 EUR',
+		crypto: '16 DTC',
+		image: {
+			img: headerAvatar,
+			webp: headerAvatarWebp
+		},
+		level: 'LVL 999',
+		list: [
+			{
+				id: v1(),
+				title: 'My profile',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'My team',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Withdraw',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Deposit',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Premium',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Statistics',
+				to: ''
+			},
+		],
+		bottomList: [
+			{
+				id: v1(),
+				title: 'Support',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Settings',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Logout',
+				to: ''
+			},
+		],
+		
+	}
 }
 
 export const navbar = {

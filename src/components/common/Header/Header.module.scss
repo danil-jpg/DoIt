@@ -12,6 +12,7 @@
 	&__container {
 		display: flex;
 		align-items: center;
+		position: relative;
 	}
 }
 
@@ -26,7 +27,6 @@
 	flex: 0 0 72px;
 	width: 72px;
 	position: relative;
-	z-index: 12;
 }
 
 .logo {
@@ -55,6 +55,12 @@
 .burger {
 	display: none;
 }
+
+.buttonList {
+	display: flex;
+	column-gap: 8px;
+}
+
 
 @media (max-width: 1220px) {
 	.wrap {
@@ -167,5 +173,12 @@
 		display: block;
 		padding: 15px 0;
 		text-align: center;
+	}
+
+	.buttonList {
+		flex-direction: column;
+		gap: 12px;
+		max-width: 400px;
+		margin: 0 auto;
 	}
 }

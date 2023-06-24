@@ -5,7 +5,7 @@ const Container = ({ children, className, ...props }) => {
 
 	return (
 		<div className={s.container}>
-			<div className={`${s.content} ${className ? className : ''}`}>
+			<div className={`${className ? className : ''}`}>
 				{children}
 			</div>
 		</div>
