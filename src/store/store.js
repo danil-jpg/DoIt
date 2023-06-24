@@ -5,6 +5,9 @@ import logo from "../assets/images/logo.png";
 import logoWebp from "../assets/images/logo.png?as=webp";
 import headerAvatar from '../assets/images/header/header_avatar.jpg';
 import headerAvatarWebp from '../assets/images/header/header_avatar.jpg?as=webp';
+// profile
+import avatarProfile from '../assets/images/Profile/avatar.png';
+import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
 
 export const headerData = {
 	logo: {
@@ -14,28 +17,28 @@ export const headerData = {
 	links: [
 		{
 			id: v1(),
-			title: "Play",
-			link: ""
+			title: 'Play',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "News",
-			link: ""
+			title: 'News',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "Games",
-			link: ""
+			title: 'Games',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "Shop",
-			link: ""
+			title: 'Shop',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "Sponsorship",
-			link: ""
+			title: 'Sponsorship',
+			link: ''
 		},
 	],
 	user: {
@@ -104,33 +107,33 @@ export const navbar = {
 	list: [
 		{
 			id: v1(),
-			iconId: "horse",
-			link: ""
+			iconId: 'horse',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "cup",
-			link: ""
+			iconId: 'cup',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "rating",
-			link: ""
+			iconId: 'rating',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "community",
-			link: ""
+			iconId: 'community',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "target",
-			link: ""
+			iconId: 'target',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "megaphone",
-			link: ""
+			iconId: 'megaphone',
+			link: ''
 		},
 	]
 }
@@ -143,5 +146,16 @@ export const homeHero = {
 	img: {
 		triangleBig: triangleBig,
 		triangleSmall: triangleSmall
+	},
+	info: {
+		title: 'DOIT',
+		descr: 'Prepare for your esports career and get ready for awesome tournaments with big prize pools and many fun! \n Register Now!'
+	}
+}
+
+export const profile = {
+	img: {
+		avatar: avatarProfile,
+		avatarW: avatarProfileWebp
 	}
 }
