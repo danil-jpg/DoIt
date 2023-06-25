@@ -273,3 +273,23 @@ export const newsData ={
 		subtitle:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.'
 	}
 }
+
+export const premiumData ={
+	title:{
+		title:"Premium"
+	},
+	titleCards:{
+		free:'FREE',
+		pro:'PRO',
+		Organizer:'Organizer'
+	},
+	subtitle:{
+		subtitleFree:'$10 per mounth',
+		subtitlePro:'$4.99 per mounth',
+		subtitleOrg:'$15 per mounth'
+	},
+	descr:{
+		descr:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.',
+		listItem:"- usecase1"
+	}
+}
