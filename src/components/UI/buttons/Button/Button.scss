@@ -11,7 +11,20 @@
 	&.blue {
 		background: linear-gradient(180deg, #2788F6 0%, #0960E0 100%);
 	}
+	&.yellow{
+		background: linear-gradient(180deg, #FFD321 0%, #9C6C0D 100%);
+	}
+	&.green{
+		background: var(--green, linear-gradient(180deg, #46F48C 0%, #2B9D37 100%));
+
+	}
 	&:hover {
 		box-shadow: 0 0 10px rgba(255, 255, 255, .3);
+	}
+}
+@media (max-width:768px) {
+	.button{
+		padding: 8px 15px;
+		font-size: 14px;
 	}
 }

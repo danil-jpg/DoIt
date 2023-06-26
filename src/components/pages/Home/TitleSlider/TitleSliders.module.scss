@@ -1,0 +1,17 @@
+.title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1;
+    color: #F5F5F5;
+}
+@media (max-width:768px) {
+    .title{
+       
+        font-size: 30px;
+    }
+}
+@media (max-width:375px) {
+    .title{
+        font-size: 30px;
+    }
+}

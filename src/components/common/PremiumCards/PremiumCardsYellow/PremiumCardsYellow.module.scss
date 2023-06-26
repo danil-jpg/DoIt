@@ -1,0 +1,70 @@
+.card{
+    max-width: 371px;
+    padding-left: 22px;
+    padding-top: 23px;
+    padding-bottom: 88px;
+    &__subtitle{
+        color: #F5F5F5;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1;
+        
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        
+    }
+    &__popular{
+        color: #0F1215;
+        font-size: 22px;
+        line-height: 1;
+    }
+    &__title{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    &__item{
+        color: #67707A;
+        font-size: 16px;
+        line-height: 1.7%;
+    }
+    &__actions{
+        margin-top: 60px;
+        max-width: 136px;
+    }
+    &__info{
+        padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (min-width: 320px) and (max-width: 375px){
+    .card{
+        padding-top: 30px;
+        padding-left: 16px;
+        padding-bottom: 45px;
+        &__popular{
+            display: none;
+        }
+        &__actions{
+            max-width: 289px;
+            margin-top: 77px;
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .card__actions{
+        margin-top: 80px;
+        max-width: 280px;
+    }
+    
+}
