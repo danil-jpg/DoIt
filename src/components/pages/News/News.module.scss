@@ -1,6 +1,6 @@
 .main{
     width: 100%;
-    padding-top: 96px;
+    padding-top: 80px;
     &__nav{
         width: 100%;
         display: flex;
@@ -8,10 +8,13 @@
         align-items: center;
     }
     &__cards{
-        margin-top: 34px;
+        margin-top: 37px;
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 24px;
+        padding-left: 5px;
+        padding-right: 5px;
+
 
     }
     &__container{
@@ -50,13 +53,14 @@
 @media (max-width:375px) {
     .main{
         width: 100%;
-        padding-top: 105px;
+        padding-top: 93px;
         &__nav{
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 35px;
+            padding-left: 23px;
         }
         &__cards{
             margin-top: 30px;
