@@ -8,7 +8,9 @@ module.exports = {
     hot: true,
     open: true,
     historyApiFallback: true,
+
   },
+
 
   module: {
     rules: [{
