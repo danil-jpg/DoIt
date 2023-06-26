@@ -4,7 +4,8 @@
 	top: 0;
 	&__info,
 	&__money,
-	&__level {
+	&__level,
+	&__bottomList {
 		display: flex;
 		align-items: center;
 	}
@@ -17,6 +18,8 @@
 	}
 	&__header {
 		cursor: pointer;
+		position: relative;
+		z-index: 2;
 	}
 	&__info {
 		padding: 8px 40px 8px 8px;
@@ -60,7 +63,50 @@
 		}
 	}
 	&__body {
-		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		&.active {
+			opacity: 1;
+		}
+	}
+	&__list {
+		border: 2px solid #0F1215;
+		border-width: 2px 0 2px 0;
+	}
+	&__list,
+	&__bottomList {
+		padding: 6px 0;
+		background: #161A1F;
+		width: 100%;
+	}
+
+	&__bottomList {
+		justify-content: space-between;
+	}
+
+	&__link,
+	&__bottomLink {
+		font-size: 12px;
+	}
+
+	&__link {
+		display: block;
+		color: #F5F5F5;
+		padding: 8px 12px;
+		text-transform: uppercase;
+		&:hover {
+			background: #05244262;
+		}
+	}
+	&__bottomLink {
+		color: #969BA3;
+		padding: 14px 12px;
+		&:hover {
+			color: #fff;
+		}
 	}
 	&__level {
 		opacity: 0;

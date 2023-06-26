@@ -48,7 +48,7 @@ const UserBlockHeader = ({ isActive, state }) => {
 				</div>
 			</div>
 
-			<div className={s.user__body}>
+			<div className={`${s.user__body} ${isActive(activeMenu, s.active)}`}>
 				<ul className={s.user__list}>
 					{state.list.map(el => (
 						<li className={s.user__item} key={el.id}>
