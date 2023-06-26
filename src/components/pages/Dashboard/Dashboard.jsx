@@ -9,7 +9,7 @@ const Dashboard = () => {
 		<Container>
 			<Routes>
 				<Route index element={<AdminPanel />} />
-				<Route path='/user' element={<UserPanel />} />
+				{/* <Route path='/user' element={<UserPanel />} /> */}
 			</Routes>
 		</Container>
 	)
