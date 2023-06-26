@@ -174,7 +174,7 @@ export const headerData = {
 				to: ''
 			},
 		],
-		
+
 	}
 }
 
@@ -213,6 +213,40 @@ export const navbar = {
 	]
 }
 
+export const adminPanel = {
+	links: [
+		{
+			id: v1(),
+			title: 'Tournaments',
+			link: '/admin/tournaments'
+		},
+		{
+			id: v1(),
+			title: 'Team',
+			link: '/admin/team'
+		},
+		{
+			id: v1(),
+			title: 'Players',
+			link: '/admin/players'
+		},
+		{
+			id: v1(),
+			title: 'News',
+			link: '/admin/news'
+		},
+		{
+			id: v1(),
+			title: 'Leagues',
+			link: '/admin/leagues'
+		},
+	],
+	tournaments: {
+
+	}
+}
+
+
 export const profile = {
 	img: {
 		avatar: avatarProfile,
@@ -224,145 +258,145 @@ export const store = {
 	headerData: headerData
 }
 
-export const homeHero ={
-	img:{
-		triangleBig:triangleBig,
-		triangleSmall:triangleSmall
+export const homeHero = {
+	img: {
+		triangleBig: triangleBig,
+		triangleSmall: triangleSmall
 	},
-  info:{
-    title:'DOIT',
-    descr:'Prepare for your esports career and get ready for awesome tournaments with big prize pools and many fun! Register Now!'
-  }
-}
-export const sliderCards ={
-	img:{
-		dotaImg:dotaImg,
-		csgo:csgo,
-		fortnite:fortnite,
-		dotaImgWebp:dotaImgWebp,
-		csgoWebp:csgoWebp,
-		fortniteWebp:fortniteWebp,
-		fortniteMob:fortniteMob,
-		fortniteMobWebp:fortniteMobWebp,
-		dotaMob:dotaMob,
-		dotaMobWebp:dotaMobWebp,
-		csgoMob:csgoMob,
-		csgoMobWebp:csgoMobWebp
-	},
-	title:{
-		title:'Tournament’s name will be here, maybe, in two lines',
-		title2:'Fortnitity evolution X',
-		title3:'CS:GO Mirageby tournament'
-	},
-	subtitle1:'Start',
-	subtitle2:'Mode',
-	subtitle3:'Slots',
-	subtitle4:'Pool',
-	number1:'07/06',
-	number2:'5v5',
-	number3:'16/30',
-	number4:'$ 1500'
-}
-export const newsCard={
-	img:{
-		witcher:witcher,
-		witcherWebp:witcherWebp,
-		witcherMob:witcherMob,
-		witcherMobWebp:witcherMobWebp,
-		dast:dast,
-		dastWebp:dastWebp,
-		dastMob:dastMob,
-		dastMobWebp:dastMobWebp,
-		mafia:mafia,
-		mafiaWebp:mafiaWebp,
-		mafiaMob:mafiaMob,
-		mafiaMobWebp:mafiaMobWebp
-	},
-	title:{
-		title1:`Fortnite map makers recreate Counter-Strike's Dust 2`,
-		title2:'Your Witcher 3 saves from Steam and GOG will now work on the Nintendo Switch',
-		title3:'Empire of Sin has been delayed until autumn 2020'
-	},
-	subtitle:{
-		subtitle1:`Team Evolve, a collective of players who create and share impressive maps using Fortnite's in-game Creative mode...`,
-		subtitle2:'If you played The Witcher 3: Wild Hunt when it was new but not the Hearts of Stone...',
-		subtitle3:`Drink up, folks, there's been a change of plans. Prohibition-era gangster tactics game Empire of Sin will no longer be...`
+	info: {
+		title: 'DOIT',
+		descr: 'Prepare for your esports career and get ready for awesome tournaments with big prize pools and many fun! Register Now!'
 	}
 }
-export const partnersIcon ={
-	img:{
-		google:google,
-		googleWebp:googleWebp,
-		googleMob:googleMob,
-		googleMobWebp:googleMobWebp,
-		nasa:nasa,
-		nasaWebp:nasaWebp,
-		nasaMob:nasaMob,
-		nasaMobWebp:nasaMobWebp,
-		navi:navi,
-		naviWebp:naviWebp,
-		naviMob:naviMob,
-		naviMobWebp:naviMobWebp,
-		airbnb:airbnb,
-		airbnbWebp:airbnbWebp,
-		airbnbMob:airbnbMob,
-		airbnbMobWebp:airbnbMobWebp,
-		telegram:telegram,
-		telegramWebp:telegramWebp,
-		telegramMob:telegramMob,
-		telegramMobWebp:telegramMobWebp,
-		youtube:youtube,
-		youtubeWebp:youtubeWebp,
-		youtubeMob:youtubeMob,
-		youtubeMobWebp:youtubeMobWebp,
-		be:be,
-		beWebp:beWebp
+export const sliderCards = {
+	img: {
+		dotaImg: dotaImg,
+		csgo: csgo,
+		fortnite: fortnite,
+		dotaImgWebp: dotaImgWebp,
+		csgoWebp: csgoWebp,
+		fortniteWebp: fortniteWebp,
+		fortniteMob: fortniteMob,
+		fortniteMobWebp: fortniteMobWebp,
+		dotaMob: dotaMob,
+		dotaMobWebp: dotaMobWebp,
+		csgoMob: csgoMob,
+		csgoMobWebp: csgoMobWebp
+	},
+	title: {
+		title: 'Tournament’s name will be here, maybe, in two lines',
+		title2: 'Fortnitity evolution X',
+		title3: 'CS:GO Mirageby tournament'
+	},
+	subtitle1: 'Start',
+	subtitle2: 'Mode',
+	subtitle3: 'Slots',
+	subtitle4: 'Pool',
+	number1: '07/06',
+	number2: '5v5',
+	number3: '16/30',
+	number4: '$ 1500'
+}
+export const newsCard = {
+	img: {
+		witcher: witcher,
+		witcherWebp: witcherWebp,
+		witcherMob: witcherMob,
+		witcherMobWebp: witcherMobWebp,
+		dast: dast,
+		dastWebp: dastWebp,
+		dastMob: dastMob,
+		dastMobWebp: dastMobWebp,
+		mafia: mafia,
+		mafiaWebp: mafiaWebp,
+		mafiaMob: mafiaMob,
+		mafiaMobWebp: mafiaMobWebp
+	},
+	title: {
+		title1: `Fortnite map makers recreate Counter-Strike's Dust 2`,
+		title2: 'Your Witcher 3 saves from Steam and GOG will now work on the Nintendo Switch',
+		title3: 'Empire of Sin has been delayed until autumn 2020'
+	},
+	subtitle: {
+		subtitle1: `Team Evolve, a collective of players who create and share impressive maps using Fortnite's in-game Creative mode...`,
+		subtitle2: 'If you played The Witcher 3: Wild Hunt when it was new but not the Hearts of Stone...',
+		subtitle3: `Drink up, folks, there's been a change of plans. Prohibition-era gangster tactics game Empire of Sin will no longer be...`
 	}
 }
-export const newsData ={
-	img:{
-		menVr:menVr,
-		menVrWebp:menVrWebp,
-		menVrMob:menVrMob,
-		menVrMobWebp:menVrMobWebp,
-		watch:watch,
-		watchWebp:watchWebp,
-		woomenNews:woomenNews,
-		woomenNewsWebp:woomenNewsWebp,
-		woomenNewsMob:woomenNewsMob,
-		woomenNewsMobWebp:woomenNewsMobWebp,
-		laptopNews:laptopNews,
-		laptopNewsWebp:laptopNewsWebp,
-		laptopNewsMob:laptopNewsMob,
-		laptopNewsMobWebp:laptopNewsMobWebp,
-		blackMen:blackMen,
-		blackMenWebp:blackMenWebp,
-		blackMenMob:blackMenMob,
-		blackMenMobWebp:blackMenMobWebp,
-		woomenNews2:woomenNews2,
-		woomenNews2Webp:woomenNews2Webp
+export const partnersIcon = {
+	img: {
+		google: google,
+		googleWebp: googleWebp,
+		googleMob: googleMob,
+		googleMobWebp: googleMobWebp,
+		nasa: nasa,
+		nasaWebp: nasaWebp,
+		nasaMob: nasaMob,
+		nasaMobWebp: nasaMobWebp,
+		navi: navi,
+		naviWebp: naviWebp,
+		naviMob: naviMob,
+		naviMobWebp: naviMobWebp,
+		airbnb: airbnb,
+		airbnbWebp: airbnbWebp,
+		airbnbMob: airbnbMob,
+		airbnbMobWebp: airbnbMobWebp,
+		telegram: telegram,
+		telegramWebp: telegramWebp,
+		telegramMob: telegramMob,
+		telegramMobWebp: telegramMobWebp,
+		youtube: youtube,
+		youtubeWebp: youtubeWebp,
+		youtubeMob: youtubeMob,
+		youtubeMobWebp: youtubeMobWebp,
+		be: be,
+		beWebp: beWebp
+	}
+}
+export const newsData = {
+	img: {
+		menVr: menVr,
+		menVrWebp: menVrWebp,
+		menVrMob: menVrMob,
+		menVrMobWebp: menVrMobWebp,
+		watch: watch,
+		watchWebp: watchWebp,
+		woomenNews: woomenNews,
+		woomenNewsWebp: woomenNewsWebp,
+		woomenNewsMob: woomenNewsMob,
+		woomenNewsMobWebp: woomenNewsMobWebp,
+		laptopNews: laptopNews,
+		laptopNewsWebp: laptopNewsWebp,
+		laptopNewsMob: laptopNewsMob,
+		laptopNewsMobWebp: laptopNewsMobWebp,
+		blackMen: blackMen,
+		blackMenWebp: blackMenWebp,
+		blackMenMob: blackMenMob,
+		blackMenMobWebp: blackMenMobWebp,
+		woomenNews2: woomenNews2,
+		woomenNews2Webp: woomenNews2Webp
 	},
-	title:{
-		title:`Brazil end 12-year wait for Copa America`
+	title: {
+		title: `Brazil end 12-year wait for Copa America`
 	},
-	subtitle:{
-		subtitle:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.'
+	subtitle: {
+		subtitle: 'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.'
 	}
 }
 
-export const premiumData ={
-	title:{
-		title:"Premium"
+export const premiumData = {
+	title: {
+		title: "Premium"
 	},
-	titleCards:{
-		free:'FREE',
-		pro:'PRO',
-		Organizer:'Organizer'
+	titleCards: {
+		free: 'FREE',
+		pro: 'PRO',
+		Organizer: 'Organizer'
 	},
-	subtitle:{
-		subtitleFree:'$10 per mounth',
-		subtitlePro:'$4.99 per mounth',
-		subtitleOrg:'$15 per mounth'
+	subtitle: {
+		subtitleFree: '$10 per mounth',
+		subtitlePro: '$4.99 per mounth',
+		subtitleOrg: '$15 per mounth'
 	},
 	descr:{
 		descr:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.',

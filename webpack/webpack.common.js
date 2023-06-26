@@ -8,11 +8,12 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js', '.jsx']
   },
   output: {
-    path: path.resolve(__dirname, './root'),
-    filename: 'js/app.js',
+    path: path.resolve(__dirname, '..', 'docs/'),
+    filename: 'scripts/bundle[hash].js',
     clean: true,
-    publicPath: '/',
+    publicPath: '/'
   },
+
   cache: false,
   module: {
     rules: [
