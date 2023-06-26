@@ -7,6 +7,13 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx']
   },
+  output: {
+    path: path.resolve(__dirname, '..', 'docs/'),
+    filename: 'scripts/bundle[hash].js',
+    clean: true,
+    publicPath: '/'
+  },
+
   cache: false,
   module: {
     rules: [

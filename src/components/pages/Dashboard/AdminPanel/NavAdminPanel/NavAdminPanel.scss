@@ -1,4 +1,5 @@
-.admin {
+.nav-admin {
+	padding: 64px 0 44px;
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(5,1fr);
@@ -18,6 +19,10 @@
 		color: #F5F5F5;
 		font-size: 30px;
 		font-weight: 700;
+		transition: all 0.5s;
+		&:hover {
+			background: rgba(245, 245, 245, 0.05);
+		}
 		&.active {
 			background: #F5F5F5;
 			color: #0F1215;

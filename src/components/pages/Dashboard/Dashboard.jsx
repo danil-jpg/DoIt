@@ -8,8 +8,8 @@ const Dashboard = () => {
 	return (
 		<Container>
 			<Routes>
-				<Route index element={<AdminPanel />} />
-				{/* <Route path='/user' element={<UserPanel />} /> */}
+				<Route path="/*" element={<AdminPanel />} />
+				{/* <Route path='user' element={<UserPanel />} /> */}
 			</Routes>
 		</Container>
 	)
