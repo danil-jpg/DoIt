@@ -1,9 +1,7 @@
 import React, { Suspense } from 'react';
-import s from './Main.module.scss';
-
 import { Route, Routes } from "react-router-dom";
+import s from './Main.module.scss';
 import Header from "../../common/Header/Header";
-import Container from "../Container/Container";
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(()=> import('../../pages/News/News.jsx'));
 const Premium = React.lazy(()=> import("../../pages/Premium/Premium.jsx"));
