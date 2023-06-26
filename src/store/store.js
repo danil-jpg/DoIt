@@ -73,7 +73,9 @@ import blackMenMob from "../assets/images/NewsPage/blackMenMob.png"
 import blackMenMobWebp from "../assets/images/NewsPage/blackMenMob.png?as=webp"
 import woomenNews2 from "../assets/images/NewsPage/women2.png"
 import woomenNews2Webp from "../assets/images/NewsPage/women2.png?as=webp"
-
+import locationIcon from "../assets/icons/Aboute/locationIcon.svg"
+import mailIcon from "../assets/icons/Aboute/mailIcon.svg"
+import phoneIcon from "../assets/icons/Aboute/phoneIcon.svg"
 
 export const headerData = {
 	logo: {
@@ -291,5 +293,26 @@ export const premiumData ={
 	descr:{
 		descr:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.',
 		listItem:"- usecase1"
+	}
+}
+export const abouteData ={
+	title:{
+		aboute:'About us',
+		contact:'Contact us'
+	},
+	icon:{
+		locationIcon:locationIcon,
+		mailIcon:mailIcon,
+		phoneIcon:phoneIcon
+	},
+	descr:{
+		location:'2440, Daisy Dr undefined Pembroke Pines, Arizona',
+		phoneNumber:'Headquater   (+48) 517 429 774',
+	},
+	mail:{
+		support:'Support@doit.gg',
+		organizer:'Organizer@doit.gg',
+		spon:'Sponsorship@doit.gg'
+		
 	}
 }

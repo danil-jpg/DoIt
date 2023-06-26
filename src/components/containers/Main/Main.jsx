@@ -6,6 +6,7 @@ import Container from "../Container/Container";
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(()=> import('../../pages/News/News.jsx'))
 const Premium =React.lazy(()=> import("../../pages/Premium/Premium.jsx") )
+const About =React.lazy(()=>import("../../pages/AboutUs/AboutUs.jsx"))
 const Main = (props) => {
 
   return (
@@ -17,6 +18,7 @@ const Main = (props) => {
             <Route index element={<Home />} />
             <Route path="/news" element={<News/>}/>
             <Route path="/premium" element={<Premium/>}/>
+            <Route path="/about" element={<About/>}/>
           </Routes>
         </Suspense>
       </Container>
