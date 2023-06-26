@@ -8,6 +8,10 @@ const Button = ({ to, style, children, onClick, color }) => {
 		switch (color) {
 			case 'blue':
 				return 'blue';
+			case "yellow":
+				return 'yellow'
+			case'green':
+			return 'green'
 			default:
 				return '';
 		}

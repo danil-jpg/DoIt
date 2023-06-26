@@ -36,7 +36,8 @@
     align-items: center;
     margin: 0 auto;
     position: relative;
-    z-index: 3;
+    z-index: 1;
+//     z-index: 3;
     padding-top: 136px;
 }
 .main__title{
@@ -112,9 +113,11 @@
             margin-left: -20px;
         }
       }
-      @media (max-width:768px) {
+      @media  (min-width: 768px) and (max-width: 1024px)  {
         .main__block{
             width: 500px;
+            margin-top:110px;
+
         }
         .triangle{
             max-width: 500px;
@@ -138,6 +141,7 @@
     @media (max-width:375px) {
         .main__block{
             max-width: 310px;
+            margin-top: 225px;
         }
         .triangle{
             max-width: 310px;
@@ -162,5 +166,8 @@
         }
         .actions{
             display: none;
+        }
+        .main{
+            min-height: 505px;
         }
     }

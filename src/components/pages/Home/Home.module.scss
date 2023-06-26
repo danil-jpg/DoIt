@@ -1,22 +1,39 @@
 .main__hero{
  margin-top: 64px;
- padding-left: 80px;
+//  padding-left: 80px;
 
 }
 .main__doit{
+    padding-left: 80px;
+}
+.main__tournaments{
+    padding-left: 23px;
     
+}
+.main__news{
+    margin-top: 147px;
+    padding-left: 23px;
 }
 @media (max-width:1440px) {
     .main__hero{
         margin-top: 70px;
+        
+    }
+    .main__doit{
+        padding-left: 80px;
         padding-left: 250px;
     }
 }
 
 @media (max-width:768px) {
-    .main__hero{
+    // .main__hero{
+    //     padding-left: 80px;
+    // }
+    .main__doit{
         padding-left: 80px;
-        margin-top: 30px;
+//     .main__hero{
+//         padding-left: 80px;
+//         margin-top: 30px;
     }
 }
 @media (max-width:375px) {
@@ -24,5 +41,16 @@
         padding-left: 0px;
         margin-top: 168px;
         margin-left: -15px;
+    }
+    .main__doit{
+        padding-left: 0;
+    }
+    .main__tournaments{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main__news{
+        padding-left: 0px;
+        margin-top: 88px;
     }
 }

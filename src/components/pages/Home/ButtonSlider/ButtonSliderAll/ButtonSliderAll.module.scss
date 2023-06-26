@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+@media (max-width:375px) {
+    .main{
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+}
