@@ -1,17 +1,103 @@
 .user {
-	&__buttonList {
+	position: absolute;
+	right: 0;
+	top: 0;
+	&__info,
+	&__money,
+	&__level {
 		display: flex;
-		column-gap: 8px;
+		align-items: center;
 	}
-	@media (max-width: 992px) {
+	&__header,
+	&__icon,
+	&__body,
+	&__info,
+	&__level {
+		transition: all .2s;
+	}
+	&__header {
+		cursor: pointer;
+	}
+	&__info {
+		padding: 8px 40px 8px 8px;
+		column-gap: 8px;
+		position: relative;
+		overflow: hidden;
+		&.active {
+			padding: 8px 40px 32px 8px;
+			background: #161A1F;
+		}
+	}
+	&__imageWrap {
+		flex: 0 0 40px;
+		height: 40px;
+	}
+	&__image {
+		object-fit: contain;
 		width: 100%;
-		&__buttonList {
-			flex-direction: column;
-			gap: 12px;
-			max-width: 400px;
-			margin: 0 auto;
+		height: 100%;
+	}
+	&__name {
+		font-weight: 500;
+		color: #F5F5F5;
+		margin: 0 0 8px;
+	}
+	&__money {
+		color: #55AAFF;
+		font-size: 12px;
+		font-weight: 500;
+		column-gap: 4px;
+	}
+	&__icon {
+		width: 12px;
+		height: 8px;
+		position: absolute;
+		top: 50%;
+		right: 16px;
+		transform: translateY(-50%);
+		&.active {
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+	&__body {
+		display: none;
+	}
+	&__level {
+		opacity: 0;
+		position: absolute;
+		z-index: -1;
+		pointer-events: none;
+		padding: 0 8px;
+		column-gap: 11px;
+		bottom: 14px;
+		left: 0;
+		transform: translateY(100%);
+		&.active {
+			width: 100%;
+			opacity: 1;
+			z-index: 1;
+			position: absolute;
+			pointer-events: all;
+			transform: translateY(0);
+		}
+	}
+	&__levelValue {
+		flex: 0 0 auto;
+		font-size: 10px;
+	}
+	&__leverLine {
+		height: 2px;
+		width: 100%;
+		border-radius: 2px;
+		background: #2B353F;
+		position: relative;
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 60%;
+			height: 100%;
+			background: #F5F5F5;
 		}
 	}
 }
-
-

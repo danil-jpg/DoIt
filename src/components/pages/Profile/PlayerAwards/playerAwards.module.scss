@@ -1,0 +1,103 @@
+.award {
+  width: 100%;
+  height: 100%;
+  //   background-color: red($color: #000000);
+}
+
+// <div className={s.award}>
+//       <p className={s.awTitle}>Level and awards</p>
+//       <div className={s.awStatWr}>
+//         <div className={s.awStatLeft}>
+//           <div className={s.awStatItem}>
+.awTitle {
+  color: #f5f5f5;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+.awStatWr {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+}
+
+.awStatLeft {
+}
+.awStatItemTop {
+  display: flex;
+  justify-content: space-between;
+}
+.awStatItemTitle,
+.awStatItemNum {
+  color: #5af;
+  font-size: 16px;
+  font-family: Rubik;
+  line-height: 100%;
+}
+
+.awStatItemLine {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #2b353f;
+  position: relative;
+
+  margin-top: 7px;
+  margin-bottom: 28px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: #5af;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+  }
+}
+
+// <div className={s.awStatRight}>
+// <div className={s.awRound}></div>
+// <div className={s.awRound}></div>
+// <div className={s.awRound}></div>
+// </div>
+
+.awStatRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.awRound {
+  width: 70px;
+  height: 70px;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid #5af;
+  background: #0f1215;
+  margin-bottom: 19px;
+}
+
+@media screen and (max-width: 992px) {
+  .award {
+    margin-top: 11px;
+  }
+
+  .awTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  .awStatWr {
+    grid-template-columns: 1fr;
+  }
+
+  .awStatRight {
+    display: none;
+  }
+}

@@ -1,8 +1,12 @@
 import { v1 } from 'uuid';
+//Header
+import logo from "../assets/images/logo.png";
+import logoWebp from "../assets/images/logo.png?as=webp";
+import headerAvatar from '../assets/images/header/header_avatar.jpg';
+import headerAvatarWebp from '../assets/images/header/header_avatar.jpg?as=webp';
+
 import triangleBig from '../assets/images/homePage/triangleBig.svg'
 import triangleSmall from '../assets/images/homePage/triangleSmall.svg'
-import logo from '../assets/images/logo.png'
-import logoWebp from '../assets/images/logo.png?as=webp';
 import dotaImg from '../assets/images/homePage/sliderCards/dota.png'
 import csgo from '../assets/images/homePage/sliderCards/cs.png'
 import fortnite from '../assets/images/homePage/sliderCards/fortnite.png'
@@ -73,6 +77,9 @@ import blackMenMob from "../assets/images/NewsPage/blackMenMob.png"
 import blackMenMobWebp from "../assets/images/NewsPage/blackMenMob.png?as=webp"
 import woomenNews2 from "../assets/images/NewsPage/women2.png"
 import woomenNews2Webp from "../assets/images/NewsPage/women2.png?as=webp"
+// profile
+import avatarProfile from '../assets/images/Profile/avatar.png';
+import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
 
 
 export const headerData = {
@@ -83,48 +90,108 @@ export const headerData = {
 	links: [
 		{
 			id: v1(),
-			title: "Play",
-			link: ""
+			title: 'Play',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "News",
-			link: ""
+			title: 'News',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "Games",
-			link: ""
+			title: 'Games',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "Shop",
-			link: ""
+			title: 'Shop',
+			link: ''
 		},
 		{
 			id: v1(),
-			title: "Sponsorship",
-			link: ""
+			title: 'Sponsorship',
+			link: ''
 		},
-	]
+	],
+	user: {
+		name: 'JohnsonBaby2020',
+		money: '160 EUR',
+		crypto: '16 DTC',
+		image: {
+			img: headerAvatar,
+			webp: headerAvatarWebp
+		},
+		level: 'LVL 999',
+		list: [
+			{
+				id: v1(),
+				title: 'My profile',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'My team',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Withdraw',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Deposit',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Premium',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Statistics',
+				to: ''
+			},
+		],
+		bottomList: [
+			{
+				id: v1(),
+				title: 'Support',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Settings',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: 'Logout',
+				to: ''
+			},
+		],
+		
+	}
 }
 
 export const navbar = {
 	list: [
 		{
 			id: v1(),
-			iconId: "horse",
-			link: ""
+			iconId: 'horse',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "cup",
-			link: ""
+			iconId: 'cup',
+			link: ''
 		},
 		{
 			id: v1(),
-			iconId: "rating",
-			link: ""
+			iconId: 'rating',
+			link: ''
 		},
 		{
 			id: v1(),
@@ -142,6 +209,13 @@ export const navbar = {
 			link: ''
 		},
 	]
+}
+
+export const profile = {
+	img: {
+		avatar: avatarProfile,
+		avatarW: avatarProfileWebp
+	}
 }
 
 export const store = {
@@ -291,5 +365,6 @@ export const premiumData ={
 	descr:{
 		descr:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.',
 		listItem:"- usecase1"
-	}
+  }
 }
+

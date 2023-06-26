@@ -27,8 +27,11 @@ const Home = (props) => {
                       </div>
                 </div>
             </div>
+          </Container>
         </div>
-     );
-}
- 
+      </div>
+    </div>
+  );
+};
+
 export default Home;

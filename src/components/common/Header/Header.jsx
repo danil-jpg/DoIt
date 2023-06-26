@@ -5,18 +5,21 @@ import { headerData } from "../../../store/store";
 import Picture from '../../UI/Picture/Picture';
 import UserBlockHeader from "./UserBlockHeader/UserBlockHeader";
 import Container from "../../containers/Container/Container";
+import Button from "../../UI/buttons/Button/Button";
 
 const Header = (props) => {
   const [state, setState] = useState(headerData);
   const [activeBurger, setActiveBurger] = useState(false);
+  const [login, setLogin] = useState(false);
 
-  const isBurger = (selector) => activeBurger ? selector : '';
+  const isActive = (el, selector) => el ? selector : '';
   const onBurgerClickHandler = () => setActiveBurger(!activeBurger);
+  const onLoginClickHandler = () => setLogin(!login);
 
   return (
     <header className={s.header}>
       <Container className={s.header__container}>
-        <div className={`${s.burger} ${isBurger(s.active)}`}
+        <div className={`${s.burger} ${isActive(activeBurger, s.active)}`}
           onClick={onBurgerClickHandler}>
           <span></span>
         </div>
@@ -30,7 +33,7 @@ const Header = (props) => {
             height='64px'
           />
         </Link>
-        <div className={`${s.body} ${isBurger(s.active)}`}>
+        <div className={`${s.body} ${isActive(activeBurger, s.active)}`}>
           <ul className={s.list}>
             {state.links.map(el => (
               <li className={s.item} key={el.id}>
@@ -41,7 +44,17 @@ const Header = (props) => {
             ))}
           </ul>
 
-          <UserBlockHeader />
+          {
+            login
+              ? <UserBlockHeader
+                state={state.user}
+                isActive={isActive} />
+              : <div className={s.buttonList}>
+                <Button onClick={onLoginClickHandler}>Login</Button>
+                <Button color={'blue'}>Sign up</Button>
+              </div>
+          }
+
         </div>
 
       </Container>

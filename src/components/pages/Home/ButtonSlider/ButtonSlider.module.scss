@@ -6,20 +6,24 @@
     background: #14191F;
     padding: 16px;
     &:hover{
+      // border: 1px solid #20252B;
+      // color: #0F1215;
         background: #D8DFEB;
         color: #0F1215;
     }
 }
+
 @media (max-width:768px) {
    .btn{
-    font-size: 16px;
-    padding: 10px;
+      font-size: 16px;
+      padding: 10px;
    }
 }
+
 @media (max-width:375px) {
     .btn{
         font-size: 14px;
         line-height: 1;
         padding: 16px;
-    }
+  }
 }
