@@ -7,6 +7,12 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx']
   },
+  output: {
+    path: path.resolve(__dirname, './root'),
+    filename: 'js/app.js',
+    clean: true,
+    publicPath: '/',
+  },
   cache: false,
   module: {
     rules: [
