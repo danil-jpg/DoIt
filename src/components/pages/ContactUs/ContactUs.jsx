@@ -2,10 +2,12 @@ import React from "react";
 import s from "./ContactUs.module.scss"
 import { abouteData } from "../../../store/store";
 import AboutInfo from "../AboutUs/AboutInfo/AboutInfo";
+import Container from "../../containers/Container/Container";
 const ContactUs = (props) => {
     return ( 
         <div className={s.main}>
-                <AboutInfo
+            <Container>
+            <AboutInfo
                 title={abouteData.title.contact}
                 icon__location={abouteData.icon.locationIcon}
                 descr={abouteData.descr.location}
@@ -16,6 +18,7 @@ const ContactUs = (props) => {
                 mail2={abouteData.mail.organizer}
                 mail3={abouteData.mail.spon}
                 />
+            </Container>
         </div>
      );
 }

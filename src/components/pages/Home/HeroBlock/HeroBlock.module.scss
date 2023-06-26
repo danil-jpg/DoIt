@@ -37,6 +37,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+//     z-index: 3;
     padding-top: 136px;
 }
 .main__title{
@@ -116,6 +117,7 @@
         .main__block{
             width: 500px;
             margin-top:110px;
+
         }
         .triangle{
             max-width: 500px;
@@ -139,7 +141,7 @@
     @media (max-width:375px) {
         .main__block{
             max-width: 310px;
-            margin-top: 225px;
+            margin-top: 210px;
         }
         .triangle{
             max-width: 310px;
