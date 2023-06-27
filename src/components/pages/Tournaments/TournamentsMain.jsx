@@ -33,6 +33,7 @@ const TournamentsMain = () => {
             webp={tournamentsMain.imgs.gameLogoW}
             className={s.tournamentsRightImg}
           />
+          <p className={s.tournamentsMobileText}>DOTA II: TOURNAMNETS</p>
           <TournamentFilter />
         </div>
       </div>

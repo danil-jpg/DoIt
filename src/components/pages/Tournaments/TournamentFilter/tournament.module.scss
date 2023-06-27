@@ -66,3 +66,9 @@
     margin-top: 8px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .filter {
+    padding-right: 70%;
+  }
+}

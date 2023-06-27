@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 function Picture({ className, img, webp, ...rest }) {
-  let imageExt = img.slice(-7).split(".")[1].trim();
-  let type = "image/" + imageExt;
-  if (imageExt != "png") {
-    type = "image/jpeg";
+  let imageExt = img.slice(-7).split('.')[1].trim();
+  let type = 'image/' + imageExt;
+  if (imageExt != 'png') {
+    type = 'image/jpeg';
   }
 
-  let alt = rest.alt ? rest.alt : "image";
+  let alt = rest.alt ? rest.alt : 'image';
 
   return (
     <picture>
@@ -15,35 +15,35 @@ function Picture({ className, img, webp, ...rest }) {
         <>
           <source
             srcSet={rest.webpMob}
-            type="image/webp"
+            type='image/webp'
             media={`(max-width: ${rest.widthMob}px)`}
           />
           <source srcSet={rest.imgMob} type={type} media={`(max-width: ${rest.widthMob}px)`} />
         </>
       ) : (
-        ""
+        ''
       )}
       {rest.imgTab ? (
         <>
           <source
             srcSet={rest.webpTab}
-            type="image/webp"
+            type='image/webp'
             media={`(max-width: ${rest.widthTab}px)`}
           />
           <source srcSet={rest.imgTab} type={type} media={`(max-width: ${rest.widthTab}px)`} />
         </>
       ) : (
-        ""
+        ''
       )}
-      <source srcSet={webp} type="image/webp" />
+      <source srcSet={webp} type='image/webp' />
       {/* <source srcSet={img} type={type} /> */}
       <img
-        className={className ? className : ""}
+        className={className ? className : ''}
         src={img}
-        alt={alt ? alt : ""}
-        loading={rest.lazy ? "lazy" : "auto"}
-        width={rest.width ? rest.width : ""}
-        height={rest.height ? rest.height : ""}
+        alt={alt ? alt : ''}
+        loading={rest.lazy ? 'lazy' : 'auto'}
+        width={rest.width ? rest.width : ''}
+        height={rest.height ? rest.height : ''}
       />
     </picture>
   );
