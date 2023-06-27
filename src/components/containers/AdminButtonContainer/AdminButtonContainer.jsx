@@ -6,7 +6,7 @@ const AdminButtonContainer = ({ buttonList }) => {
 	return (
 		<div className={s.list}>
 			{buttonList.map(el => (
-				<Button
+				<Button style={{padding: '16px 44px'}}
 					className={s.list__btn}
 					to={el.link}
 					key={el.id}>
