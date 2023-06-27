@@ -5,15 +5,14 @@ import Picture from '../../UI/Picture/Picture';
 import { tournamentsMain } from '../../../store/store';
 import Container from '../../containers/Container/Container';
 import TournamentCard from './TournamentCard/TournamentCard';
+import TournamentFilter from './TournamentFilter/TournamentFilter';
 
 const TournamentsMain = () => {
   return (
     <Container>
       <div className={s.tournamentMain}>
-        {/* <Checkbox /> */}
         <div className={s.tournamentsLeft}>
           <p className={s.tournamentsTitle}>DOTA II: TOURNAMNETS</p>
-          <TournamentCard />
           {tournamentsMain.cardData.map((el) => {
             return (
               <TournamentCard
@@ -34,6 +33,7 @@ const TournamentsMain = () => {
             webp={tournamentsMain.imgs.gameLogoW}
             className={s.tournamentsRightImg}
           />
+          <TournamentFilter />
         </div>
       </div>
     </Container>

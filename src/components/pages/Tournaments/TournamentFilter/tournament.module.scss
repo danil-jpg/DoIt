@@ -1,0 +1,68 @@
+.filter {
+  border: 2px solid #20252b;
+  background: #0f1215;
+  width: 100%;
+  padding: 24px 28px;
+}
+.filterTitleWr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 51px;
+}
+.filterTitle {
+  color: #f5f5f5;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.filterclear {
+  color: #b83333;
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+// <div className={s.filterItem}>
+//         <p className={s.filterItemTitle}>Game mode</p>
+//         <div className={s.checkboxWr}>
+//           <Checkbox />
+//           <p className={s.checkboxDescr}>1v1</p>
+//         </div>
+
+.filterItem {
+  margin-top: 24px;
+}
+.filterItemCheckboxWr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.filterItemTitle {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 24px;
+}
+.checkboxWr {
+  display: flex;
+}
+.checkboxDescr {
+  margin-left: 8px;
+  color: #67707a;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.filterItemCheckboxHorWr {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  .checkboxWr {
+    margin-top: 8px;
+  }
+}
