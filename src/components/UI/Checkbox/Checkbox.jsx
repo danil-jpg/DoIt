@@ -6,8 +6,6 @@ const Checkbox = () => {
     <>
       <input type='checkbox' className={s.customCheckbox} id='checkbox' />
       <label className={s.customCheckboxLabel} htmlFor='checkbox'></label>
-      <input type='checkbox' className={s.checkbox} id='happy' name='happy' value='yes' />
-      <label htmlFor='happy'>Happy</label>
     </>
   );
 };
