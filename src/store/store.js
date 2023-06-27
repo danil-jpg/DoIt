@@ -290,7 +290,23 @@ export const adminPanel = {
 			},
 		},
 	],
+	search: {
+		name: 'search',
+		ph: 'Search by name, prize, signed, etc.',
+	},
 	tournaments: {
+		buttonList: [
+			{
+				id: v1(),
+				title: 'Edit mode',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: '+  Add player',
+				to: ''
+			},
+		]
 	}
 }
 

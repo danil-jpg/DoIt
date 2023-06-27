@@ -17,9 +17,13 @@ const ScItemsAdmin = ({ state, list }) => {
 							img={el.image.img}
 							webp={el.image.webp}
 							className={s.scList__image}
-							alt={'icon'}
-							width='32'
-							height='32'
+							imgMob={el.imgMob}
+							imgTab={el.imgTab}
+							widthMob='768'
+							widthTab='576'
+							alt='icon'
+							width='32px'
+							height='32px'
 						/>
 					</div>
 				</li>

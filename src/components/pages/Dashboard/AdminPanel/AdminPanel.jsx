@@ -20,7 +20,9 @@ const AdminPanel = () => {
 						<TournamentsAdmin
 							state={state.tournaments}
 							links={state.links}
-							icons={state.icons} />
+							icons={state.icons}
+							search={state.search}
+						/>
 					} />
 					<Route path="/team" element={
 						<TeamAdmin state={state.tournaments} list={state.links} />
