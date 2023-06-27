@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import NavAdminPanel from "../NavAdminPanel/NavAdminPanel";
 import NavPanel from "../NavAdminPanel/NavAdminPanel";
+import ScItemsAdmin from "../ScItemsAdmin/ScItemsAdmin";
 import s from './TournamentsAdmin.module.scss';
 
-const TournamentsAdmin = ({ state, list }) => {
-
-	console.log(list)
+const TournamentsAdmin = ({ state, links, icons }) => {
 
 	return (
-		<div className={s.admin}>
-			<NavAdminPanel list={list} />
-			
+		<div className={s.tournaments}>
+			<NavAdminPanel list={links} />
+			<div className={s.tournaments__header}>
+				<ScItemsAdmin list={icons} />
+			</div>
 		</div>
 	)
 }

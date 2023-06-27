@@ -17,7 +17,10 @@ const AdminPanel = () => {
 			<Container>
 				<Routes>
 					<Route path="/tournaments" element={
-						<TournamentsAdmin state={state.tournaments} list={state.links} />
+						<TournamentsAdmin
+							state={state.tournaments}
+							links={state.links}
+							icons={state.icons} />
 					} />
 					<Route path="/team" element={
 						<TeamAdmin state={state.tournaments} list={state.links} />
