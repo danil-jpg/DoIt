@@ -224,6 +224,127 @@ export const navbar = {
 	]
 }
 
+const adminTournaments = {
+	buttonList: [
+		{
+			id: v1(),
+			title: 'Edit mode',
+			to: '',
+			value: 'edit'
+		},
+		{
+			id: v1(),
+			title: '+  Add player',
+			to: '',
+			value: 'add'
+		},
+	],
+	header: {
+		name: {
+			title: 'Tournament\`s name',
+			value: 'name'
+		},
+		entryPrice: {
+			title: 'Entry price',
+			value: 'entryPrice'
+		},
+		poolPrice: {
+			title: 'Pool price',
+			value: 'poolPrice'
+		},
+		signed: {
+			title: 'Signed',
+			value: 'signed'
+		},
+		start: {
+			title: 'Start in',
+			value: 'start'
+		},
+	},
+	body: [
+		{
+			id: v1(),
+			name: 'The best of the best tournament',
+			entryPrice: 1500,
+			poolPrice: 20000,
+			signed: '1/4',
+			start: 10
+		},
+		{
+			id: v1(),
+			name: 'The best tournament',
+			entryPrice: 100,
+			poolPrice: 2000,
+			signed: '1/6',
+			start: 322
+		},
+		{
+			id: v1(),
+			name: 'The best of the best tournament',
+			entryPrice: 1600,
+			poolPrice: 79000,
+			signed: '1/4',
+			start: 343
+		},
+		{
+			id: v1(),
+			name: 'The best tournament',
+			entryPrice: 71500,
+			poolPrice: 984000,
+			signed: '1/4',
+			start: 102
+		},
+		{
+			id: v1(),
+			name: 'The best of the best tournament',
+			entryPrice: 300,
+			poolPrice: 44000,
+			signed: '1/4',
+			start: 342
+		},
+		{
+			id: v1(),
+			name: 'The best tournament',
+			entryPrice: 900,
+			poolPrice: 95400,
+			signed: '1/4',
+			start: 543
+		},
+		{
+			id: v1(),
+			name: 'The best of the best tournament',
+			entryPrice: 850,
+			poolPrice: 78500,
+			signed: '1/4',
+			start: 190
+		},
+		{
+			id: v1(),
+			name: 'The best tournament',
+			entryPrice: 15600,
+			poolPrice: 200095,
+			signed: '1/4',
+			start: 30
+		},
+		{
+			id: v1(),
+			name: 'The best of the best tournament',
+			entryPrice: 3500,
+			poolPrice: 60000,
+			signed: '1/4',
+			start: 5
+		},
+		{
+			id: v1(),
+			name: 'The best tournament',
+			entryPrice: 1900,
+			poolPrice: 56000,
+			signed: '1/4',
+			start: 9
+		},
+	]
+}
+
 export const adminPanel = {
 	links: [
 		{
@@ -301,21 +422,9 @@ export const adminPanel = {
 		name: 'search',
 		ph: 'Search by name, prize, signed, etc.',
 	},
-	tournaments: {
-		buttonList: [
-			{
-				id: v1(),
-				title: 'Edit mode',
-				to: ''
-			},
-			{
-				id: v1(),
-				title: '+  Add player',
-				to: ''
-			},
-		]
-	}
+	tournaments: adminTournaments
 }
+
 
 
 export const profile = {

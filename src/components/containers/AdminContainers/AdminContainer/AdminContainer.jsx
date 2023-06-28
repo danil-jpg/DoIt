@@ -1,6 +1,6 @@
 import React from 'react';
-import ScItemsAdmin from '../../pages/Dashboard/AdminPanel/ScItemsAdmin/ScItemsAdmin';
-import SearchAdminPanel from '../../UI/forms/SearchAdminPanel/SearchAdminPanel';
+import ScItemsAdmin from '../../../pages/Dashboard/AdminPanel/ScItemsAdmin/ScItemsAdmin';
+import SearchAdminPanel from '../../../UI/forms/SearchAdminPanel/SearchAdminPanel';
 import AdminButtonContainer from '../AdminButtonContainer/AdminButtonContainer';
 import s from './AdminContainer.module.scss';
 

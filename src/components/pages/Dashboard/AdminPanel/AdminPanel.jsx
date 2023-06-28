@@ -9,7 +9,7 @@ import NewsAdmin from "./NewsAdmin/NewsAdmin";
 import LeaguesAdmin from "./LeaguesAdmin/LeaguesAdmin";
 import Container from "../../../containers/Container/Container";
 import NavAdminPanel from "./NavAdminPanel/NavAdminPanel";
-import AdminContainer from "../../../containers/AdminContainer/AdminContainer";
+import AdminContainer from '../../../containers/AdminContainers/AdminContainer/AdminContainer';
 
 const AdminPanel = () => {
 	const [state, setState] = useState(adminPanel);
