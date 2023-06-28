@@ -55,6 +55,11 @@
   line-height: 1.5;
 }
 
+.cardArrowTab {
+  display: none;
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 1200px) {
   .card {
     grid-template-columns: 1fr;
@@ -67,5 +72,60 @@
   .cardGameBottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .cardGameTitle {
+    display: flex;
+    cursor: pointer;
+  }
+  .cardArrowTab {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 28px;
+  }
+
+  .cardGameBottomMob {
+    display: none;
+  }
+
+  .cardArrowRev {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+
+  .card {
+    margin-top: 30px;
+    position: relative;
+  }
+  .cardRight {
+    padding: 16px;
+  }
+  //
+  .cardLeftActive {
+    height: 66px;
+  }
+
+  .cardRightActive {
+    position: absolute;
+    top: 6px;
+  }
+  //
+  .cardGameTitle {
+    font-size: 22px;
+  }
+  .cardArrowTab {
+  }
+  .cardGameBottom {
+    column-gap: 30px;
+    margin-top: 8px;
+  }
+  .cardStatus {
+    display: none;
+  }
+  .cardArrowTab {
+    margin-left: 20px;
+  }
+  .card {
+    margin-top: 16px;
   }
 }

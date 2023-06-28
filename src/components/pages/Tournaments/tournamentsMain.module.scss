@@ -45,4 +45,16 @@
   .tournamentsTitle {
     display: none;
   }
+  .tournamentsMobileText {
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tournamentsRightImg {
+    width: 186px;
+    height: 33px;
+    margin-top: 6px;
+  }
 }

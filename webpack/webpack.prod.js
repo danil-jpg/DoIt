@@ -2,10 +2,11 @@ const path = require('path')
 const CssMin = require('css-minimizer-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'production',
-
+  externals: [nodeExternals()],
   output: {
     path: path.resolve(__dirname, '..', 'docs/'),
     filename: 'scripts/bundle[hash].js',
@@ -43,6 +44,7 @@ module.exports = {
       },
       {
         test: /\.module\.scss$/,
+        exclude: /node_modules/,
         generator: {
           filename: 'styles/[name][hash][ext]'
         },

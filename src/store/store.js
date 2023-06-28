@@ -93,6 +93,11 @@ import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
 import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
 import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
+import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png'
+import dotaInGameMobW from '../assets/images/tournamentsMain/dotaInGameMob.png?as=webp'
+// Tournaments info
+import gameLogo from '../assets/images/tournamentsInfo/mdi_games.png'
+import gameLogoW from '../assets/images/tournamentsInfo/mdi_games.png?as=webp'
 
 
 export const headerData = {
@@ -501,7 +506,9 @@ export const tournamentsMain = {
 		gameLogo: dotaLogo,
 		gameLogoW: dotaLogoWeb,
 		dotaInGame: dotaInGame,
-		dotaInGameW: dotaInGameW
+		dotaInGameW: dotaInGameW,
+		dotaInGameMob: dotaInGameMob,
+		dotaInGameMobW: dotaInGameMobW,
 	},
 	cardData: [{
 		status: 'Ongoing',
@@ -537,6 +544,15 @@ export const tournamentsMain = {
 		platform: 'XBOX',
 		server: 'Europe', key: v1()
 	}]
+}
+
+export const tournamentsInfo = {
+	imgs: {
+		gameLogo: dotaLogo,
+		gameLogoW: dotaLogoWeb,
+		mortalLogo: gameLogo,
+		mortalLogoW: gameLogoW
+	}
 }
 
 
