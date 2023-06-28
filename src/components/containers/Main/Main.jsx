@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import s from './Main.module.scss';
 import Header from '../../common/Header/Header';
-import AdminPanel from '../../pages/Dashboard/AdminPanel/AdminPanel';
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
