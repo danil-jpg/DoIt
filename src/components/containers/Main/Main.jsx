@@ -11,7 +11,7 @@ const AdminPanel = React.lazy(() => import('../../pages/Dashboard/AdminPanel/Adm
 const About = React.lazy(() => import('../../pages/AboutUs/AboutUs.jsx'));
 const Contact = React.lazy(() => import('../../pages/ContactUs/ContactUs.jsx'));
 const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
-
+const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
 
 const Main = (props) => {
   return (
@@ -27,6 +27,7 @@ const Main = (props) => {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/tournamentsmain' element={<TournamentsMain />} />
+          <Route path='/tournamentsInfo' element={<TournamentsInfo />} />
         </Routes>
       </Suspense>
     </main>
