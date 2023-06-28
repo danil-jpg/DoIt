@@ -95,5 +95,37 @@
 
   .card {
     margin-top: 30px;
+    position: relative;
+  }
+  .cardRight {
+    padding: 16px;
+  }
+  //
+  .cardLeftActive {
+    height: 66px;
+  }
+
+  .cardRightActive {
+    position: absolute;
+    top: 6px;
+  }
+  //
+  .cardGameTitle {
+    font-size: 22px;
+  }
+  .cardArrowTab {
+  }
+  .cardGameBottom {
+    column-gap: 30px;
+    margin-top: 8px;
+  }
+  .cardStatus {
+    display: none;
+  }
+  .cardArrowTab {
+    margin-left: 20px;
+  }
+  .card {
+    margin-top: 16px;
   }
 }

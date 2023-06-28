@@ -161,6 +161,9 @@
     display: flex;
     margin-bottom: 16px;
   }
+  .filterTitleWr {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 768px) {
