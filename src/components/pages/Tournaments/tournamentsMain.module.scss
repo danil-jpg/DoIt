@@ -1,0 +1,48 @@
+.tournamentMain {
+  display: grid;
+
+  grid-template-columns: 70.5% 1fr;
+
+  gap: 30px;
+  margin-top: 77px;
+}
+.tournamentsLeft {
+}
+.tournamentsRight {
+}
+.tournamentsTitle {
+  color: #f5f5f5;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 12px;
+  margin-bottom: 12px;
+}
+.tournamentsRightImg {
+  justify-self: end;
+  margin-bottom: 17px;
+  display: block;
+}
+.tournamentsMobileText {
+  display: none;
+  color: #f5f5f5;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .tournamentsLeft {
+    order: 1;
+  }
+  .tournamentMain {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .tournamentsMobileText {
+    display: block;
+  }
+  .tournamentsTitle {
+    display: none;
+  }
+}
