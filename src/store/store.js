@@ -5,6 +5,12 @@ import logoWebp from '../assets/images/logo.png?as=webp';
 import headerAvatar from '../assets/images/header/header_avatar.jpg';
 import headerAvatarWebp from '../assets/images/header/header_avatar.jpg?as=webp';
 
+//Admin Panel
+import imgSc from '../assets/images/admin_panel/sc-image.png';
+import imgScWebp from '../assets/images/admin_panel/sc-image.png?as=webp';
+import imgFortnite from '../assets/images/admin_panel/fortnite.png';
+import imgFortniteWebp from '../assets/images/admin_panel/fortnite.png?as=webp';
+
 import triangleBig from '../assets/images/homePage/triangleBig.svg'
 import triangleSmall from '../assets/images/homePage/triangleSmall.svg'
 import dotaImg from '../assets/images/homePage/sliderCards/dota.png'
@@ -248,8 +254,68 @@ export const adminPanel = {
 			link: '/admin/leagues'
 		},
 	],
+	icons: [
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			type: 'fortnite',
+			image: {
+				img: imgFortnite,
+				webp: imgFortniteWebp,
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+	],
+	search: {
+		name: 'search',
+		ph: 'Search by name, prize, signed, etc.',
+	},
 	tournaments: {
-
+		buttonList: [
+			{
+				id: v1(),
+				title: 'Edit mode',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: '+  Add player',
+				to: ''
+			},
+		]
 	}
 }
 

@@ -8,7 +8,6 @@ const PlayersAdmin = ({ state, list }) => {
 
 	return (
 		<div className={s.admin}>
-			<NavAdminPanel list={list} />
 
 		</div>
 	)

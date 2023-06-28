@@ -1,4 +1,6 @@
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -48,3 +50,4 @@ module.exports = {
     new ReactRefreshWebpackPlugin(),
   ],
 }
+

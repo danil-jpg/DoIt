@@ -1,6 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const postcss 
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/index.jsx'),

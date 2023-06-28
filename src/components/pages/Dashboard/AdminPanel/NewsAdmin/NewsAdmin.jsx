@@ -9,7 +9,6 @@ const NewsAdmin = ({ state, list }) => {
 
 	return (
 		<div className={s.admin}>
-			<NavAdminPanel list={list} />
 
 		</div>
 	)

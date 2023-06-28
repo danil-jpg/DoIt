@@ -8,7 +8,6 @@ const TeamAdmin = ({ state, list }) => {
 
 	return (
 		<div className={s.admin}>
-			<NavAdminPanel list={list} />
 
 		</div>
 	)

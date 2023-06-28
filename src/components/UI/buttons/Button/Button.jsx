@@ -9,9 +9,9 @@ const Button = ({ to, style, children, onClick, color }) => {
 			case 'blue':
 				return 'blue';
 			case "yellow":
-				return 'yellow'
-			case'green':
-			return 'green'
+				return 'yellow';
+			case 'green':
+				return 'green';
 			default:
 				return '';
 		}
