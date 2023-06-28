@@ -8,6 +8,8 @@ import PlayersAdmin from "./PlayersAdmin/PlayersAdmin";
 import NewsAdmin from "./NewsAdmin/NewsAdmin";
 import LeaguesAdmin from "./LeaguesAdmin/LeaguesAdmin";
 import Container from "../../../containers/Container/Container";
+import NavAdminPanel from "./NavAdminPanel/NavAdminPanel";
+import AdminContainer from "../../../containers/AdminContainer/AdminContainer";
 
 const AdminPanel = () => {
 	const [state, setState] = useState(adminPanel);
@@ -15,21 +17,50 @@ const AdminPanel = () => {
 	return (
 		<div className={s.admin}>
 			<Container>
+
+				<NavAdminPanel list={state.links} />
 				<Routes>
 					<Route path="/tournaments" element={
-						<TournamentsAdmin state={state.tournaments} list={state.links} />
+						<AdminContainer
+							icons={state.icons}
+							search={state.search}
+							buttonList={state.tournaments.buttonList}>
+							<TournamentsAdmin
+								state={state.tournaments}
+							/>
+						</AdminContainer>
 					} />
 					<Route path="/team" element={
-						<TeamAdmin state={state.tournaments} list={state.links} />
+						<AdminContainer
+							icons={state.icons}
+							search={state.search}
+							buttonList={state.tournaments.buttonList}>
+							<TeamAdmin state={state.tournaments} list={state.links} />
+						</AdminContainer>
 					} />
 					<Route path="/players" element={
-						<PlayersAdmin state={state.tournaments} list={state.links} />
+						<AdminContainer
+							icons={state.icons}
+							search={state.search}
+							buttonList={state.tournaments.buttonList}>
+							<PlayersAdmin state={state.tournaments} list={state.links} />
+						</AdminContainer>
 					} />
 					<Route path="/news" element={
-						<NewsAdmin state={state.tournaments} list={state.links} />
+						<AdminContainer
+							icons={state.icons}
+							search={state.search}
+							buttonList={state.tournaments.buttonList}>
+							<NewsAdmin state={state.tournaments} list={state.links} />
+						</AdminContainer>
 					} />
 					<Route path="/leagues" element={
-						<LeaguesAdmin state={state.tournaments} list={state.links} />
+						<AdminContainer
+							icons={state.icons}
+							search={state.search}
+							buttonList={state.tournaments.buttonList}>
+							<LeaguesAdmin state={state.tournaments} list={state.links} />
+						</AdminContainer>
 					} />
 				</Routes>
 			</Container>

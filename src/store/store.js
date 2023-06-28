@@ -1,9 +1,15 @@
 import { v1 } from 'uuid';
 //Header
-import logo from "../assets/images/logo.png";
-import logoWebp from "../assets/images/logo.png?as=webp";
+import logo from '../assets/images/logo.png';
+import logoWebp from '../assets/images/logo.png?as=webp';
 import headerAvatar from '../assets/images/header/header_avatar.jpg';
 import headerAvatarWebp from '../assets/images/header/header_avatar.jpg?as=webp';
+
+//Admin Panel
+import imgSc from '../assets/images/admin_panel/sc-image.png';
+import imgScWebp from '../assets/images/admin_panel/sc-image.png?as=webp';
+import imgFortnite from '../assets/images/admin_panel/fortnite.png';
+import imgFortniteWebp from '../assets/images/admin_panel/fortnite.png?as=webp';
 
 import triangleBig from '../assets/images/homePage/triangleBig.svg'
 import triangleSmall from '../assets/images/homePage/triangleSmall.svg'
@@ -21,67 +27,72 @@ import csgoMob from '../assets/images/homePage/sliderCards/csMob.png'
 import csgoMobWebp from '../assets/images/homePage/sliderCards/csMob.png?as=webp'
 import witcher from '../assets/images/homePage/sliderCards/witcher.png'
 import witcherWebp from '../assets/images/homePage/sliderCards/witcher.png?as=webp'
-import witcherMob from "../assets/images/homePage/sliderCards/witcherMob.png"
-import witcherMobWebp from "../assets/images/homePage/sliderCards/witcherMob.png?as=webp"
-import dast from "../assets/images/homePage/sliderCards/dast2.png"
-import dastWebp from "../assets/images/homePage/sliderCards/dast2.png?as=webp"
-import dastMob from "../assets/images/homePage/sliderCards/dast2Mob.png"
-import dastMobWebp from "../assets/images/homePage/sliderCards/dast2Mob.png?as=webp"
+import witcherMob from '../assets/images/homePage/sliderCards/witcherMob.png'
+import witcherMobWebp from '../assets/images/homePage/sliderCards/witcherMob.png?as=webp'
+import dast from '../assets/images/homePage/sliderCards/dast2.png'
+import dastWebp from '../assets/images/homePage/sliderCards/dast2.png?as=webp'
+import dastMob from '../assets/images/homePage/sliderCards/dast2Mob.png'
+import dastMobWebp from '../assets/images/homePage/sliderCards/dast2Mob.png?as=webp'
 import mafia from '../assets/images/homePage/sliderCards/mafia.png'
 import mafiaWebp from '../assets/images/homePage/sliderCards/mafia.png?as=webp'
-import mafiaMob from "../assets/images/homePage/sliderCards/mafiaMob.png"
-import mafiaMobWebp from "../assets/images/homePage/sliderCards/mafiaMob.png?as=webp"
-import google from "../assets/images/homePage/Partners/google.png"
-import googleWebp from "../assets/images/homePage/Partners/google.png?as=webp"
-import googleMob from "../assets/images/homePage/Partners/googleMob.png"
-import googleMobWebp from "../assets/images/homePage/Partners/googleMob.png?as=webp"
-import nasa from "../assets/images/homePage/Partners/nasa.png"
-import nasaWebp from "../assets/images/homePage/Partners/nasa.png?as=webp"
-import nasaMob from "../assets/images/homePage/Partners/nasaMob.png"
-import nasaMobWebp from "../assets/images/homePage/Partners/nasaMob.png?as=webp"
-import navi from "../assets/images/homePage/Partners/navi.png"
-import naviWebp from "../assets/images/homePage/Partners/navi.png?as=webp"
-import naviMob from "../assets/images/homePage/Partners/naviMob.png"
-import naviMobWebp from "../assets/images/homePage/Partners/naviMob.png?as=webp"
-import airbnb from "../assets/images/homePage/Partners/airbnb.png"
-import airbnbWebp from "../assets/images/homePage/Partners/airbnb.png?as=webp"
-import airbnbMob from "../assets/images/homePage/Partners/airbnbMob.png"
-import airbnbMobWebp from "../assets/images/homePage/Partners/airbnbMob.png?as=webp"
-import telegram from "../assets/images/homePage/Partners/telegram.png"
-import telegramWebp from "../assets/images/homePage/Partners/telegram.png?as=webp"
-import telegramMob from "../assets/images/homePage/Partners/telegramMob.png"
-import telegramMobWebp from "../assets/images/homePage/Partners/telegramMob.png?as=webp"
-import youtube from "../assets/images/homePage/Partners/youtube.png"
-import youtubeWebp from "../assets/images/homePage/Partners/youtube.png?as=webp"
-import youtubeMob from "../assets/images/homePage/Partners/youtubeMob.png"
-import youtubeMobWebp from "../assets/images/homePage/Partners/youtubeMob.png?as=webp"
-import be from "../assets/images/homePage/Partners/be.png"
-import beWebp from "../assets/images/homePage/Partners/be.png?=webp"
-import menVr from "../assets/images/NewsPage/menVr.png"
-import menVrWebp from "../assets/images/NewsPage/menVr.png?as=webp"
-import menVrMob from "../assets/images/NewsPage/menVrMob.png"
-import menVrMobWebp from "../assets/images/NewsPage/menVrMob.png?as=webp"
-import watch from "../assets/images/NewsPage/watch.png"
-import watchWebp from "../assets/images/NewsPage/watch.png?as=webp"
-import woomenNews from "../assets/images/NewsPage/women.png"
-import woomenNewsWebp from "../assets/images/NewsPage/women.png?as=webp"
-import woomenNewsMob from "../assets/images/NewsPage/womenMob.png"
-import woomenNewsMobWebp from "../assets/images/NewsPage/womenMob.png?as-webp"
-import laptopNews from "../assets/images/NewsPage/laptop.png"
-import laptopNewsWebp from "../assets/images/NewsPage/laptop.png?as=webp"
-import laptopNewsMob from "../assets/images/NewsPage/laptopMob.png"
-import laptopNewsMobWebp from "../assets/images/NewsPage/laptopMob.png?as=webp"
-import blackMen from "../assets/images/NewsPage/blackMen.png"
-import blackMenWebp from "../assets/images/NewsPage/blackMen.png?as=webp"
-import blackMenMob from "../assets/images/NewsPage/blackMenMob.png"
-import blackMenMobWebp from "../assets/images/NewsPage/blackMenMob.png?as=webp"
-import woomenNews2 from "../assets/images/NewsPage/women2.png"
-import woomenNews2Webp from "../assets/images/NewsPage/women2.png?as=webp"
-import locationIcon from "../assets/icons/Aboute/locationIcon.svg"
-import mailIcon from "../assets/icons/Aboute/mailIcon.svg"
-import phoneIcon from "../assets/icons/Aboute/phoneIcon.svg"
+import mafiaMob from '../assets/images/homePage/sliderCards/mafiaMob.png'
+import mafiaMobWebp from '../assets/images/homePage/sliderCards/mafiaMob.png?as=webp'
+import google from '../assets/images/homePage/Partners/google.png'
+import googleWebp from '../assets/images/homePage/Partners/google.png?as=webp'
+import googleMob from '../assets/images/homePage/Partners/googleMob.png'
+import googleMobWebp from '../assets/images/homePage/Partners/googleMob.png?as=webp'
+import nasa from '../assets/images/homePage/Partners/nasa.png'
+import nasaWebp from '../assets/images/homePage/Partners/nasa.png?as=webp'
+import nasaMob from '../assets/images/homePage/Partners/nasaMob.png'
+import nasaMobWebp from '../assets/images/homePage/Partners/nasaMob.png?as=webp'
+import navi from '../assets/images/homePage/Partners/navi.png'
+import naviWebp from '../assets/images/homePage/Partners/navi.png?as=webp'
+import naviMob from '../assets/images/homePage/Partners/naviMob.png'
+import naviMobWebp from '../assets/images/homePage/Partners/naviMob.png?as=webp'
+import airbnb from '../assets/images/homePage/Partners/airbnb.png'
+import airbnbWebp from '../assets/images/homePage/Partners/airbnb.png?as=webp'
+import airbnbMob from '../assets/images/homePage/Partners/airbnbMob.png'
+import airbnbMobWebp from '../assets/images/homePage/Partners/airbnbMob.png?as=webp'
+import telegram from '../assets/images/homePage/Partners/telegram.png'
+import telegramWebp from '../assets/images/homePage/Partners/telegram.png?as=webp'
+import telegramMob from '../assets/images/homePage/Partners/telegramMob.png'
+import telegramMobWebp from '../assets/images/homePage/Partners/telegramMob.png?as=webp'
+import youtube from '../assets/images/homePage/Partners/youtube.png'
+import youtubeWebp from '../assets/images/homePage/Partners/youtube.png?as=webp'
+import youtubeMob from '../assets/images/homePage/Partners/youtubeMob.png'
+import youtubeMobWebp from '../assets/images/homePage/Partners/youtubeMob.png?as=webp'
+import be from '../assets/images/homePage/Partners/be.png'
+import beWebp from '../assets/images/homePage/Partners/be.png?=webp'
+import menVr from '../assets/images/NewsPage/menVr.png'
+import menVrWebp from '../assets/images/NewsPage/menVr.png?as=webp'
+import menVrMob from '../assets/images/NewsPage/menVrMob.png'
+import menVrMobWebp from '../assets/images/NewsPage/menVrMob.png?as=webp'
+import watch from '../assets/images/NewsPage/watch.png'
+import watchWebp from '../assets/images/NewsPage/watch.png?as=webp'
+import woomenNews from '../assets/images/NewsPage/women.png'
+import woomenNewsWebp from '../assets/images/NewsPage/women.png?as=webp'
+import woomenNewsMob from '../assets/images/NewsPage/womenMob.png'
+import woomenNewsMobWebp from '../assets/images/NewsPage/womenMob.png?as-webp'
+import laptopNews from '../assets/images/NewsPage/laptop.png'
+import laptopNewsWebp from '../assets/images/NewsPage/laptop.png?as=webp'
+import laptopNewsMob from '../assets/images/NewsPage/laptopMob.png'
+import laptopNewsMobWebp from '../assets/images/NewsPage/laptopMob.png?as=webp'
+import blackMen from '../assets/images/NewsPage/blackMen.png'
+import blackMenWebp from '../assets/images/NewsPage/blackMen.png?as=webp'
+import blackMenMob from '../assets/images/NewsPage/blackMenMob.png'
+import blackMenMobWebp from '../assets/images/NewsPage/blackMenMob.png?as=webp'
+import woomenNews2 from '../assets/images/NewsPage/women2.png'
+import woomenNews2Webp from '../assets/images/NewsPage/women2.png?as=webp'
+import locationIcon from '../assets/icons/Aboute/locationIcon.svg'
+import mailIcon from '../assets/icons/Aboute/mailIcon.svg'
+import phoneIcon from '../assets/icons/Aboute/phoneIcon.svg'
 import avatarProfile from '../assets/images/Profile/avatar.png';
 import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
+// Tournaments main
+import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
+import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
+import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
+import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
 
 
 export const headerData = {
@@ -241,8 +252,68 @@ export const adminPanel = {
 			link: '/admin/leagues'
 		},
 	],
+	icons: [
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			type: 'fortnite',
+			image: {
+				img: imgFortnite,
+				webp: imgFortniteWebp,
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+		{
+			id: v1(),
+			image: {
+				img: imgSc,
+				webp: imgScWebp
+			},
+		},
+	],
+	search: {
+		name: 'search',
+		ph: 'Search by name, prize, signed, etc.',
+	},
 	tournaments: {
-
+		buttonList: [
+			{
+				id: v1(),
+				title: 'Edit mode',
+				to: ''
+			},
+			{
+				id: v1(),
+				title: '+  Add player',
+				to: ''
+			},
+		]
 	}
 }
 
@@ -313,14 +384,14 @@ export const newsCard = {
 		mafiaMobWebp: mafiaMobWebp
 	},
 	title: {
-		title1: `Fortnite map makers recreate Counter-Strike's Dust 2`,
+		title1: 'Fortnite map makers recreate Counter-Strike\'s Dust 2',
 		title2: 'Your Witcher 3 saves from Steam and GOG will now work on the Nintendo Switch',
 		title3: 'Empire of Sin has been delayed until autumn 2020'
 	},
 	subtitle: {
-		subtitle1: `Team Evolve, a collective of players who create and share impressive maps using Fortnite's in-game Creative mode...`,
+		subtitle1: 'Team Evolve, a collective of players who create and share impressive maps using Fortnite\'s in-game Creative mode...',
 		subtitle2: 'If you played The Witcher 3: Wild Hunt when it was new but not the Hearts of Stone...',
-		subtitle3: `Drink up, folks, there's been a change of plans. Prohibition-era gangster tactics game Empire of Sin will no longer be...`
+		subtitle3: 'Drink up, folks, there\'s been a change of plans. Prohibition-era gangster tactics game Empire of Sin will no longer be...'
 	}
 }
 export const partnersIcon = {
@@ -377,7 +448,7 @@ export const newsData = {
 		woomenNews2Webp: woomenNews2Webp
 	},
 	title: {
-		title: `Brazil end 12-year wait for Copa America`
+		title: 'Brazil end 12-year wait for Copa America'
 	},
 	subtitle: {
 		subtitle: 'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.'
@@ -386,7 +457,7 @@ export const newsData = {
 
 export const premiumData = {
 	title: {
-		title: "Premium"
+		title: 'Premium'
 	},
 	titleCards: {
 		free: 'FREE',
@@ -398,32 +469,74 @@ export const premiumData = {
 		subtitlePro: '$4.99 per mounth',
 		subtitleOrg: '$15 per mounth'
 	},
-	descr:{
-		descr:'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.',
-		listItem:"- usecase1"
+	descr: {
+		descr: 'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.',
+		listItem: '- usecase1'
 
 	}
 }
-export const abouteData ={
-	title:{
-		aboute:'About us',
-		contact:'Contact us'
+export const abouteData = {
+	title: {
+		aboute: 'About us',
+		contact: 'Contact us'
 	},
-	icon:{
-		locationIcon:locationIcon,
-		mailIcon:mailIcon,
-		phoneIcon:phoneIcon
+	icon: {
+		locationIcon: locationIcon,
+		mailIcon: mailIcon,
+		phoneIcon: phoneIcon
 	},
-	descr:{
-		location:'2440, Daisy Dr undefined Pembroke Pines, Arizona',
-		phoneNumber:'Headquater   (+48) 517 429 774',
+	descr: {
+		location: '2440, Daisy Dr undefined Pembroke Pines, Arizona',
+		phoneNumber: 'Headquater   (+48) 517 429 774',
 	},
-	mail:{
-		support:'Support@doit.gg',
-		organizer:'Organizer@doit.gg',
-		spon:'Sponsorship@doit.gg'
-		
+	mail: {
+		support: 'Support@doit.gg',
+		organizer: 'Organizer@doit.gg',
+		spon: 'Sponsorship@doit.gg'
+
 	}
 }
-  
+export const tournamentsMain = {
+	imgs: {
+		gameLogo: dotaLogo,
+		gameLogoW: dotaLogoWeb,
+		dotaInGame: dotaInGame,
+		dotaInGameW: dotaInGameW
+	},
+	cardData: [{
+		status: 'Ongoing',
+		price: Math.round(Math.random() * 100),
+		enterFee: `${Math.round(Math.random() * 100)}$`,
+		platform: 'PS4',
+		server: 'Europe',
+		key: v1(),
+	},
+	{
+		status: 'Started',
+		price: Math.round(Math.random() * 100),
+		enterFee: `${Math.round(Math.random() * 100)}$`,
+		platform: 'PS4',
+		server: 'Us East', key: v1()
+	}, {
+		status: 'Ongoing',
+		price: Math.round(Math.random() * 100),
+		enterFee: `${Math.round(Math.random() * 100)}$`,
+		platform: 'PS4',
+		server: 'Us North', key: v1()
+	}, {
+		status: 'Finised',
+		price: Math.round(Math.random() * 100),
+		enterFee: `${Math.round(Math.random() * 100)}$`,
+		platform: 'Pc',
+		server: 'Europe', key: v1(),
+		color: 'red'
+	}, {
+		status: 'Ongoing',
+		price: Math.round(Math.random() * 100),
+		enterFee: 'Free to enter',
+		platform: 'XBOX',
+		server: 'Europe', key: v1()
+	}]
+}
+
 

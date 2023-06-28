@@ -1,6 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const postcss 
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/index.jsx'),
@@ -13,8 +12,7 @@ module.exports = {
     clean: true,
     publicPath: '/'
   },
-
-  cache: false,
+  cache: true,
   module: {
     rules: [
       {
@@ -26,23 +24,6 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   test: /\.module\.scss$/,
-      //   use: ["style-loader", {
-      //     loader: "css-loader",
-      //   }, "sass-loader"]
-      // },
-      // {
-      //   test: /\.(css|sass|scss)$/,
-      //   exclude: /\.module\.scss$/,
-      //   use: [
-      //     "style-loader",
-      //     {
-      //       loader: "css-loader",
-      //     },
-      //     "sass-loader",
-      //   ],
-      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',
