@@ -477,4 +477,11 @@ export const tournamentsMain = {
 	}]
 }
 
+export const tournamentsInfo = {
+	imgs: {
+		gameLogo: dotaLogo,
+	}
+
+}
+
 
