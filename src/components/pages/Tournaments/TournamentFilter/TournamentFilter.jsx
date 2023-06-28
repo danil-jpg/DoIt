@@ -1,23 +1,49 @@
 import React, { useState } from 'react';
 import s from './tournament.module.scss';
 import Checkbox from '../../../UI/Checkbox/Checkbox';
+import arrowSvg from '../../../../assets/icons/arrow.svg';
+import x from '../../../../assets/icons/x.svg';
 
 const TournamentFilter = () => {
-  const [active, setActive] = useState(true);
+  const [clear, setClear] = useState('');
+  const [mobileFilterClose, setMobileFilter] = useState(false);
 
   return (
     <div className={s.filter}>
-      <div className={s.filterTitleWr}>
+      <div
+        className={s.filterTitleWr}
+        onClick={() => {
+          setMobileFilter(!mobileFilterClose);
+        }}>
         <p className={s.filterTitle}>Filters</p>
+        <img
+          className={`${s.filterArrow} ${mobileFilterClose ? s.rotate180 : ''}`}
+          src={arrowSvg}></img>
         <div
           className={s.filterclear}
           onClick={() => {
-            setActive(false);
+            setClear(false);
           }}>
           clear
         </div>
       </div>
-      <div className={s.filterItem}>
+      <div className={s.filterAdded}>
+        <div className={s.filterAddedText}>
+          5v5
+          <img src={x} />
+        </div>
+        <div className={s.filterAddedText}>
+          Upcoming <img src={x} />
+        </div>
+        <div
+          className={s.filterClearTab}
+          onClick={() => {
+            setClear(false);
+          }}>
+          clear
+        </div>
+      </div>
+      <div className={`${s.filterItem} ${mobileFilterClose ? s.filterItemClose : ''}`}>
         <p className={s.filterItemTitle}>Game mode</p>
         <div className={s.filterItemCheckboxWr}>
           <div className={s.checkboxWr}>
@@ -25,7 +51,7 @@ const TournamentFilter = () => {
             <p className={s.checkboxDescr}>1v1</p>
           </div>
           <div className={s.checkboxWr}>
-            <Checkbox active={active} setActive={setActive} />
+            <Checkbox />
             <p className={s.checkboxDescr}>2v2</p>
           </div>
           <div className={s.checkboxWr}>

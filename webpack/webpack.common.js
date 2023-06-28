@@ -25,23 +25,6 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   test: /\.module\.scss$/,
-      //   use: ["style-loader", {
-      //     loader: "css-loader",
-      //   }, "sass-loader"]
-      // },
-      // {
-      //   test: /\.(css|sass|scss)$/,
-      //   exclude: /\.module\.scss$/,
-      //   use: [
-      //     "style-loader",
-      //     {
-      //       loader: "css-loader",
-      //     },
-      //     "sass-loader",
-      //   ],
-      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',

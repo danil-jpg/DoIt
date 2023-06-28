@@ -435,7 +435,7 @@ export const tournamentsMain = {
 		gameLogo: dotaLogo,
 		gameLogoW: dotaLogoWeb,
 		dotaInGame: dotaInGame,
-		dotaInGameW: dotaInGameW
+		dotaInGameW: dotaInGameW,
 	},
 	cardData: [{
 		status: 'Ongoing',
