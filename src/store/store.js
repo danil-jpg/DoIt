@@ -82,7 +82,7 @@ import mailIcon from "../assets/icons/Aboute/mailIcon.svg"
 import phoneIcon from "../assets/icons/Aboute/phoneIcon.svg"
 import avatarProfile from '../assets/images/Profile/avatar.png';
 import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
-
+import streamIcon from "../assets/images/homePage/stream.svg"
 
 export const headerData = {
 	logo: {
@@ -391,5 +391,13 @@ export const abouteData ={
 		
 	}
 }
-  
+ 
+export const streamsData ={
+	title:{
+		title:'Streams'
+	},
+	icon:{
+		icon:streamIcon
+	}
+}
 

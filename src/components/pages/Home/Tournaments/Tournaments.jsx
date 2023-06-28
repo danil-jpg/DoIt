@@ -3,7 +3,7 @@ import s from "./Tournaments.module.scss"
 import TitleSliders from "../TitleSlider/TitleSliders";
 import ButtonSliderAll from "../ButtonSlider/ButtonSliderAll/ButtonSliderAll";
 import { sliderCards } from "../../../../store/store";
-import GameCardsSmall from "../../../GameCards/GameCardsSmall/GameCardsSmall";
+import GameCardsSmall from "../../../common/GameCards/GameCardsSmall/GameCardsSmall";
 import CustomSwiper from "../CustomSwiper/CustomSwiper";
 const Tournaments = (props) => {
     
@@ -22,6 +22,7 @@ const Tournaments = (props) => {
                    status3={sliderCards.number3}
                    status4={sliderCards.number4}
                    />,
+                   
                    <GameCardsSmall 
                    img={sliderCards.img.fortnite} 
                    img__webp={sliderCards.img.fortniteWebp} 

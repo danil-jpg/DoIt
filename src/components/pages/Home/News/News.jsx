@@ -2,7 +2,7 @@ import React from "react";
 import s from "./News.module.scss"
 import TitleSliders from "../TitleSlider/TitleSliders";
 import ButtonSliderAll from "../ButtonSlider/ButtonSliderAll/ButtonSliderAll";
-import GameCardsBig from "../../../GameCards/GameCardsBig/GameCardsBig";
+import GameCardsBig from "../../../common/GameCards/GameCardsBig/GameCardsBig";
 import { newsCard } from "../../../../store/store";
 import CustomSwiper from "../CustomSwiper/CustomSwiper";
 const News = (props) => {
