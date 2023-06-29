@@ -239,32 +239,59 @@ const adminTournaments = {
 			value: 'add'
 		},
 	],
-	header: {
-		name: {
+	// header: {
+	// 	name: {
+	// 		title: 'Tournament\`s name',
+	// 		value: 'name'
+	// 	},
+	// 	entryPrice: {
+	// 		title: 'Entry price',
+	// 		value: 'entryPrice'
+	// 	},
+	// 	poolPrice: {
+	// 		title: 'Pool price',
+	// 		value: 'poolPrice'
+	// 	},
+	// 	signed: {
+	// 		title: 'Signed',
+	// 		value: 'signed'
+	// 	},
+	// 	start: {
+	// 		title: 'Start in',
+	// 		value: 'start'
+	// 	},
+	// },
+	header: [
+		{
+			id: v1(),
 			title: 'Tournament\`s name',
 			value: 'name'
 		},
-		entryPrice: {
+		{
+			id: v1(),
 			title: 'Entry price',
 			value: 'entryPrice'
 		},
-		poolPrice: {
+		{
+			id: v1(),
 			title: 'Pool price',
 			value: 'poolPrice'
 		},
-		signed: {
+		{
+			id: v1(),
 			title: 'Signed',
 			value: 'signed'
 		},
-		start: {
+		{
+			id: v1(),
 			title: 'Start in',
 			value: 'start'
 		},
-	},
+	],
 	body: [
 		{
 			id: v1(),
-			name: 'The best of the best tournament',
+			name: 'Suspected assailant and US consulate',
 			entryPrice: 1500,
 			poolPrice: 20000,
 			signed: '1/4',
@@ -272,51 +299,51 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'The best tournament',
+			name: 'That’s where packing expert Chelsea Dickenson steps in.',
 			entryPrice: 100,
 			poolPrice: 2000,
 			signed: '1/6',
-			start: 322
+			start: 32
 		},
 		{
 			id: v1(),
-			name: 'The best of the best tournament',
+			name: 'What do you do with your jackets',
 			entryPrice: 1600,
 			poolPrice: 79000,
 			signed: '1/4',
-			start: 343
+			start: 34
 		},
 		{
 			id: v1(),
-			name: 'The best tournament',
+			name: 'On another flight from London to Vienna with Wizz Air',
 			entryPrice: 71500,
 			poolPrice: 984000,
 			signed: '1/4',
-			start: 102
+			start: 10
 		},
 		{
 			id: v1(),
-			name: 'The best of the best tournament',
+			name: 'Dickenson took off bra to go through security to avoid any embarrassment',
 			entryPrice: 300,
 			poolPrice: 44000,
 			signed: '1/4',
-			start: 342
+			start: 34
 		},
 		{
 			id: v1(),
-			name: 'The best tournament',
+			name: 'While Dickenson decided the bra idea was ',
 			entryPrice: 900,
 			poolPrice: 95400,
 			signed: '1/4',
-			start: 543
+			start: 54
 		},
 		{
 			id: v1(),
-			name: 'The best of the best tournament',
+			name: 'I have had loads of messages from people who',
 			entryPrice: 850,
 			poolPrice: 78500,
 			signed: '1/4',
-			start: 190
+			start: 19
 		},
 		{
 			id: v1(),
@@ -336,7 +363,7 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'The best tournament',
+			name: 'And Dickenson’s a big proponent',
 			entryPrice: 1900,
 			poolPrice: 56000,
 			signed: '1/4',
