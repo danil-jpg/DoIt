@@ -2,16 +2,15 @@ const path = require('path')
 const CssMin = require('css-minimizer-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'production',
-  externals: [nodeExternals()],
+  // externals: [nodeExternals()],
   output: {
     path: path.resolve(__dirname, '..', 'docs/'),
-    filename: 'scripts/bundle[hash].js',
+    filename: 'scripts/bundle.js',
     clean: true,
-    publicPath: '/'
+    publicPath: './'
   },
 
   plugins: [
@@ -59,7 +58,7 @@ module.exports = {
       },
       {
         test: /\.(css|sass|scss)$/,
-        exclude: /\.module\.scss$/,
+        exclude: [/\.module\.scss$/],
         use: [
           'style-loader',
           {

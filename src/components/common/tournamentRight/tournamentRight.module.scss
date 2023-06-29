@@ -1,0 +1,94 @@
+.infoRight {
+  margin-top: 91px;
+}
+.infoRightSubInfo {
+  margin-top: 11px;
+  border: 2px solid #20252b;
+  background: #0f1215;
+}
+.infoSubInfoTop {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+
+  padding: 28px;
+
+  border-bottom: 2px solid #20252b;
+}
+.infoSubInfoCenter {
+  padding: 28px;
+}
+.infoMinAge {
+}
+.infoTextTop {
+  color: #f5f5f5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.infoTextBottom {
+  color: #67707a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: 11px;
+}
+.infoResidence {
+  margin-top: 24px;
+  color: #f5f5f5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.infoTextBottomBlue {
+  color: #0a68f5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+// <div className={s.infoSubInfoBottom}>
+//               <p className={s.infoClose}>`Sign up closes in ${43}minutes`</p>
+//               <button>Log in / Register</button>
+//             </div>
+
+.infoSubInfoBottom {
+  border-top: 2px solid #20252b;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.infoClose {
+  font-size: 16px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+  color: #b83333;
+}
+.infoBottomBtn {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 16px 66px;
+  border-radius: 2px;
+  background: linear-gradient(#2788f6, #0960e0);
+}
+
+.infoSubSocials {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px;
+  border-top: 2px solid #20252b;
+}
