@@ -15,6 +15,9 @@ const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/Tou
 const TournamentsPlayer = React.lazy(() =>
   import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
 );
+const TournamentsStanding = React.lazy(() =>
+  import('../../pages/TournamentsStanding/TournamentStanding.jsx')
+);
 
 const Main = (props) => {
   return (
@@ -32,6 +35,7 @@ const Main = (props) => {
           <Route path='/tournamentsmain' element={<TournamentsMain />} />
           <Route path='/tournamentsInfo' element={<TournamentsInfo />} />
           <Route path='/tournamentsPlayer' element={<TournamentsPlayer />} />
+          <Route path='/tournamentsStanding' element={<TournamentsStanding />} />
         </Routes>
       </Suspense>
     </main>

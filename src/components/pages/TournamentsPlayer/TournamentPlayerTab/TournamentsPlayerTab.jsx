@@ -1,13 +1,6 @@
 import React from 'react';
 import s from './TournamentsPlayerTab.module.scss';
 import TournamentTab from '../../../common/TournamentTabsTemplate/TournamentTabs';
-import game from '../../../../assets/icons/tournamentsInfo/game 1.svg';
-import dollar from '../../../../assets/icons/tournamentsInfo/money 1.svg';
-import check from '../../../../assets/icons/tournamentsInfo/check 1.svg';
-import ball from '../../../../assets/icons/tournamentsInfo/basketball 1.svg';
-import alert from '../../../../assets/icons/tournamentsInfo/alert 1.svg';
-import addReq from '../../../../assets/icons/tournamentsInfo/receipt 1.svg';
-import lobby from '../../../../assets/icons/tournamentsInfo/tag 1.svg';
 import Picture from '../../../UI/Picture/Picture';
 import { tournamentPlayer } from '../../../../store/store';
 
