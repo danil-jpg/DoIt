@@ -285,7 +285,8 @@ const adminTournaments = {
 			entryPrice: 1500,
 			poolPrice: 20000,
 			signed: '1/4',
-			start: 10
+			start: 10,
+			active: false
 		},
 		{
 			id: v1(),
@@ -293,7 +294,8 @@ const adminTournaments = {
 			entryPrice: 100,
 			poolPrice: 2000,
 			signed: '1/6',
-			start: 32
+			start: 32,
+			active: false
 		},
 		{
 			id: v1(),
@@ -301,7 +303,8 @@ const adminTournaments = {
 			entryPrice: 1600,
 			poolPrice: 79000,
 			signed: '1/4',
-			start: 34
+			start: 34,
+			active: false
 		},
 		{
 			id: v1(),
@@ -309,7 +312,8 @@ const adminTournaments = {
 			entryPrice: 71500,
 			poolPrice: 984000,
 			signed: '1/4',
-			start: 10
+			start: 10,
+			active: false
 		},
 		{
 			id: v1(),
@@ -317,7 +321,8 @@ const adminTournaments = {
 			entryPrice: 300,
 			poolPrice: 44000,
 			signed: '1/4',
-			start: 34
+			start: 34,
+			active: false
 		},
 		{
 			id: v1(),
@@ -325,7 +330,8 @@ const adminTournaments = {
 			entryPrice: 900,
 			poolPrice: 95400,
 			signed: '1/4',
-			start: 54
+			start: 54,
+			active: false
 		},
 		{
 			id: v1(),
@@ -333,7 +339,8 @@ const adminTournaments = {
 			entryPrice: 850,
 			poolPrice: 78500,
 			signed: '1/4',
-			start: 19
+			start: 19,
+			active: false
 		},
 		{
 			id: v1(),
@@ -341,7 +348,8 @@ const adminTournaments = {
 			entryPrice: 15600,
 			poolPrice: 200095,
 			signed: '1/4',
-			start: 30
+			start: 30,
+			active: false
 		},
 		{
 			id: v1(),
@@ -349,7 +357,8 @@ const adminTournaments = {
 			entryPrice: 3500,
 			poolPrice: 60000,
 			signed: '1/4',
-			start: 5
+			start: 5,
+			active: false
 		},
 		{
 			id: v1(),
@@ -357,7 +366,8 @@ const adminTournaments = {
 			entryPrice: 1900,
 			poolPrice: 56000,
 			signed: '1/4',
-			start: 9
+			start: 9,
+			active: false
 		},
 	]
 }

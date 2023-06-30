@@ -117,6 +117,29 @@
 	}
 
 	&.currentEdit {
-		input {display: none;}
+		input {
+			display: none;
+		}
+		& .itemBody__input {
+			display: block;
+		}
+		& .itemBody__item {
+			padding: 0 10px;
+		}
+		& .itemBody__item span {
+			display: none;
+		}
+	}
+
+	&__input {
+		background: transparent;
+		color: #f5f5f5;
+		border-radius: 4px;
+		border: 1px solid #20252B;
+		display: none;
+		padding: 8px 16px;
+		font-size: 16px;
+		display: none;
+		width: 100%;
 	}
 }
