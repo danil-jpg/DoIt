@@ -51,3 +51,36 @@
 //   <li className={s.tournamentTabLink}>Support</li>
 // </ul>
 // <div className={s.tournamentTabBody}>{children}</div>
+
+@media screen and (max-width: 768px) {
+  .tournamentTabs {
+    margin-top: 25px;
+    overflow: hidden;
+    width: 329px;
+  }
+  .tournamentTabLinks {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  .tournamentTabLink.active {
+    background: var(--primary-gradient, linear-gradient(180deg, #2788f6 0%, #0960e0 100%));
+    font-size: 12px;
+    padding: 10px 18px;
+  }
+  .tournamentTabLink {
+    background: #1a222d;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 4px;
+    padding: 13px 18px;
+    height: 46px;
+  }
+  .tournamentTabBody {
+    padding: 0;
+    border: none;
+    grid-template-columns: 1fr;
+    margin-top: 55px;
+    gap: 29px;
+  }
+}

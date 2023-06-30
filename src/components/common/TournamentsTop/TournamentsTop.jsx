@@ -14,7 +14,7 @@ const TournamentsTop = () => {
         />
       </div>
       <div className={s.tournamentsTopRight}>
-        <p className={s.tournamentsTopTitle}>MK11 (PS4) Open Cup #3 Russia</p>
+        <p className={s.tournamentsTopTitle}>MK11 (PS4) Open Cup #3 Europe</p>
         <p className={s.tournamentsTopDescr}>52 players signed up</p>
       </div>
     </div>

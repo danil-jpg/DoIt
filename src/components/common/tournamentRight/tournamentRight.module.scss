@@ -92,3 +92,67 @@
   padding: 28px;
   border-top: 2px solid #20252b;
 }
+
+@media screen and (max-width: 768px) {
+  .infoRight {
+    margin-top: 0px;
+  }
+  .infoDota {
+    display: none;
+  }
+
+  .infoRightSubInfo {
+    margin: 0;
+    border: none;
+    margin-top: 13px;
+  }
+
+  .infoSubInfoTop {
+    padding: 0;
+    font-size: 22px;
+    border: none;
+  }
+
+  .infoSubInfoCenter {
+    padding: 0;
+  }
+
+  .infoMinAge {
+    margin-top: 27px;
+  }
+
+  .infoTextTop {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .infoTextBottom {
+    font-size: 14px;
+  }
+
+  .infoResidence {
+    margin-top: 26px;
+  }
+
+  .infoSubInfoBottom {
+    padding: 0;
+    display: block;
+    border: none;
+    margin-top: 49px;
+  }
+
+  .infoClose {
+    margin-bottom: 26px;
+  }
+
+  .infoBottomBtn {
+    width: 100%;
+  }
+
+  .infoSubSocials {
+    padding: 0;
+    border: none;
+    margin-top: 32px;
+    padding: 0 38px;
+  }
+}

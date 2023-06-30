@@ -85,7 +85,7 @@ const TournamentInfoTab = () => {
       </TournamentTab>
       <TournamentTab
         contentClass={s.contentClassLorem}
-        tabClass={s.infoTab}
+        tabClass={`${s.infoTab} ${s.displayNoneMob}`}
         tabs={false}
         elemInsteadOfTab={'Quick rules'}>
         {
@@ -110,7 +110,7 @@ const TournamentInfoTab = () => {
       </TournamentTab>
       <TournamentTab
         contentClass={s.contentClassLorem}
-        tabClass={s.infoTab}
+        tabClass={`${s.infoTab} ${s.displayNoneMob}`}
         tabs={false}
         elemInsteadOfTab={'Streams'}>
         {
@@ -135,7 +135,7 @@ const TournamentInfoTab = () => {
       </TournamentTab>
       <TournamentTab
         contentClass={s.contentClassLorem}
-        tabClass={s.infoTab}
+        tabClass={`${s.infoTab} ${s.displayNoneMob}`}
         tabs={false}
         elemInsteadOfTab={'Prize pool'}>
         {
