@@ -5,6 +5,7 @@ import HeroBlock from "./HeroBlock/HeroBlock";
 import Tournaments from "./Tournaments/Tournaments";
 import News from "./News/News";
 import Partners from "./Partners/Partners";
+import Streams from "./Streams/Streams";
 
 const Home = (props) => {
   return (
@@ -21,7 +22,10 @@ const Home = (props) => {
             <div className={s.main__news}>
               <News />
             </div>
-            <div className={s.partners}>
+            <div className={s.main__streams}>
+            <Streams/>
+            </div>
+            <div className={s.main__partners}>
 
             </div>
           </div>

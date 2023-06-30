@@ -9,7 +9,7 @@ import NewsAdmin from "./NewsAdmin/NewsAdmin";
 import LeaguesAdmin from "./LeaguesAdmin/LeaguesAdmin";
 import Container from "../../../containers/Container/Container";
 import NavAdminPanel from "./NavAdminPanel/NavAdminPanel";
-import AdminContainer from "../../../containers/AdminContainer/AdminContainer";
+import AdminContainer from '../../../containers/AdminContainers/AdminContainer/AdminContainer';
 
 const AdminPanel = () => {
 	const [state, setState] = useState(adminPanel);
@@ -21,16 +21,13 @@ const AdminPanel = () => {
 				<NavAdminPanel list={state.links} />
 				<Routes>
 					<Route path="/tournaments" element={
-						<AdminContainer
+						<TournamentsAdmin
+							state={state.tournaments}
 							icons={state.icons}
 							search={state.search}
-							buttonList={state.tournaments.buttonList}>
-							<TournamentsAdmin
-								state={state.tournaments}
-							/>
-						</AdminContainer>
+							buttonList={state.tournaments.buttonList} />
 					} />
-					<Route path="/team" element={
+					{/* <Route path="/team" element={
 						<AdminContainer
 							icons={state.icons}
 							search={state.search}
@@ -61,7 +58,7 @@ const AdminPanel = () => {
 							buttonList={state.tournaments.buttonList}>
 							<LeaguesAdmin state={state.tournaments} list={state.links} />
 						</AdminContainer>
-					} />
+					} /> */}
 				</Routes>
 			</Container>
 		</div>

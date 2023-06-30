@@ -3,7 +3,7 @@ import s from './tournaments.module.scss';
 import { tournamentsInfo } from '../../../store/store';
 import Picture from '../../UI/Picture/Picture';
 
-const TournamentsTop = () => {
+const TournamentsTop = ({ title = 'MK11 (PS4) Open Cup #3 Europe' }) => {
   return (
     <div className={s.tournamentsTop}>
       <div className={s.tournamentsTopLeft}>
@@ -14,7 +14,7 @@ const TournamentsTop = () => {
         />
       </div>
       <div className={s.tournamentsTopRight}>
-        <p className={s.tournamentsTopTitle}>MK11 (PS4) Open Cup #3 Russia</p>
+        <p className={s.tournamentsTopTitle}>{title}</p>
         <p className={s.tournamentsTopDescr}>52 players signed up</p>
       </div>
     </div>

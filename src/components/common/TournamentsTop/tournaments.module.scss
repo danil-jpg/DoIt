@@ -40,3 +40,22 @@
 //   <p className={s.tournamentsTopDescr}>52 players signed up</p>
 // </div>
 // </div>
+@media screen and (max-width: 768px) {
+  .tournamentsTop {
+    border: none;
+    padding: 0;
+  }
+  .tournamentsTopImg {
+    width: 40px;
+    height: 40px;
+  }
+  .tournamentsTopTitle {
+    font-size: 18px;
+  }
+  .tournamentsTopDescr {
+    font-size: 12px;
+  }
+  .tournamentsTopRight {
+    margin-left: 12px;
+  }
+}

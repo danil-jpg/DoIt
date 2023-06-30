@@ -88,16 +88,21 @@ import mailIcon from '../assets/icons/Aboute/mailIcon.svg'
 import phoneIcon from '../assets/icons/Aboute/phoneIcon.svg'
 import avatarProfile from '../assets/images/Profile/avatar.png';
 import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
-// Tournaments main
 import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
 import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
 import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
-import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png'
+import streamIcon from "../assets/images/homePage/stream.svg";
+import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png';
 import dotaInGameMobW from '../assets/images/tournamentsMain/dotaInGameMob.png?as=webp'
 // Tournaments info
 import gameLogo from '../assets/images/tournamentsInfo/mdi_games.png'
 import gameLogoW from '../assets/images/tournamentsInfo/mdi_games.png?as=webp'
+// Tournamnents Player
+import avatar from '../assets/images/TournamentsPlayer/avatarGame.png'
+import avatarW from '../assets/images/TournamentsPlayer/avatarGame.png?as=webp'
+import japan from '../assets/images/TournamentsPlayer/japan.png'
+import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 
 
 export const headerData = {
@@ -229,6 +234,154 @@ export const navbar = {
 	]
 }
 
+const adminTournaments = {
+	buttonList: {
+		edit: {
+			id: v1(),
+			title: 'Edit mode',
+			to: '',
+			value: 'edit'
+		},
+		add: {
+			id: v1(),
+			title: '+  Add player',
+			to: '',
+			value: 'add'
+		},
+		cancel: {
+			id: v1(),
+			title: 'Cancel',
+			to: '',
+			value: 'cancel'
+		},
+		save: {
+			id: v1(),
+			title: 'Save changes',
+			to: '',
+			value: 'save'
+		},
+	},
+	header: [
+		{
+			id: v1(),
+			title: 'Tournament\`s name',
+			value: 'name'
+		},
+		{
+			id: v1(),
+			title: 'Entry price',
+			value: 'entryPrice'
+		},
+		{
+			id: v1(),
+			title: 'Pool price',
+			value: 'poolPrice'
+		},
+		{
+			id: v1(),
+			title: 'Signed',
+			value: 'signed'
+		},
+		{
+			id: v1(),
+			title: 'Start in',
+			value: 'start'
+		},
+	],
+	body: [
+		{
+			id: v1(),
+			name: 'Suspected assailant and US ',
+			entryPrice: 1500,
+			poolPrice: 20000,
+			signed: '1/4',
+			start: 10,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'That’s where packing expert Chelsea ',
+			entryPrice: 100,
+			poolPrice: 2000,
+			signed: '1/6',
+			start: 32,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'What do you do with your jackets',
+			entryPrice: 1600,
+			poolPrice: 79000,
+			signed: '1/4',
+			start: 34,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'On another flight from London to',
+			entryPrice: 71500,
+			poolPrice: 984000,
+			signed: '1/4',
+			start: 10,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'Dickenson took off bra to go through',
+			entryPrice: 300,
+			poolPrice: 44000,
+			signed: '1/4',
+			start: 34,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'While Dickenson decided the bra idea ',
+			entryPrice: 900,
+			poolPrice: 95400,
+			signed: '1/4',
+			start: 54,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'I have had loads of messages',
+			entryPrice: 850,
+			poolPrice: 78500,
+			signed: '1/4',
+			start: 19,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'The best tournament',
+			entryPrice: 15600,
+			poolPrice: 200095,
+			signed: '1/4',
+			start: 30,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'The best of the best tournament',
+			entryPrice: 3500,
+			poolPrice: 60000,
+			signed: '1/4',
+			start: 5,
+			active: false
+		},
+		{
+			id: v1(),
+			name: 'And Dickenson’s a big proponent',
+			entryPrice: 1900,
+			poolPrice: 56000,
+			signed: '1/4',
+			start: 9,
+			active: false
+		},
+	]
+}
+
 export const adminPanel = {
 	links: [
 		{
@@ -306,21 +459,9 @@ export const adminPanel = {
 		name: 'search',
 		ph: 'Search by name, prize, signed, etc.',
 	},
-	tournaments: {
-		buttonList: [
-			{
-				id: v1(),
-				title: 'Edit mode',
-				to: ''
-			},
-			{
-				id: v1(),
-				title: '+  Add player',
-				to: ''
-			},
-		]
-	}
+	tournaments: adminTournaments
 }
+
 
 
 export const profile = {
@@ -501,6 +642,7 @@ export const abouteData = {
 
 	}
 }
+
 export const tournamentsMain = {
 	imgs: {
 		gameLogo: dotaLogo,
@@ -546,12 +688,30 @@ export const tournamentsMain = {
 	}]
 }
 
+export const streamsData ={
+	title:{
+		title:'Streams'
+	},
+	icon:{
+		icon:streamIcon
+	}
+}
+
 export const tournamentsInfo = {
 	imgs: {
 		gameLogo: dotaLogo,
 		gameLogoW: dotaLogoWeb,
 		mortalLogo: gameLogo,
 		mortalLogoW: gameLogoW
+	}
+}
+
+export const tournamentPlayer = {
+	img: {
+		avatar: avatar,
+		avatarW: avatarW,
+		japan: japan,
+		japanW: japanW
 	}
 }
 
