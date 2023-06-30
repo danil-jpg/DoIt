@@ -54,9 +54,10 @@
 
 @media screen and (max-width: 768px) {
   .tournamentTabs {
-    margin-top: 25px;
     overflow: hidden;
     width: 329px;
+    margin: 0 auto;
+    margin-top: 25px;
   }
   .tournamentTabLinks {
     overflow-x: scroll;

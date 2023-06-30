@@ -98,6 +98,11 @@ import dotaInGameMobW from '../assets/images/tournamentsMain/dotaInGameMob.png?a
 // Tournaments info
 import gameLogo from '../assets/images/tournamentsInfo/mdi_games.png'
 import gameLogoW from '../assets/images/tournamentsInfo/mdi_games.png?as=webp'
+// Tournamnents Player
+import avatar from '../assets/images/TournamentsPlayer/avatarGame.png'
+import avatarW from '../assets/images/TournamentsPlayer/avatarGame.png?as=webp'
+import japan from '../assets/images/TournamentsPlayer/japan.png'
+import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 
 
 export const headerData = {
@@ -555,4 +560,12 @@ export const tournamentsInfo = {
 	}
 }
 
+export const tournamentPlayer = {
+	img: {
+		avatar: avatar,
+		avatarW: avatarW,
+		japan: japan,
+		japanW: japanW
+	}
+}
 
