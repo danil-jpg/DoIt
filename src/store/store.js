@@ -88,12 +88,11 @@ import mailIcon from '../assets/icons/Aboute/mailIcon.svg'
 import phoneIcon from '../assets/icons/Aboute/phoneIcon.svg'
 import avatarProfile from '../assets/images/Profile/avatar.png';
 import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
-// Tournaments main
 import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
 import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
 import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
-
+import streamIcon from "../assets/images/homePage/stream.svg"
 
 export const headerData = {
 	logo: {
@@ -632,6 +631,7 @@ export const abouteData = {
 
 	}
 }
+
 export const tournamentsMain = {
 	imgs: {
 		gameLogo: dotaLogo,
@@ -673,6 +673,15 @@ export const tournamentsMain = {
 		platform: 'XBOX',
 		server: 'Europe', key: v1()
 	}]
+}
+
+export const streamsData ={
+	title:{
+		title:'Streams'
+	},
+	icon:{
+		icon:streamIcon
+	}
 }
 
 

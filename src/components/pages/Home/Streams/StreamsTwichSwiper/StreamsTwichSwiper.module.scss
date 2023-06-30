@@ -1,0 +1,32 @@
+.slider{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+    }
+}
+.slide__dis{
+    display: flex;
+}
+@media (min-width:320px)  and (max-width:375px){
+    .slide__video__small{
+        display: none;
+    }
+    .slide__video__big{
+        width: 329px;
+        height:256px ;
+    }
+    .slide__video__dis{
+        display: none;
+    }
+
+}
