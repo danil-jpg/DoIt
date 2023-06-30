@@ -4,14 +4,18 @@ import SearchAdminPanel from '../../../UI/forms/SearchAdminPanel/SearchAdminPane
 import AdminButtonContainer from '../AdminButtonContainer/AdminButtonContainer';
 import s from './AdminContainer.module.scss';
 
-const AdminContainer = ({ icons, search, buttonList, children }) => {
+const AdminContainer = ({ icons, search, buttonList, children, isEditing, setIsEditing }) => {
 
 	return (
 		<>
 			<div className={s.header}>
 				<ScItemsAdmin list={icons} />
 				<SearchAdminPanel ph={search.ph} name={search.name} />
-				<AdminButtonContainer buttonList={buttonList} />
+				<AdminButtonContainer
+					buttonList={buttonList}
+					// isEditing={isEditing}
+					// setIsEditing={setIsEditing}
+				/>
 			</div>
 
 			{children}

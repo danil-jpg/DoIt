@@ -225,42 +225,32 @@ export const navbar = {
 }
 
 const adminTournaments = {
-	buttonList: [
-		{
+	buttonList: {
+		edit: {
 			id: v1(),
 			title: 'Edit mode',
 			to: '',
 			value: 'edit'
 		},
-		{
+		add: {
 			id: v1(),
 			title: '+  Add player',
 			to: '',
 			value: 'add'
 		},
-	],
-	// header: {
-	// 	name: {
-	// 		title: 'Tournament\`s name',
-	// 		value: 'name'
-	// 	},
-	// 	entryPrice: {
-	// 		title: 'Entry price',
-	// 		value: 'entryPrice'
-	// 	},
-	// 	poolPrice: {
-	// 		title: 'Pool price',
-	// 		value: 'poolPrice'
-	// 	},
-	// 	signed: {
-	// 		title: 'Signed',
-	// 		value: 'signed'
-	// 	},
-	// 	start: {
-	// 		title: 'Start in',
-	// 		value: 'start'
-	// 	},
-	// },
+		cancel: {
+			id: v1(),
+			title: 'Cancel',
+			to: '',
+			value: 'cancel'
+		},
+		save: {
+			id: v1(),
+			title: 'Save changes',
+			to: '',
+			value: 'save'
+		},
+	},
 	header: [
 		{
 			id: v1(),
@@ -291,7 +281,7 @@ const adminTournaments = {
 	body: [
 		{
 			id: v1(),
-			name: 'Suspected assailant and US consulate',
+			name: 'Suspected assailant and US ',
 			entryPrice: 1500,
 			poolPrice: 20000,
 			signed: '1/4',
@@ -299,7 +289,7 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'That’s where packing expert Chelsea Dickenson steps in.',
+			name: 'That’s where packing expert Chelsea ',
 			entryPrice: 100,
 			poolPrice: 2000,
 			signed: '1/6',
@@ -315,7 +305,7 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'On another flight from London to Vienna with Wizz Air',
+			name: 'On another flight from London to',
 			entryPrice: 71500,
 			poolPrice: 984000,
 			signed: '1/4',
@@ -323,7 +313,7 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'Dickenson took off bra to go through security to avoid any embarrassment',
+			name: 'Dickenson took off bra to go through',
 			entryPrice: 300,
 			poolPrice: 44000,
 			signed: '1/4',
@@ -331,7 +321,7 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'While Dickenson decided the bra idea was ',
+			name: 'While Dickenson decided the bra idea ',
 			entryPrice: 900,
 			poolPrice: 95400,
 			signed: '1/4',
@@ -339,7 +329,7 @@ const adminTournaments = {
 		},
 		{
 			id: v1(),
-			name: 'I have had loads of messages from people who',
+			name: 'I have had loads of messages',
 			entryPrice: 850,
 			poolPrice: 78500,
 			signed: '1/4',

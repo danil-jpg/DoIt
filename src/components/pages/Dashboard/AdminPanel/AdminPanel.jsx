@@ -21,16 +21,13 @@ const AdminPanel = () => {
 				<NavAdminPanel list={state.links} />
 				<Routes>
 					<Route path="/tournaments" element={
-						<AdminContainer
+						<TournamentsAdmin
+							state={state.tournaments}
 							icons={state.icons}
 							search={state.search}
-							buttonList={state.tournaments.buttonList}>
-							<TournamentsAdmin
-								state={state.tournaments}
-							/>
-						</AdminContainer>
+							buttonList={state.tournaments.buttonList} />
 					} />
-					<Route path="/team" element={
+					{/* <Route path="/team" element={
 						<AdminContainer
 							icons={state.icons}
 							search={state.search}
@@ -61,7 +58,7 @@ const AdminPanel = () => {
 							buttonList={state.tournaments.buttonList}>
 							<LeaguesAdmin state={state.tournaments} list={state.links} />
 						</AdminContainer>
-					} />
+					} /> */}
 				</Routes>
 			</Container>
 		</div>
