@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './tournamentCard.module.scss';
 import Picture from '../../../UI/Picture/Picture';
 import { tournamentsMain } from '../../../../store/store';
+import arrowSvg from '../../../../assets/icons/arrow.svg';
 
 const TournamentCard = ({
   status = 'Ongoing',
@@ -12,21 +13,33 @@ const TournamentCard = ({
   platform = 'PS3',
   className,
 }) => {
+  const [menu, setMenu] = useState(false);
+
   return (
     <div className={`${s.card} ${className}`}>
-      <div className={s.cardLeft}>
+      <div className={`${s.cardLeft} ${menu ? s.cardLeftActive : ''}`}>
         <div className={s.cardStatus} style={{ background: color }}>
           {status}
         </div>
         <Picture
           img={tournamentsMain.imgs.dotaInGame}
           webp={tournamentsMain.imgs.dotaInGameW}
+          imgTab={tournamentsMain.imgs.dotaInGameMob}
+          webpTab={tournamentsMain.imgs.dotaInGameMobW}
+          widthTab='1200'
           className={s.cardGameImg}
         />
       </div>
-      <div className={s.cardRight}>
-        <p className={s.cardGameTitle}>Dota 2 5v5 #2 - Sunday</p>
-        <div className={s.cardGameBottom}>
+      <div className={`${s.cardRight} ${menu ? s.cardRightActive : ''}`}>
+        <div
+          className={s.cardGameTitle}
+          onClick={() => {
+            setMenu(!menu);
+          }}>
+          Dota 2 5v5 #2 - Sunday
+          <img className={`${s.cardArrowTab} ${menu ? s.cardArrowRev : ''}`} src={arrowSvg}></img>
+        </div>
+        <div className={`${s.cardGameBottom} ${menu ? s.cardGameBottomMob : ''}`}>
           <div className={s.cardGameParams}>
             <p className={s.cardGameParamTitle}>Prize</p>
             <p className={s.cardGameParamDescr}>{price}</p>

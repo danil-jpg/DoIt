@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './checkbox.module.scss';
 
-const Checkbox = () => {
+const Checkbox = ({ clear }) => {
   const [active, setActive] = useState(false);
+  console.log(clear);
+  useEffect(() => {
+    setActive(false);
+  }, [clear]);
 
   return (
     <>
-      <label
-        className={`${s.customCheckboxLabel} ${active ? s.active : ''}`}
-        htmlFor='checkbox'
+      <div
         onClick={() => {
           setActive(!active);
-        }}></label>
+        }}
+        className={`${s.customCheckboxLabel} ${active ? s.active : ''} `}
+        htmlFor='checkbox'
+      />
     </>
   );
 };

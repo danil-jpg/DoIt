@@ -92,7 +92,18 @@ import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
 import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
 import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
-import streamIcon from "../assets/images/homePage/stream.svg"
+import streamIcon from "../assets/images/homePage/stream.svg";
+import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png';
+import dotaInGameMobW from '../assets/images/tournamentsMain/dotaInGameMob.png?as=webp'
+// Tournaments info
+import gameLogo from '../assets/images/tournamentsInfo/mdi_games.png'
+import gameLogoW from '../assets/images/tournamentsInfo/mdi_games.png?as=webp'
+// Tournamnents Player
+import avatar from '../assets/images/TournamentsPlayer/avatarGame.png'
+import avatarW from '../assets/images/TournamentsPlayer/avatarGame.png?as=webp'
+import japan from '../assets/images/TournamentsPlayer/japan.png'
+import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
+
 
 export const headerData = {
 	logo: {
@@ -637,7 +648,9 @@ export const tournamentsMain = {
 		gameLogo: dotaLogo,
 		gameLogoW: dotaLogoWeb,
 		dotaInGame: dotaInGame,
-		dotaInGameW: dotaInGameW
+		dotaInGameW: dotaInGameW,
+		dotaInGameMob: dotaInGameMob,
+		dotaInGameMobW: dotaInGameMobW,
 	},
 	cardData: [{
 		status: 'Ongoing',
@@ -681,6 +694,24 @@ export const streamsData ={
 	},
 	icon:{
 		icon:streamIcon
+	}
+}
+
+export const tournamentsInfo = {
+	imgs: {
+		gameLogo: dotaLogo,
+		gameLogoW: dotaLogoWeb,
+		mortalLogo: gameLogo,
+		mortalLogoW: gameLogoW
+	}
+}
+
+export const tournamentPlayer = {
+	img: {
+		avatar: avatar,
+		avatarW: avatarW,
+		japan: japan,
+		japanW: japanW
 	}
 }
 
