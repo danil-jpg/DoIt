@@ -3,7 +3,7 @@ import Button from '../../../UI/buttons/Button/Button';
 import { onClickActiveHandler } from '../../../utils/onClickActiveHandler';
 import s from './AdminButtonContainer.module.scss';
 
-const AdminButtonContainer = ({ buttonList, isEditing, setIsEditing, disableEditItem, onSaveBtnClickHandler }) => {
+const AdminButtonContainer = ({style, buttonList, isEditing, setIsEditing, disableEditItem, onSaveBtnClickHandler }) => {
 
 	const onCancelClickHandler = () => {
 		onClickActiveHandler(isEditing, setIsEditing);
@@ -11,7 +11,7 @@ const AdminButtonContainer = ({ buttonList, isEditing, setIsEditing, disableEdit
 	};
 
 	return (
-		<div className={s.list}>
+		<div className={s.list} style={style?style:{}}>
 			{isEditing
 				? <>
 					<Button style={{ padding: '16px 44px' }}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from './SearchAdminPanel.module.scss';
 import { IconRenderer } from '../../IconRenderer/IconRenderer';
 
-const SearchAdminPanel = ({ ph, name, }) => {
+const SearchAdminPanel = ({ style, ph, name, }) => {
 	const [value, setValue] = useState('');
 
 	const onValueChangeHandler = e => {
@@ -10,7 +10,7 @@ const SearchAdminPanel = ({ ph, name, }) => {
 	}
 
 	return (
-		<div className={s.search}>
+		<div className={s.search} style={style ? style : {}}>
 			<input
 				type="text"
 				className={s.search__input}
