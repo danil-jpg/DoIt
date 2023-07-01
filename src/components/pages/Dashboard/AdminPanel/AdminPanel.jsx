@@ -27,23 +27,21 @@ const AdminPanel = () => {
 							search={state.search}
 							buttonList={state.tournaments.buttonList} />
 					} />
-					{/* <Route path="/team" element={
-						<AdminContainer
+					<Route path="/team" element={
+						<TeamAdmin
+							state={state.teams}
 							icons={state.icons}
 							search={state.search}
-							buttonList={state.tournaments.buttonList}>
-							<TeamAdmin state={state.tournaments} list={state.links} />
-						</AdminContainer>
+							buttonList={state.tournaments.buttonList} />
 					} />
 					<Route path="/players" element={
-						<AdminContainer
+						<PlayersAdmin
+							state={state.players}
 							icons={state.icons}
 							search={state.search}
-							buttonList={state.tournaments.buttonList}>
-							<PlayersAdmin state={state.tournaments} list={state.links} />
-						</AdminContainer>
+							buttonList={state.tournaments.buttonList} />
 					} />
-					<Route path="/news" element={
+					{/*<Route path="/news" element={
 						<AdminContainer
 							icons={state.icons}
 							search={state.search}

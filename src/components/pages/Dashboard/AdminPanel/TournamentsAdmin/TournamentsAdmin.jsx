@@ -9,7 +9,6 @@ import { sortObjects } from "../../../../utils/sortObjects";
 import AdminButtonContainer from "../../../../containers/AdminContainers/AdminButtonContainer/AdminButtonContainer";
 import SearchAdminPanel from "../../../../UI/forms/SearchAdminPanel/SearchAdminPanel";
 import ScItemsAdmin from "../ScItemsAdmin/ScItemsAdmin";
-import { useEffect } from "react";
 
 const TournamentsAdmin = ({ state, icons, search, buttonList }) => {
 	const [tourState, setTourState] = useState(state);
@@ -28,10 +27,6 @@ const TournamentsAdmin = ({ state, icons, search, buttonList }) => {
 
 		setTourState({ ...newState });
 	}
-
-	useEffect(() => {
-		console.log(currentId);
-	}, [currentId]);
 
 
 	const onEditClickHandler = (e, id, active) => {
@@ -85,16 +80,19 @@ const TournamentsAdmin = ({ state, icons, search, buttonList }) => {
 			}
 		})
 
-		setTourState({ ...newState });
 		disableEditItem();
+		setTourState({ ...newState });
 	}
 
 	return (
 		<>
 			<div className={s.header}>
 				<ScItemsAdmin list={icons} />
-				<SearchAdminPanel ph={search.ph} name={search.name} />
-				<AdminButtonContainer
+				<SearchAdminPanel
+					ph={search.ph}
+					name={search.name}
+					style={{ margin: '0 0 0 10%' }} />
+				<AdminButtonContainer style={{ margin: '0 0 0 auto' }}
 					buttonList={buttonList}
 					isEditing={isEditing}
 					setIsEditing={setIsEditing}
