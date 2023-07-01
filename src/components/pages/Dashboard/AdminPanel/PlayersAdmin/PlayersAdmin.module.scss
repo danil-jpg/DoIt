@@ -1,0 +1,158 @@
+.header {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin: 0 0 32px;
+}
+
+.itemHeader:nth-child(1),
+.itemBody__item:nth-child(1) {
+	width: 18%;
+	text-align: left;
+	justify-content: flex-start;
+	padding: 0 10px;
+}
+
+.itemHeader:nth-child(2),
+.itemBody__item:nth-child(2) {
+	width: 15%;
+}
+
+.itemHeader:nth-child(3),
+.itemBody__item:nth-child(3) {
+	width: 15%;
+}
+
+.itemHeader:nth-child(4),
+.itemBody__item:nth-child(4) {
+	width: 15%;
+}
+
+.itemHeader:nth-child(5),
+.itemBody__item:nth-child(5) {
+	width: 13%;
+}
+.itemHeader:nth-child(6),
+.itemBody__item:nth-child(6) {
+	width: 12%;
+}
+.itemHeader:nth-child(6),
+.itemBody__item:nth-child(6) {
+	width: 12%;
+}
+
+.itemHeader {
+	text-align: center;
+}
+
+
+.itemHeader {
+	color: #E6E6E6;
+	font-size: 22px;
+	font-weight: 500;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-left: 8px;
+	}
+	&__btn {
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin: 0 2px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__icon {
+		width: 16px;
+		height: 8px;
+		&.iconReverse {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.itemBody {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+	position: relative;
+	&__item {
+		padding: 0 33px 0 0;
+		color: #67707A;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 400;
+		span {
+			padding: 8px 16px;
+			max-width: max-content;
+		}
+		&:last-child {
+			& .itemBody__input {
+				width: 50px;
+			}
+		}
+	}
+	&__edit {
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: -21px;
+		transform: translateY(-50%);
+		&:hover {
+			opacity: 0.5;
+			cursor: pointer;
+		}
+	}
+
+	&.edit .itemBody__edit {
+		display: block;
+	}
+
+	&.edit .itemBody__item {
+		&:nth-child(5) {
+			padding: 0 30px 0 0;
+		}
+		span{
+			border-radius: 4px;
+			border: 1px solid #20252B;
+		}
+	}
+
+	&.currentEdit {
+		input {
+			display: none;
+		}
+		& .itemBody__input {
+			display: block;
+		}
+		& .itemBody__item {
+			padding: 0 10px;
+		}
+		& .itemBody__item span {
+			display: none;
+		}
+	}
+
+	&__input {
+		background: transparent;
+		color: #f5f5f5;
+		border-radius: 4px;
+		border: 1px solid #20252B;
+		display: none;
+		padding: 8px 16px;
+		font-size: 16px;
+		display: none;
+		width: 100%;
+		&.age {
+			max-width: 70px;
+			margin: 0 20px 0 0;
+		}
+	}
+}

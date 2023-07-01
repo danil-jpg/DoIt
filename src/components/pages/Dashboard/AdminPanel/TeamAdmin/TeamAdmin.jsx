@@ -13,13 +13,10 @@ import ScItemsAdmin from "../ScItemsAdmin/ScItemsAdmin";
 const TeamAdmin = ({ state, icons, search, buttonList }) => {
 	const [teamState, setTeamState] = useState(state);
 	const [isEditing, setIsEditing] = useState(false);
-	const [nick, setNick] = useState('');
-	const [name, setName] = useState('');
-	const [pass, setPass] = useState('');
-	const [country, setCountry] = useState('');
 	const [team, setTeam] = useState('');
+	const [leader, setLeader] = useState('');
+	const [game, setGame] = useState('');
 	const [created, setCreated] = useState('');
-	const [age, setAge] = useState('');
 	const [currentId, setCurrentId] = useState();
 
 	const sortItems = (value, up) => {
@@ -46,13 +43,10 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 		let filterResult = newState.body.filter(el => el.id === id);
 		let currentEl = filterResult[0];
 
-		setName(currentEl.name);
-		setNick(currentEl.nick);
-		setPass(currentEl.pass);
-		setCountry(currentEl.country);
 		setTeam(currentEl.team);
+		setLeader(currentEl.leader);
+		setGame(currentEl.game);
 		setCreated(currentEl.created);
-		setAge(currentEl.age);
 	}
 
 
@@ -76,12 +70,9 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 
 		newState.body.forEach(el => {
 			if (el.id === currentId) {
-				el.name = name;
-				el.nick = nick;
-				el.country = country;
-				el.pass = pass;
-				el.age = age;
 				el.team = team;
+				el.leader = leader;
+				el.game = game;
 				el.created = created;
 			}
 		})
@@ -108,7 +99,7 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 			</div>
 
 			<AdminTableContainer>
-				<HeaderAdminContainer>
+				<HeaderAdminContainer style={{justifyContent: 'flex-start'}}>
 					{teamState.header.map(el => (
 						<div className={`${s.itemHeader}`} key={el.id}>
 							<span>{el.title}</span>
@@ -136,30 +127,6 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 						}
 							key={el.id}>
 							<li className={`${s.itemBody__item}`}>
-								<span>{el.nick}</span>
-								<input
-									className={s.itemBody__input}
-									type="text"
-									value={nick}
-									onChange={e => { onInputChangeHAndler(e, setNick) }} />
-							</li>
-							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>********</span>
-								<input
-									className={s.itemBody__input}
-									type="text"
-									value={pass}
-									onChange={e => { onInputChangeHAndler(e, setPass) }} />
-							</li>
-							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{`${el.country}`}</span>
-								<input
-									className={s.itemBody__input}
-									type="text"
-									value={country}
-									onChange={e => { onInputChangeHAndler(e, setCountry) }} />
-							</li>
-							<li className={`${s.itemBody__item} ${s.edit}`}>
 								<span>{el.team}</span>
 								<input
 									className={s.itemBody__input}
@@ -168,28 +135,28 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 									onChange={e => { onInputChangeHAndler(e, setTeam) }} />
 							</li>
 							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{`${el.name}`}</span>
+								<span>{el.leader}</span>
 								<input
 									className={s.itemBody__input}
 									type="text"
-									value={name}
-									onChange={e => { onInputChangeHAndler(e, setName) }} />
+									value={leader}
+									onChange={e => { onInputChangeHAndler(e, setLeader) }} />
 							</li>
 							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{`${el.created}`}</span>
+								<span>{`${el.game}`}</span>
+								<input
+									className={s.itemBody__input}
+									type="text"
+									value={game}
+									onChange={e => { onInputChangeHAndler(e, setGame) }} />
+							</li>
+							<li className={`${s.itemBody__item} ${s.edit}`}>
+								<span>{el.created}</span>
 								<input
 									className={s.itemBody__input}
 									type="text"
 									value={created}
 									onChange={e => { onInputChangeHAndler(e, setCreated) }} />
-							</li>
-							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{`${el.age}`}</span>
-								<input
-									className={`${s.itemBody__input} ${s.age}`}
-									type="number"
-									value={age}
-									onChange={e => { onInputChangeHAndler(e, setAge) }} />
 							</li>
 							<li className={`${s.itemBody__edit}`}
 								onClick={e => { onEditClickHandler(e, el.id, el.active) }}>

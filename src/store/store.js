@@ -382,8 +382,177 @@ const adminTournaments = {
 	]
 }
 
-const adminTeam = {
-	buttonList: adminTournaments.buttonList,
+const adminTeams = {
+	buttonList: {
+		edit: {
+			id: v1(),
+			title: 'Edit mode',
+			to: '',
+			value: 'edit'
+		},
+		add: {
+			id: v1(),
+			title: '+  Add teams',
+			to: '',
+			value: 'add'
+		},
+		cancel: {
+			id: v1(),
+			title: 'Cancel',
+			to: '',
+			value: 'cancel'
+		},
+		save: {
+			id: v1(),
+			title: 'Save changes',
+			to: '',
+			value: 'save'
+		},
+	},
+	header: [
+		{
+			id: v1(),
+			title: 'Team',
+			value: 'team'
+		},
+
+		{
+			id: v1(),
+			title: 'Leader',
+			value: 'leader'
+		},
+
+		{
+			id: v1(),
+			title: 'Main Game',
+			value: 'game'
+		},
+
+		{
+			id: v1(),
+			title: 'Creation Date',
+			value: 'created'
+		},
+	],
+	body: [
+		{
+			id: v1(),
+			team: 'Xpomba',
+			leader: 'Jack003',
+			game: 'StarCraft II',
+			created: '07/21/17',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'Krasnoludy777',
+			leader: 'Michal',
+			game: 'Fifa 2020',
+			created: '02/08/13',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'XpomTeam Virus',
+			leader: 'John',
+			game: 'Main News',
+			created: '12/30/19',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'G2B',
+			leader: 'Jack003',
+			game: 'CS:GO',
+			created: '02/08/13',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'TEAM Blacer',
+			leader: 'Hren',
+			game: 'DOTA II',
+			created: '05/16/18',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'Drużyna pierścienia',
+			leader: 'Pupop',
+			game: 'Costa Rica',
+			created: '01/26/13',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'NoobTeam87',
+			leader: 'Mamba',
+			game: 'Hero',
+			created: '07/21/17',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'PowerRengers',
+			leader: 'Simons',
+			game: 'WoW',
+			created: '07/21/17',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'Edward Gaming',
+			leader: 'Henry',
+			game: 'Niue',
+			created: '07/21/17',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'Xpomba094',
+			leader: 'Jack003',
+			game: 'Greenland',
+			created: '07/21/17',
+			active: false,
+		},
+		{
+			id: v1(),
+			team: 'Xpomba',
+			leader: 'Jack003',
+			game: 'Valorant',
+			created: '12/25/15',
+			active: false,
+		},
+	]
+}
+
+const adminPlayers = {
+	buttonList: {
+		edit: {
+			id: v1(),
+			title: 'Edit mode',
+			to: '',
+			value: 'edit'
+		},
+		add: {
+			id: v1(),
+			title: '+  Add players',
+			to: '',
+			value: 'add'
+		},
+		cancel: {
+			id: v1(),
+			title: 'Cancel',
+			to: '',
+			value: 'cancel'
+		},
+		save: {
+			id: v1(),
+			title: 'Save changes',
+			to: '',
+			value: 'save'
+		},
+	},
 	header: [
 		{
 			id: v1(),
@@ -617,7 +786,8 @@ export const adminPanel = {
 		ph: 'Search by name, prize, signed, etc.',
 	},
 	tournaments: adminTournaments,
-	team: adminTeam,
+	players: adminPlayers,
+	teams: adminTeams,
 }
 
 

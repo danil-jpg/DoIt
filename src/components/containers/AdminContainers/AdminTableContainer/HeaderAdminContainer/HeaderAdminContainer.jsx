@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './HeaderAdminContainer.module.scss';
 
-const HeaderAdminContainer = ({ className, children }) => {
+const HeaderAdminContainer = ({ style, className, children }) => {
 
 	return (
-		<div className={`${s.tableHeader} ${className ? className : ''}`}>
+		<div className={`${s.tableHeader} ${className ? className : ''}`}
+			style={style ? style : {}}>
 			{children}
 		</div>
 	);
