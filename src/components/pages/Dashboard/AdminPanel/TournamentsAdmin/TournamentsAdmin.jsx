@@ -9,7 +9,6 @@ import { sortObjects } from "../../../../utils/sortObjects";
 import AdminButtonContainer from "../../../../containers/AdminContainers/AdminButtonContainer/AdminButtonContainer";
 import SearchAdminPanel from "../../../../UI/forms/SearchAdminPanel/SearchAdminPanel";
 import ScItemsAdmin from "../ScItemsAdmin/ScItemsAdmin";
-import { useEffect } from "react";
 
 const TournamentsAdmin = ({ state, icons, search, buttonList }) => {
 	const [tourState, setTourState] = useState(state);

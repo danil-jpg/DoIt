@@ -382,6 +382,163 @@ const adminTournaments = {
 	]
 }
 
+const adminTeam = {
+	buttonList: adminTournaments.buttonList,
+	header: [
+		{
+			id: v1(),
+			title: 'Nickname',
+			value: 'nick'
+		},
+
+		{
+			id: v1(),
+			title: 'Password',
+			value: 'pass'
+		},
+
+		{
+			id: v1(),
+			title: 'Country',
+			value: 'country'
+		},
+
+		{
+			id: v1(),
+			title: 'Team',
+			value: 'team'
+		},
+		{
+			id: v1(),
+			title: 'Name',
+			value: 'name'
+		},
+		{
+			id: v1(),
+			title: 'Created',
+			value: 'created'
+		},
+
+		{
+			id: v1(),
+			title: 'Age',
+			value: 'age'
+		},
+	],
+	body: [
+		{
+			id: v1(),
+			nick: 'nikelodeon',
+			pass: 'password',
+			country: 'Sudan',
+			team: 'Sudan',
+			name: 'Calvin',
+			created: '07/21/17',
+			age: 32,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'beautifulmouse112',
+			pass: 'password',
+			country: 'Italy',
+			team: 'Italy',
+			name: 'Wade',
+			created: '07/16/17',
+			age: 97,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'whiterabbit554',
+			pass: 'password',
+			country: 'Guernsey',
+			team: 'Guernsey',
+			name: 'Jorge',
+			created: '02/08/13',
+			age: 32,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'nikelodeon',
+			pass: 'password',
+			country: 'Sudan',
+			team: 'Sudan',
+			name: 'Calvin',
+			created: '07/21/17',
+			age: 32,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'nikelodeon',
+			pass: 'password',
+			country: 'Sudan',
+			team: 'Sudan',
+			name: 'Calvin',
+			created: '07/21/17',
+			age: 32,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'smallsnake312',
+			pass: 'password',
+			country: 'Spain',
+			team: 'Spain',
+			name: 'Dwight',
+			created: '01/26/13',
+			age: 67,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'tinypanda866',
+			pass: 'password',
+			country: 'Greenland',
+			team: 'Greenland',
+			name: 'Brandon',
+			created: '05/16/18',
+			age: 18,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'nikelodeon',
+			pass: 'password',
+			country: 'Sudan',
+			team: 'Sudan',
+			name: 'Calvin',
+			created: '07/21/17',
+			age: 32,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'beautifullion765',
+			pass: 'password',
+			country: 'Guam',
+			team: 'Guam',
+			name: 'Dwight',
+			created: '01/26/13',
+			age: 67,
+			active: false,
+		},
+		{
+			id: v1(),
+			nick: 'bluebear234',
+			pass: 'password',
+			country: 'Costa Rica',
+			team: 'Costa Rica',
+			name: 'Bernard',
+			created: '12/25/15',
+			age: 88,
+			active: false,
+		},
+	]
+}
+
 export const adminPanel = {
 	links: [
 		{
@@ -459,7 +616,8 @@ export const adminPanel = {
 		name: 'search',
 		ph: 'Search by name, prize, signed, etc.',
 	},
-	tournaments: adminTournaments
+	tournaments: adminTournaments,
+	team: adminTeam,
 }
 
 
@@ -688,12 +846,12 @@ export const tournamentsMain = {
 	}]
 }
 
-export const streamsData ={
-	title:{
-		title:'Streams'
+export const streamsData = {
+	title: {
+		title: 'Streams'
 	},
-	icon:{
-		icon:streamIcon
+	icon: {
+		icon: streamIcon
 	}
 }
 
