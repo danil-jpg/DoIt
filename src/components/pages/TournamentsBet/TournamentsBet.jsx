@@ -1,19 +1,19 @@
 import React from 'react';
-import s from './tournamentsInfo.module.scss';
+import s from './tournamentsBet.module.scss';
 import Container from '../../containers/Container/Container';
 import TournamentsTop from '../../common/TournamentsTop/TournamentsTop';
 import TournamentsReturn from '../../common/TournamentsTop/tournamentsReturn/TournamentsReturn';
 import TournamentRight from '../../common/tournamentRight/tournamentRight';
-import TournamentInfoTab from './TournamentInfoTab/TournamentInfoTab';
+import TournamentBetTab from './TournamentBetTab/TournamentBetTab';
 
-const TournamentsInfo = () => {
+const TournamentsBet = () => {
   return (
     <Container>
       <div className={s.tournamentsInfo}>
         <div className={s.infoLeft}>
           <TournamentsReturn />
           <TournamentsTop />
-          <TournamentInfoTab />
+          <TournamentBetTab />
         </div>
         <TournamentRight />
       </div>
@@ -21,4 +21,4 @@ const TournamentsInfo = () => {
   );
 };
 
-export default TournamentsInfo;
+export default TournamentsBet;

@@ -92,7 +92,7 @@ import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
 import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
 import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
-import streamIcon from "../assets/images/homePage/stream.svg";
+import streamIcon from '../assets/images/homePage/stream.svg';
 import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png';
 import dotaInGameMobW from '../assets/images/tournamentsMain/dotaInGameMob.png?as=webp'
 // Tournaments info
@@ -103,6 +103,9 @@ import avatar from '../assets/images/TournamentsPlayer/avatarGame.png'
 import avatarW from '../assets/images/TournamentsPlayer/avatarGame.png?as=webp'
 import japan from '../assets/images/TournamentsPlayer/japan.png'
 import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
+// 
+import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
+import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
 
 
 export const headerData = {
@@ -1043,4 +1046,9 @@ export const tournamentPlayer = {
 	}
 }
 
-
+export const tournamentBet = {
+	img: {
+		shrigma: shrigma,
+		shrigmaW: shrigmaW
+	}
+}
