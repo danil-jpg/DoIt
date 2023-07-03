@@ -55,7 +55,7 @@
 @media screen and (max-width: 768px) {
   .tournamentTabs {
     overflow: hidden;
-    width: 329px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 25px;
   }
@@ -83,5 +83,11 @@
     grid-template-columns: 1fr;
     margin-top: 55px;
     gap: 29px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tournamentTabs {
+    width: 329px;
   }
 }
