@@ -320,6 +320,17 @@
   border-radius: 0px 0px 2px 2px;
   background: var(--primary-gradient, linear-gradient(180deg, #2788f6 0%, #0960e0 100%));
 }
+.contentClass {
+  padding: 15px 35px 15px 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .itemText {
@@ -333,5 +344,12 @@
 
   .displayNoneMob {
     display: none;
+  }
+
+  .cardsWr {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
   }
 }
