@@ -32,7 +32,7 @@ const Main = (props) => {
           <Route path='/admin/*' element={<AdminPanel />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/tournamentsmain' element={<TournamentsMain />} />
+          <Route path='/tournamentsMain' element={<TournamentsMain />} />
           <Route path='/tournamentsInfo' element={<TournamentsInfo />} />
           <Route path='/tournamentsPlayer' element={<TournamentsPlayer />} />
           <Route path='/tournamentsStanding' element={<TournamentsStanding />} />

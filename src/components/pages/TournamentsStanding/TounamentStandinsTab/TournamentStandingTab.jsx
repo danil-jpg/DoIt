@@ -7,7 +7,7 @@ import { tournamentPlayer } from '../../../../store/store';
 const TournamentStandingTab = () => {
   return (
     <>
-      <TournamentTab activeTab={3} contentClass={s.contentClassStandings} tabClass={s.infoTab}>
+      <TournamentTab activeTab={3} contentClass={s.contentClassStandings} tabClass={s.tabClass}>
         <div className={s.tableTop}>
           <p className={s.tableTitle}>Group A</p>
           <div className={s.tableToggleEl}>
