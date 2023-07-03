@@ -10,14 +10,14 @@ const Profile = React.lazy(() => import('../../pages/Profile/Profile.jsx'));
 const AdminPanel = React.lazy(() => import('../../pages/Dashboard/AdminPanel/AdminPanel'));
 const About = React.lazy(() => import('../../pages/AboutUs/AboutUs.jsx'));
 const Contact = React.lazy(() => import('../../pages/ContactUs/ContactUs.jsx'));
-// const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
-// const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
-// const TournamentsPlayer = React.lazy(() =>
-//   import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
-// );
-// const TournamentsStanding = React.lazy(() =>
-//   import('../../pages/TournamentsStanding/TournamentStanding.jsx')
-// );
+const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
+const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
+const TournamentsPlayer = React.lazy(() =>
+  import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
+);
+const TournamentsStanding = React.lazy(() =>
+  import('../../pages/TournamentsStanding/TournamentStanding.jsx')
+);
 
 const Main = (props) => {
   return (
@@ -32,10 +32,10 @@ const Main = (props) => {
           <Route path='/admin/*' element={<AdminPanel />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          {/* <Route path='/tournamentsmain' element={<TournamentsMain />} />
+          <Route path='/tournamentsmain' element={<TournamentsMain />} />
           <Route path='/tournamentsInfo' element={<TournamentsInfo />} />
           <Route path='/tournamentsPlayer' element={<TournamentsPlayer />} />
-          <Route path='/tournamentsStanding' element={<TournamentsStanding />} /> */}
+          <Route path='/tournamentsStanding' element={<TournamentsStanding />} />
         </Routes>
       </Suspense>
     </main>
