@@ -711,6 +711,140 @@ const adminPlayers = {
 	]
 }
 
+const adminNews = {
+	buttonList: {
+		edit: {
+			id: v1(),
+			title: 'Edit mode',
+			to: '',
+			value: 'edit'
+		},
+		add: {
+			id: v1(),
+			title: '+  Add players',
+			to: '',
+			value: 'add'
+		},
+		cancel: {
+			id: v1(),
+			title: 'Cancel',
+			to: '',
+			value: 'cancel'
+		},
+		save: {
+			id: v1(),
+			title: 'Save changes',
+			to: '',
+			value: 'save'
+		},
+	},
+	header: [
+		{
+			id: v1(),
+			title: 'Title',
+			value: 'title'
+		},
+		{
+			id: v1(),
+			title: 'Author',
+			value: 'author'
+		},
+		{
+			id: v1(),
+			title: 'Categories',
+			value: 'categories'
+		},
+		{
+			id: v1(),
+			title: 'Date',
+			value: 'date'
+		},
+	],
+	body: [
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'StarCraft II',
+			date: '12/25/15',
+			active: false,
+		},
+	
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'CS:GO',
+			date: '06/29/16',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Main News',
+			date: '08/16/18',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Fifa 2020',
+			date: '01/26/13',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Valorant',
+			date: '05/16/18',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Greenland',
+			date: '08/10/12',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Spain',
+			date: '02/08/13',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Niue',
+			date: '12/30/19',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Guam',
+			date: '07/16/17',
+			active: false,
+		},
+		{
+			id: v1(),
+			title: 'Dwudziesty sezon ESL MP rusza za chwilę! 50 tys. zł w puli',
+			author: 'password',
+			categories: 'Costa Rica',
+			date: '07/21/17',
+			active: false,
+		},
+	]
+}
+
 export const adminPanel = {
 	links: [
 		{
@@ -791,6 +925,7 @@ export const adminPanel = {
 	tournaments: adminTournaments,
 	players: adminPlayers,
 	teams: adminTeams,
+	news: adminNews,
 }
 
 

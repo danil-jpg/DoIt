@@ -11,20 +11,12 @@ const AdminPanel = React.lazy(() => import('../../pages/Dashboard/AdminPanel/Adm
 const About = React.lazy(() => import('../../pages/AboutUs/AboutUs.jsx'));
 const Contact = React.lazy(() => import('../../pages/ContactUs/ContactUs.jsx'));
 const EditAdmin = React.lazy(() => import('../../pages/Dashboard/EditAdmin/EditAdmin'));
-const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
-const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
-const TournamentsPlayer = React.lazy(() =>
-  import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
-);
-const TournamentsStanding = React.lazy(() =>
-  import('../../pages/TournamentsStanding/TournamentStanding.jsx')
-);
-const TournamentBet = React.lazy(() => {
-  import('../../pages/TournamentsBet/TournamentsBet.jsx');
-});
-const TournamentsBracket = React.lazy(() =>
-  import('../../pages/TournamentsBracket/TournamentsBracket.jsx')
-);
+// const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
+// const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
+// const TournamentsPlayer = React.lazy(() => import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx'));
+// const TournamentsStanding = React.lazy(() => import('../../pages/TournamentsStanding/TournamentStanding.jsx'));
+// const TournamentBet = React.lazy(() => import('../../pages/TournamentsBet/TournamentsBet.jsx'));
+// const TournamentsBracket = React.lazy(() => import('../../pages/TournamentsBracket/TournamentsBracket.jsx'));
 
 const Main = (props) => {
   return (
@@ -40,12 +32,12 @@ const Main = (props) => {
           <Route path='/edit/*' element={<EditAdmin />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/tournamentsMain' element={<TournamentsMain />} />
+          {/* <Route path='/tournamentsMain' element={<TournamentsMain />} />
           <Route path='/tournamentsInfo' element={<TournamentsInfo />} />
           <Route path='/tournamentsPlayer' element={<TournamentsPlayer />} />
           <Route path='/tournamentsStanding' element={<TournamentsStanding />} />
           <Route path='/tournamentBet' element={<TournamentBet />} />
-          <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
+          <Route path='/tournamentsBracket' element={<TournamentsBracket />} /> */}
         </Routes>
       </Suspense>
     </main>
