@@ -192,3 +192,24 @@ $color-border: #c0c0c8;
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .topLine {
+    justify-content: center;
+    width: 100%;
+    .topLineText {
+      display: none !important;
+    }
+    .topLineText:first-of-type {
+      display: block !important;
+    }
+
+    .semifinals {
+      display: none !important;
+    }
+
+    .finals {
+      display: none !important;
+    }
+  }
+}

@@ -9,7 +9,11 @@ const TournamentsBracketTab = () => {
   return (
     <>
       <TournamentTab contentClass={s.contentClass} tabClass={s.infoTab} activeTab={1}>
-        <div className={s.topLine}></div>
+        <div className={s.topLine}>
+          <div className={s.topLineText}>Round 8</div>
+          <p className={s.topLineText}>Semi-final</p>
+          <div className={s.topLineText}>Final</div>
+        </div>
         <div className='bracket'>
           <section className='round quarterfinals'>
             <div className='winners'>

@@ -2,7 +2,7 @@
 }
 
 .contentClass {
-  padding: 39px 35px 13px 40px;
+  padding: 35px;
   display: grid;
   row-gap: 30px;
 
@@ -61,6 +61,23 @@
   line-height: 1.5;
 }
 
+.topLine {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.topLineText {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .itemText {
     font-size: 14px;
@@ -73,5 +90,18 @@
 
   .displayNoneMob {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topLine {
+    justify-content: center;
+    width: 100%;
+    .topLineText {
+      display: none;
+    }
+    .topLineText:first-of-type {
+      display: block;
+    }
   }
 }
