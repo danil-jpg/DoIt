@@ -3,7 +3,7 @@ import s from './popUpTemp.module.scss';
 import { useScrollbarWidth } from '../../utils/useScrollbarWidth';
 import closeIcon from '../../../assets/icons/close.svg';
 
-const PopUpTemp = ({ visible, setVisible, modalClass = '', children }) => {
+const PopUpTemp = ({ visible = true, setVisible, modalClass = '', children }) => {
   const res = useScrollbarWidth();
 
   const cssStyles = ['subStrate'];

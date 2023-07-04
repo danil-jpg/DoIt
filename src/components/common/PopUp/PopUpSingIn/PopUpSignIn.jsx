@@ -12,13 +12,57 @@ import googleW from '../../../../assets/images/PopUps/goog.png?as=webp';
 import steam from '../../../../assets/images/PopUps/steam.png';
 import steamW from '../../../../assets/images/PopUps/steam.png?as=webp';
 import Picture from '../../../UI/Picture/Picture';
+import InputFormContainer from '../../../UI/forms/InputFormContainer/InputFormContainer';
+import { useState } from 'react';
+import Button from '../../../UI/buttons/Button/Button';
 
 const PopUpSignIn = () => {
+  const [user, setUser] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <PopUpTemp>
       <div className={s.body}>
         <Picture img={logo} webp={logoW} className={s.logo} />
         <p className={s.title}>Login</p>
+        <InputFormContainer
+          style={{ width: '100%' }}
+          ph={'google@gmail.com'}
+          title={'Username or Email'}
+          value={user}
+          setValue={setUser}
+        />
+        <InputFormContainer
+          style={{ width: '100%' }}
+          title={'Password'}
+          type={'password'}
+          value={password}
+          setValue={setPassword}
+        />
+        <button className={s.button}>Login</button>
+        <div className={s.loginVia}>
+          <p className={s.loginViaText}>or login with</p>
+          <div className={s.loginViaLine}>
+            <div className={s.viaWr}>
+              <Picture img={face} webp={faceW} />
+            </div>
+            <div className={s.viaWr}>
+              <Picture img={bliz} webp={blizW} />
+            </div>
+            <div className={s.viaWr}>
+              <Picture img={google} webp={googleW} />
+            </div>
+            <div className={s.viaWr}>
+              <Picture img={steam} webp={steamW} />
+            </div>
+          </div>
+        </div>
+        <div className={s.links}>
+          <button className={s.link}>Forgot password?</button>
+          <button className={s.link}>
+            Don't have an account?<p className={s.linkSign}>Sign up!</p>
+          </button>
+        </div>
       </div>
     </PopUpTemp>
   );
