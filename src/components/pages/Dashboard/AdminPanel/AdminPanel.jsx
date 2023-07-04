@@ -48,14 +48,13 @@ const AdminPanel = () => {
 							search={state.search}
 							buttonList={state.tournaments.buttonList} />
 					} />
-					{/*<Route path="/leagues" element={
-						<AdminContainer
+					<Route path="/leagues" element={
+							<LeaguesAdmin
+							state={state.league}
 							icons={state.icons}
 							search={state.search}
-							buttonList={state.tournaments.buttonList}>
-							<LeaguesAdmin state={state.tournaments} list={state.links} />
-						</AdminContainer>
-					} /> */}
+							buttonList={state.tournaments.buttonList} />
+					} />
 				</Routes>
 			</Container>
 		</div>
