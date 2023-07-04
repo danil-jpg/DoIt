@@ -10,6 +10,7 @@ const Profile = React.lazy(() => import('../../pages/Profile/Profile.jsx'));
 const AdminPanel = React.lazy(() => import('../../pages/Dashboard/AdminPanel/AdminPanel'));
 const About = React.lazy(() => import('../../pages/AboutUs/AboutUs.jsx'));
 const Contact = React.lazy(() => import('../../pages/ContactUs/ContactUs.jsx'));
+const EditAdmin = React.lazy(() => import('../../pages/Dashboard/EditAdmin/EditAdmin'));
 const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
 const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
 const TournamentsPlayer = React.lazy(() =>
@@ -36,6 +37,7 @@ const Main = (props) => {
           <Route path='/premium' element={<Premium />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/admin/*' element={<AdminPanel />} />
+          <Route path='/edit/*' element={<EditAdmin />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/tournamentsMain' element={<TournamentsMain />} />

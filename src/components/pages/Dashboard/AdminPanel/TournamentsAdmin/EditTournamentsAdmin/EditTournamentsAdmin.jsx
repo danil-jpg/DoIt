@@ -1,27 +1,36 @@
 import React, { useState } from "react";
-import s from './TeamAdmin.module.scss';
+import AdminTableContainer from "../../../../containers/AdminContainers/AdminTableContainer/AdminTableContainer";
+import BodyContainerAdmin from "../../../../containers/AdminContainers/AdminTableContainer/BodyContainerAdmin/BodyContainerAdmin";
+import HeaderAdminContainer from "../../../../containers/AdminContainers/AdminTableContainer/HeaderAdminContainer/HeaderAdminContainer";
+import { IconRenderer } from "../../../../UI/IconRenderer/IconRenderer";
+import s from './TournamentsAdmin.module.scss';
+import { isActive } from "../../../../utils/isActive";
+import { sortObjects } from "../../../../utils/sortObjects";
+import AdminButtonContainer from "../../../../containers/AdminContainers/AdminButtonContainer/AdminButtonContainer";
+import SearchAdminPanel from "../../../../UI/forms/SearchAdminPanel/SearchAdminPanel";
+import ScItemsAdmin from "../ScItemsAdmin/ScItemsAdmin";
 
-
-const TeamAdmin = ({ state, icons, search, buttonList }) => {
-	const [teamState, setTeamState] = useState(state);
+const TournamentsAdmin = ({ state, icons, search, buttonList }) => {
+	const [tourState, setTourState] = useState(state);
 	const [isEditing, setIsEditing] = useState(false);
-	const [team, setTeam] = useState('');
-	const [leader, setLeader] = useState('');
-	const [game, setGame] = useState('');
-	const [created, setCreated] = useState('');
+	const [name, setName] = useState('');
+	const [entryPrice, setEntryPrice] = useState('');
+	const [poolPrice, setPoolPrice] = useState('');
+	const [signed, setSigned] = useState('');
+	const [start, setStart] = useState('');
 	const [currentId, setCurrentId] = useState();
 
 	const sortItems = (value, up) => {
-		let newState = { ...teamState };
+		let newState = { ...tourState };
 
 		sortObjects(newState.body, value, up);
 
-		setTeamState({ ...newState });
+		setTourState({ ...newState });
 	}
 
 
 	const onEditClickHandler = (e, id, active) => {
-		let newState = { ...teamState };
+		let newState = { ...tourState };
 
 		newState.body.forEach(el => {
 			el.active = false;
@@ -35,10 +44,11 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 		let filterResult = newState.body.filter(el => el.id === id);
 		let currentEl = filterResult[0];
 
-		setTeam(currentEl.team);
-		setLeader(currentEl.leader);
-		setGame(currentEl.game);
-		setCreated(currentEl.created);
+		setName(currentEl.name);
+		setEntryPrice(currentEl.entryPrice);
+		setPoolPrice(currentEl.poolPrice);
+		setSigned(currentEl.signed);
+		setStart(currentEl.start);
 	}
 
 
@@ -48,29 +58,30 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 	};
 
 	const disableEditItem = () => {
-		let newState = { ...teamState };
+		let newState = { ...tourState };
 
 		newState.body.forEach(el => {
 			el.active = false;
 		});
 
-		setTeamState({ ...newState });
+		setTourState({ ...newState });
 	}
 
 	const onSaveBtnClickHandler = () => {
-		let newState = { ...teamState };
+		let newState = { ...tourState };
 
 		newState.body.forEach(el => {
 			if (el.id === currentId) {
-				el.team = team;
-				el.leader = leader;
-				el.game = game;
-				el.created = created;
+				el.name = name;
+				el.entryPrice = entryPrice;
+				el.poolPrice = poolPrice;
+				el.signed = signed;
+				el.start = start;
 			}
 		})
 
 		disableEditItem();
-		setTeamState({ ...newState });
+		setTourState({ ...newState });
 	}
 
 	return (
@@ -91,8 +102,8 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 			</div>
 
 			<AdminTableContainer>
-				<HeaderAdminContainer style={{justifyContent: 'flex-start'}}>
-					{teamState.header.map(el => (
+				<HeaderAdminContainer>
+					{tourState.header.map(el => (
 						<div className={`${s.itemHeader}`} key={el.id}>
 							<span>{el.title}</span>
 							<div className={s.itemHeader__buttons}>
@@ -113,42 +124,50 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 				</HeaderAdminContainer>
 
 				<BodyContainerAdmin>
-					{teamState.body.map(el => (
+					{tourState.body.map(el => (
 						<ul className={
 							`${s.itemBody} ${isActive(isEditing, s.edit)} ${isActive(el.active, s.currentEdit)}`
 						}
 							key={el.id}>
 							<li className={`${s.itemBody__item}`}>
-								<span>{el.team}</span>
+								<span>{el.name}</span>
 								<input
 									className={s.itemBody__input}
 									type="text"
-									value={team}
-									onChange={e => { onInputChangeHAndler(e, setTeam) }} />
+									value={name}
+									onChange={e => { onInputChangeHAndler(e, setName) }} />
 							</li>
 							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{el.leader}</span>
+								<span>{`${el.entryPrice}$`}</span>
 								<input
 									className={s.itemBody__input}
-									type="text"
-									value={leader}
-									onChange={e => { onInputChangeHAndler(e, setLeader) }} />
+									type="number"
+									value={entryPrice}
+									onChange={e => { onInputChangeHAndler(e, setEntryPrice) }} />
 							</li>
 							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{`${el.game}`}</span>
+								<span>{`${el.poolPrice}$`}</span>
 								<input
 									className={s.itemBody__input}
-									type="text"
-									value={game}
-									onChange={e => { onInputChangeHAndler(e, setGame) }} />
+									type="number"
+									value={poolPrice}
+									onChange={e => { onInputChangeHAndler(e, setPoolPrice) }} />
 							</li>
 							<li className={`${s.itemBody__item} ${s.edit}`}>
-								<span>{el.created}</span>
+								<span>{el.signed}</span>
 								<input
 									className={s.itemBody__input}
 									type="text"
-									value={created}
-									onChange={e => { onInputChangeHAndler(e, setCreated) }} />
+									value={signed}
+									onChange={e => { onInputChangeHAndler(e, setSigned) }} />
+							</li>
+							<li className={`${s.itemBody__item} ${s.edit}`}>
+								<span>{`${el.start} minutes`}</span>
+								<input
+									className={s.itemBody__input}
+									type="number"
+									value={start}
+									onChange={e => { onInputChangeHAndler(e, setStart) }} />
 							</li>
 							<li className={`${s.itemBody__edit}`}
 								onClick={e => { onEditClickHandler(e, el.id, el.active) }}>
@@ -163,4 +182,4 @@ const TeamAdmin = ({ state, icons, search, buttonList }) => {
 	)
 }
 
-export default TeamAdmin;
+export default TournamentsAdmin;
