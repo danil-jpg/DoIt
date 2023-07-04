@@ -231,6 +231,14 @@
 .Draws1 {
   margin-right: 38px;
 }
+@media screen and (max-width: 992px) {
+  .name {
+    margin-right: 22%;
+  }
+  .name1 {
+    margin-right: 10%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .itemText {
@@ -250,5 +258,31 @@
     gap: 15px;
     margin-top: 26px;
     padding: 0;
+  }
+  .contentClassStandings {
+    overflow-x: scroll;
+    // width: 768px;
+  }
+  .name {
+    margin-right: 20%;
+  }
+  .tabClass {
+    width: 100% !important;
+  }
+  .tableTitle {
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .name {
+    margin-right: 12%;
+  }
+  .contentClassStandings {
+    width: 329px !important;
+    overflow-x: scroll;
+  }
+  .tabClass {
+    width: 329px !important;
   }
 }
