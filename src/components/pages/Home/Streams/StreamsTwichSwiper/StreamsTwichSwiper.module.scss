@@ -30,3 +30,14 @@
     }
 
 }
+@media (max-width:768px) {
+    .slide__video__dis{
+        display: none;
+    }
+    .slide__video__small{
+        display: none;
+    }
+    .slide__video__big{
+        width: 100%;
+    }
+}

@@ -83,6 +83,19 @@ import phoneIcon from "../assets/icons/Aboute/phoneIcon.svg"
 import avatarProfile from '../assets/images/Profile/avatar.png';
 import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
 import streamIcon from "../assets/images/homePage/stream.svg"
+import gameCard1 from "../assets/images/homePage/Games/game1.png"
+import gameCard1Webp from "../assets/images/homePage/Games/game1.png?as=webp"
+import gameCard1Mob from "../assets/images/homePage/Games/game1-mob.png"
+import gameCard1MobWebp from "../assets/images/homePage/Games/game1-mob.png?as=webp"
+import gameCard2 from "../assets/images/homePage/Games/game2.png"
+import gameCard2Webp from "../assets/images/homePage/Games/game2.png?as=webp"
+import gameCard2Mob from "../assets/images/homePage/Games/game2-mob.png"
+import gameCard2MobWebp from "../assets/images/homePage/Games/game2-mob.png?as=webp"
+import gameCard3 from "../assets/images/homePage/Games/game3.png"
+import gameCard3Webp from "../assets/images/homePage/Games/game3.png?as=webp"
+import gameCard3Mob from "../assets/images/homePage/Games/game3-mob.png"
+import gameCard3MobWebp from "../assets/images/homePage/Games/game3-mob.png?as=webp"
+
 
 export const headerData = {
 	logo: {
@@ -401,3 +414,23 @@ export const streamsData ={
 	}
 }
 
+export const gamesData={
+	title:{
+		title:"Games"
+	},
+	image:{
+		gameCard1:gameCard1,
+		gameCard1Webp:gameCard1Webp,
+		gameCard1Mob:gameCard1Mob,
+		gameCard1MobWebp:gameCard1MobWebp,
+		gameCard2:gameCard2,
+		gameCard2Webp:gameCard2Webp,
+		gameCard2Mob:gameCard2Mob,
+		gameCard2MobWebp:gameCard2MobWebp,
+		gameCard3:gameCard3,
+		gameCard3Webp:gameCard3Webp,
+		gameCard3Mob:gameCard3Mob,
+		gameCard3MobWebp:gameCard3MobWebp
+	}
+
+}

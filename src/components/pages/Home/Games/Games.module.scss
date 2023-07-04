@@ -1,0 +1,12 @@
+.main{
+
+    &__slides{
+        display: flex;
+        width: 100%;
+        max-width: 1170px;
+    }
+}
+.slides{
+    display: flex;
+    align-items: center;
+}

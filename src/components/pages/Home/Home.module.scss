@@ -16,6 +16,11 @@
     margin-top: 180px;
     padding: 0 23px;
 }
+.main__partners{
+    margin-top: 183px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
 @media  (max-width:1440px) {
     .main__hero{
         margin-top: 70px;
@@ -57,4 +62,10 @@
         padding-left: 15px;
         padding-right: 0px;
     }
+    .main__partners{
+        padding-left: 15px;
+        padding-right: 0;
+        margin-top: 82px;
+    }
+
 }
