@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import s from './Main.module.scss';
 import Header from '../../common/Header/Header';
+import PopUpSignIn from '../../common/PopUp/PopUpSingIn/PopUpSignIn';
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
@@ -46,6 +47,7 @@ const Main = (props) => {
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
         </Routes>
       </Suspense>
+      <PopUpSignIn />
     </main>
   );
 };
