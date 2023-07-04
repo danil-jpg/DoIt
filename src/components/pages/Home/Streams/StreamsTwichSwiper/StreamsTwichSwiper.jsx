@@ -5,6 +5,7 @@ import s from "./StreamsTwichSwiper.module.scss"
 import 'swiper/scss';
 import { Pagination } from "swiper";
 import "swiper/scss/pagination";
+
 const TwitchSwiper = () => {
   const channels = ["coopertv", "fandercs", "buichka",'qrushcsgo'];
   return (

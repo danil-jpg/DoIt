@@ -1,0 +1,288 @@
+.infoTab {
+}
+
+.contentClass {
+  padding: 39px 35px 13px 40px;
+  display: grid;
+  row-gap: 30px;
+
+  grid-template-columns: 34.3% 26% 1fr;
+  column-gap: 40px;
+}
+
+.contentClassLorem {
+  padding: 20px 35px 13px 40px;
+}
+
+.itemText {
+  color: #67707a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 7px;
+}
+
+.itemTop {
+  display: flex;
+}
+.itemIcon {
+  margin-right: 8px;
+}
+
+.itemTitle {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.itemBtn {
+  border-radius: 2px;
+  background: #1a222d;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 12px 22px;
+  margin-top: 14px;
+}
+.itemFirstColumn .itemText {
+  margin-top: 0;
+}
+.loremText {
+  color: #67707a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+// <div className={s.card}>
+// <Picture
+//   img={tournamentPlayer.img.avatar}
+//   webp={tournamentPlayer.img.avatarW}
+//   className={s.playerImg}
+// />
+// <div className={s.cardBottom}>
+//   <div className={s.cardTextsTop}>
+//     <Picture
+//       img={tournamentPlayer.img.japan}
+//       webp={tournamentPlayer.img.japanW}
+//       className={s.playerImgCountry}
+//     />
+//     <p className={s.tournamentTitle}>Fresh young gun</p>
+//   </div>
+//   <div className={s.cardTextsBottom}>
+//     <p className={s.tournamentsTitle}>registred</p>
+//   </div>
+// </div>
+// </div>
+.contentClassPlayer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 55px 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.cardBottom {
+  background-color: #151a1f;
+  padding: 13px 0 16px 10px;
+}
+.cardTextsTop {
+  display: flex;
+}
+
+.playerDescr {
+  color: var(--dce-1-e-6, #e6e8eb);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  margin-left: 7px;
+}
+
+.playerStatus {
+  margin-top: 7px;
+
+  color: #525c66;
+  font-size: 12px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.playerImg {
+  width: 100%;
+}
+
+// <div className={s.tableTop}>
+// <p className={s.tableTitle}>Group A</p>
+// <div className={s.tableToggleEl}>
+//   <p className={s.tableToggleTitle}>Classic</p>
+//   <p className={s.tableToggleCash}>Cash prize</p>
+// </div>
+
+.tableTop {
+  display: flex;
+  padding: 22px 30px;
+}
+.tableTitle {
+  color: var(--white-96, #f5f5f5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.tableToggleEl {
+  margin-left: 57px;
+  display: flex;
+  align-items: center;
+}
+.tableToggleTitle {
+  color: var(--white-96, #f5f5f5);
+  font-size: 14px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  border-radius: 1px 0px 0px 1px;
+  background: var(--primary-gradient, linear-gradient(180deg, #2788f6 0%, #0960e0 100%));
+  padding: 7px 16px;
+}
+
+.tableToggleCash {
+  color: #7a8899;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  border-radius: 2px;
+  border: 1px solid #20252b;
+  padding: 7px 16px;
+}
+
+.contentClassStandings {
+}
+.tableCenter {
+  display: flex;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  background: #20252b;
+  line-height: 100%;
+  padding: 16px 0 16px 40px;
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+.lattice {
+  margin-right: 40px;
+}
+.county {
+  margin-right: 40px;
+}
+.name {
+  margin-right: 237px;
+}
+.wins {
+  margin-right: 30px;
+}
+.Loses {
+  margin-right: 30px;
+}
+.Draws {
+  margin-right: 30px;
+}
+.Points {
+}
+
+.tableLine {
+  display: flex;
+  padding: 12px 40px;
+  border-bottom: 1px solid #20252b;
+}
+
+.lattice1 {
+  margin-right: 54px;
+}
+
+.county1 {
+  margin-right: 56px;
+}
+
+.name1 {
+  margin-right: 147px;
+}
+
+.wins1 {
+  margin-right: 45px;
+}
+.Loses1 {
+  margin-right: 52px;
+}
+.Draws1 {
+  margin-right: 38px;
+}
+@media screen and (max-width: 992px) {
+  .name {
+    margin-right: 22%;
+  }
+  .name1 {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .itemText {
+    font-size: 14px;
+  }
+  .itemBtn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 15px 22px;
+  }
+
+  .displayNoneMob {
+    display: none;
+  }
+  .contentClassPlayer {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 26px;
+    padding: 0;
+  }
+  .contentClassStandings {
+    overflow-x: scroll;
+    // width: 768px;
+  }
+  .name {
+    margin-right: 20%;
+  }
+  .tabClass {
+    width: 100% !important;
+  }
+  .tableTitle {
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .name {
+    margin-right: 12%;
+  }
+  .contentClassStandings {
+    width: 329px !important;
+    overflow-x: scroll;
+  }
+  .tabClass {
+    width: 329px !important;
+  }
+}

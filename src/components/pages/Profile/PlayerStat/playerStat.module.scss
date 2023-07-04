@@ -67,6 +67,10 @@
 .profileLeftUl {
   margin-top: 66px;
   padding-left: 19px;
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .profileLeftLi {

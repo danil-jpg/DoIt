@@ -1,0 +1,26 @@
+.admin {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+	}
+	&__item {
+		border: 2px solid #20252B;
+		border-right: 0;
+		&:last-child {
+			border-right: 2px solid #20252B;
+		}
+	}
+	&__link {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 30px 15px;
+		color: #F5F5F5;
+		font-size: 30px;
+		font-weight: 700;
+		&.active {
+			background: #F5F5F5;
+			color: #0F1215;
+		}
+	}
+}

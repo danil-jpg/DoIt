@@ -6,21 +6,20 @@ import Picture from '../../UI/Picture/Picture';
 import UserBlockHeader from "./UserBlockHeader/UserBlockHeader";
 import Container from "../../containers/Container/Container";
 import Button from "../../UI/buttons/Button/Button";
+import { isActive } from "../../utils/isActive";
+import { onClickActiveHandler } from "../../utils/onClickActiveHandler";
 
 const Header = (props) => {
   const [state, setState] = useState(headerData);
   const [activeBurger, setActiveBurger] = useState(false);
   const [login, setLogin] = useState(false);
 
-  const isActive = (el, selector) => el ? selector : '';
-  const onBurgerClickHandler = () => setActiveBurger(!activeBurger);
-  const onLoginClickHandler = () => setLogin(!login);
-
   return (
     <header className={s.header}>
       <Container className={s.header__container}>
-        <div className={`${s.burger} ${isActive(activeBurger, s.active)}`}
-          onClick={onBurgerClickHandler}>
+        <div
+          className={`${s.burger} ${isActive(activeBurger, s.active)}`}
+          onClick={() => { onClickActiveHandler(activeBurger, setActiveBurger) }}>
           <span></span>
         </div>
         <Link to="/" className={s.logoWrap}>
@@ -50,7 +49,11 @@ const Header = (props) => {
                 state={state.user}
                 isActive={isActive} />
               : <div className={s.buttonList}>
-                <Button onClick={onLoginClickHandler}>Login</Button>
+                <Button
+                  onClick={() => onClickActiveHandler(login, setLogin)}
+                >
+                  Login
+                </Button>
                 <Button color={'blue'}>Sign up</Button>
               </div>
           }

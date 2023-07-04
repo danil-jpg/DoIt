@@ -5,12 +5,12 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-
+  // externals: [nodeExternals()],
   output: {
     path: path.resolve(__dirname, '..', 'docs/'),
-    filename: 'scripts/bundle[hash].js',
+    filename: 'scripts/bundle.js',
     clean: true,
-    publicPath: '/'
+    publicPath: './'
   },
 
   plugins: [
@@ -43,6 +43,7 @@ module.exports = {
       },
       {
         test: /\.module\.scss$/,
+        exclude: /node_modules/,
         generator: {
           filename: 'styles/[name][hash][ext]'
         },
@@ -57,7 +58,7 @@ module.exports = {
       },
       {
         test: /\.(css|sass|scss)$/,
-        exclude: /\.module\.scss$/,
+        exclude: [/\.module\.scss$/],
         use: [
           'style-loader',
           {
@@ -67,9 +68,9 @@ module.exports = {
             },
           },
           'sass-loader',
-          {
-            loader: 'postcss-loader'
-          }
+          // {
+          //   loader: 'postcss-loader'
+          // }
         ],
       },
     ]

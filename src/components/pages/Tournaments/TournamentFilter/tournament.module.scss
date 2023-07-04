@@ -1,0 +1,171 @@
+.filter {
+  border: 2px solid #20252b;
+  background: #0f1215;
+  width: 100%;
+  padding: 24px 28px;
+}
+.filterTitleWr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 51px;
+}
+.filterTitle {
+  color: #f5f5f5;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.filterclear {
+  color: #b83333;
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+// <div className={s.filterItem}>
+//         <p className={s.filterItemTitle}>Game mode</p>
+//         <div className={s.checkboxWr}>
+//           <Checkbox />
+//           <p className={s.checkboxDescr}>1v1</p>
+//         </div>
+
+.filterItem {
+  margin-top: 24px;
+}
+.filterItemCheckboxWr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.filterItemTitle {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 24px;
+}
+.checkboxWr {
+  display: flex;
+}
+.checkboxDescr {
+  margin-left: 8px;
+  color: #67707a;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.filterItemCheckboxHorWr {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  .checkboxWr {
+    margin-top: 8px;
+  }
+}
+.filterArrow {
+  display: none;
+}
+.filterAdded {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .filter {
+    padding-right: 70%;
+  }
+  .filterArrow {
+    display: block;
+  }
+  .filterclear {
+    display: none;
+  }
+  .filterAdded {
+    display: block;
+  }
+  .filterItemClose {
+    display: none;
+  }
+  .filter {
+    padding: 0;
+    border: none;
+  }
+
+  .filterTitle {
+    color: #f5f5f5;
+    font-size: 20px;
+  }
+  .filterTitleWr {
+    display: flex;
+    justify-content: initial;
+  }
+  .filterAdded {
+    display: flex;
+  }
+
+  .filterAddedText {
+    color: #0a68f5;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: 16px 18px;
+    cursor: pointer;
+    background: #141a24;
+    display: flex;
+    margin-right: 8px;
+
+    img {
+      margin-left: 12px;
+    }
+  }
+  .filter {
+    padding-right: 0;
+  }
+  .filterArrow {
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+  .filterTitleWr {
+    margin-bottom: 0px;
+  }
+  .filterAdded {
+    align-items: flex-start;
+    margin-top: 13px;
+  }
+  .filterClearTab {
+    color: #b83333;
+    font-size: 12px;
+    font-family: Rubik;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  .rotate180 {
+    transform: rotate(180deg);
+  }
+  .filterItem {
+    margin-top: -3px;
+  }
+  .filterItemTitle {
+    font-size: 22px;
+  }
+
+  .filterItemCheckboxWr {
+    justify-content: initial;
+    display: block;
+  }
+  .checkboxWr {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .filterTitleWr {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

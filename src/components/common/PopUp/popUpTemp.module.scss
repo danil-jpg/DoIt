@@ -1,0 +1,40 @@
+:global(.subStrate) {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  z-index: -1;
+  overflow-y: auto;
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:global(.subStrate.active) {
+  opacity: 1;
+  z-index: 1000;
+}
+.modal {
+  background-color: #0b1729;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+  padding: 64px 228px 0;
+  transition: 0.3s;
+  width: auto;
+  height: auto;
+  position: static;
+}
+
+.cross {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2) rotate(90deg);
+  }
+}
