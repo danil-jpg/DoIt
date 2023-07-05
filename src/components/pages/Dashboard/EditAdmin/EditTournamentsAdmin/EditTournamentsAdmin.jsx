@@ -7,7 +7,7 @@ const EditTournamentsAdmin = ({ state }) => {
 	return (
 		<>
 			<EditAdminBtn>New/Edit Tournament</EditAdminBtn>
-			<BasicInfo />
+			<BasicInfo state={state.basic} />
 		</>
 	)
 }

@@ -2,25 +2,46 @@ import React, { useState } from "react";
 import Accordion from "../../../../../common/Accordion/Accordion";
 import InputFormContainer from "../../../../../UI/forms/InputFormContainer/InputFormContainer";
 import SelectFormContainer from "../../../../../UI/forms/SelectFormContainer/SelectFormContainer";
+import TextareaFormContainer from "../../../../../UI/forms/TextareaFormContainer/TextareaFormContainer";
+import UrlFormContainer from "../../../../../UI/forms/UrlFormContainer/UrlFormContainer";
 import s from './BasicInfo.module.scss';
 
 const BasicInfo = ({ state }) => {
 	const [hostValue, setHostValue] = useState('');
+	const [rulesValue, setRulesValue] = useState('');
+	const [urlValue, setUrlValue] = useState(state.url.value);
 
 	return (
 		<Accordion
-			header='Basic info'
+			header={state.title}
 		>
 			<SelectFormContainer
-				list={['Tournament name*', 'Basic info', 3]}
-				title='Host'
+				list={state.host.list}
+				title={state.host.title}
 			/>
 
 			<InputFormContainer
-				title='Tournament name*'
-				name='Tournament name*'
+				title={state.name.title}
+				name={state.name.title}
+				ph={state.name.ph}
 				value={hostValue}
 				setValue={setHostValue}
+			/>
+
+			<UrlFormContainer
+				label={state.url.label}
+				title={state.url.title}
+				name={state.url.title}
+				value={urlValue}
+				setValue={setUrlValue}
+			/>
+
+			<TextareaFormContainer
+				title={state.rules.title}
+				name={state.rules.title}
+				ph={state.rules.ph}
+				value={rulesValue}
+				setValue={setRulesValue}
 			/>
 		</Accordion>
 	)

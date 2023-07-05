@@ -107,6 +107,9 @@ import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
 import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
 
+//edit admin data
+import { tournamentEditData } from './editAdminData';
+
 
 export const headerData = {
 	logo: {
@@ -1077,8 +1080,6 @@ export const adminPanel = {
 	league: adminLeague
 }
 
-
-
 export const profile = {
 	img: {
 		avatar: avatarProfile,
@@ -1335,4 +1336,8 @@ export const tournamentBet = {
 		shrigma: shrigma,
 		shrigmaW: shrigmaW
 	}
+}
+
+export const editAdminData = {
+	tournaments: tournamentEditData
 }
