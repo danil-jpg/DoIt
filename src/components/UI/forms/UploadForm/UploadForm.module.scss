@@ -1,0 +1,19 @@
+.upload {
+	display: flex;
+	&__input {
+		position: absolute;
+		z-index: -1;
+		pointer-events: none;
+		visibility: hidden;
+	}
+	&__field {
+		flex: 0 1 339px;
+		display: flex;
+		align-items: center;
+		border-radius: 4px;
+		border: 2px solid #20252B;
+		background: #0F1215;
+		margin: 0 16px 0 0;
+	}
+
+}

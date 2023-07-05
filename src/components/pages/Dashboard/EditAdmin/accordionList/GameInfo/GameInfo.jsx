@@ -5,6 +5,7 @@ import RadioForm from "../../../../../UI/forms/RadioForm/RadioForm";
 import RadioFormContainer from "../../../../../UI/forms/RadioFormContainer/RadioFormContainer";
 import SelectFormContainer from "../../../../../UI/forms/SelectFormContainer/SelectFormContainer";
 import TitleForm from "../../../../../UI/forms/TitleForm/TitleForm";
+import UploadForm from "../../../../../UI/forms/UploadForm/UploadForm";
 import s from './GameInfo.module.scss';
 
 const GameInfo = ({ state }) => {
@@ -58,6 +59,8 @@ const GameInfo = ({ state }) => {
 					def={gameData.map.default}
 				/>
 			</div>
+
+			<UploadForm/>
 		</Accordion>
 	)
 }

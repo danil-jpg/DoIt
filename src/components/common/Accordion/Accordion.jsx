@@ -5,7 +5,7 @@ import AccordionHeader from "./AccordionHeader/AccordionHeader";
 import { isActive } from "../../utils/isActive";
 
 const Accordion = ({ children, header }) => {
-	const [opened, setOpened] = useState(false);
+	const [opened, setOpened] = useState(true);
 
 	const onOpenClickHandler = () => setOpened(!opened);
 
