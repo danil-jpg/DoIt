@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Accordion from "../../../../../common/Accordion/Accordion";
-import InputFormContainer from "../../../../../UI/forms/CheckboxAdmin/CheckboxAdmin";
+import InputFormContainer from "../../../../../UI/forms/InputFormContainer/InputFormContainer";
 import SelectFormContainer from "../../../../../UI/forms/SelectFormContainer/SelectFormContainer";
 import TextareaFormContainer from "../../../../../UI/forms/TextareaFormContainer/TextareaFormContainer";
 import UrlFormContainer from "../../../../../UI/forms/UrlFormContainer/UrlFormContainer";
@@ -37,7 +37,6 @@ const BasicInfo = ({ state }) => {
 			/>
 
 			<TextareaFormContainer
-				style={{ margin: '0' }}
 				title={state.rules.title}
 				name={state.rules.title}
 				ph={state.rules.ph}

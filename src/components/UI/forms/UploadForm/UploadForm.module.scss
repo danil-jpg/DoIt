@@ -1,5 +1,6 @@
 .upload {
 	display: flex;
+	margin: 0 0 22px;
 	&__input {
 		position: absolute;
 		z-index: -1;
@@ -8,6 +9,7 @@
 	}
 	&__field {
 		flex: 0 1 339px;
+		min-height: 40px;
 		padding: 10px 16px 10px;
 		display: flex;
 		align-items: center;
@@ -15,6 +17,11 @@
 		border: 2px solid #20252b;
 		background: #0f1215;
 		margin: 0 16px 0 0;
+		color: #3c434d;
+		font-size: 16px;
+		&.selected {
+			color: #fff;
+		}
 	}
 	&__btn {
 		width: 100%;

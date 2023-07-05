@@ -1,11 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import TitleForm from "../TitleForm/TitleForm";
 import s from './UploadForm.module.scss';
+import { isActive } from "../../../utils/isActive";
 
 const UploadForm = ({ title, text, style }) => {
+	const [fieldText, setFieldText] = useState(text);
+	const [fileSelected, setFileSelected] = useState(false);
 
 	const onChangeHandler = e => {
-		console.log(e.currentTarget)
+		setFieldText(e.currentTarget.files[0].name);
+		setFileSelected(true);
 	}
 
 	return (
@@ -18,7 +23,9 @@ const UploadForm = ({ title, text, style }) => {
 					className={s.upload__input}
 					onChange={e => { onChangeHandler(e) }}
 				/>
-				<p className={s.upload__field}>lol</p>
+				<p className={`${s.upload__field} ${isActive(fileSelected, s.selected)}`}>
+					{fieldText}
+				</p>
 				<div className={`${s.upload__btn} button`}>Upload</div>
 			</label>
 		</>

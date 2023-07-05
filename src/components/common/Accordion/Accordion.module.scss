@@ -1,6 +1,10 @@
 .accordion {
 	border: 1px solid #20252B;
 	background: #0F1215;
+	margin: 0 0 28px;
+	&:last-child{
+		margin: 0;
+	}
 	&__header {
 		padding: 31px 70px 31px 30px;
 		cursor: pointer;
@@ -31,7 +35,6 @@
 		overflow: hidden;
 		opacity: 0;
 		transition: all .2s ease;
-		padding: 0 0 20px;
 	}
 	&__container {
 		padding: 0 44px;

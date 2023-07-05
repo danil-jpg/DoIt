@@ -44,7 +44,7 @@ const GameInfo = ({ state }) => {
 
 			<div className={s.selectList}>
 				<SelectFormContainer
-					style={{ flex: '0 0 108px'}}
+					style={{ flex: '0 0 108px' }}
 					title={gameData.mode.title}
 					name={gameData.mode.title}
 					list={gameData.mode.list}
@@ -52,7 +52,7 @@ const GameInfo = ({ state }) => {
 				/>
 
 				<SelectFormContainer
-					style={{ flex:'0 0 276px' }}
+					style={{ flex: '0 0 276px' }}
 					title={gameData.map.title}
 					name={gameData.map.title}
 					list={gameData.map.list}
@@ -60,7 +60,17 @@ const GameInfo = ({ state }) => {
 				/>
 			</div>
 
-			<UploadForm/>
+			<UploadForm
+				title={gameData.bannerUpload.title}
+				text={gameData.bannerUpload.ph}
+				titleBtn={gameData.bannerUpload.titleBtn}
+			/>
+
+			<UploadForm
+				title={gameData.bgUpload.title}
+				text={gameData.bgUpload.ph}
+				titleBtn={gameData.bgUpload.titleBtn}
+			/>
 		</Accordion>
 	)
 }
