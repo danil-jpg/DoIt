@@ -1,0 +1,140 @@
+.bodyPopUp {
+  width: 100%;
+  max-width: 698px;
+  display: block;
+  padding: 52px 228px 0;
+  position: relative;
+  height: 664px;
+  padding: 62px 228px 0;
+}
+.popUp__logo {
+  margin: 0 auto;
+}
+.popUp__title {
+  margin-top: 44px;
+  color: #e6e6e6;
+  text-align: center;
+  font-size: 32px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+.buttonPopUp {
+  color: var(--white-96, #f5f5f5);
+  text-align: center;
+  font-size: 16px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-top: 22px;
+  border-radius: 2px;
+  background: var(--primary-gradient, linear-gradient(180deg, #2788f6 0%, #0960e0 100%));
+  width: 241px;
+  height: 44px;
+  margin-bottom: 30px;
+  margin-top: -2px;
+}
+.loginVia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginViaText {
+  color: #627ca3;
+  font-size: 16px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.loginViaLine {
+  display: flex;
+  width: 216px;
+  justify-content: space-between;
+}
+
+.viaWr {
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid #16263d;
+  background: #0b1729;
+}
+
+.links {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  .link:nth-of-type(2) {
+    margin-top: 12px;
+    span {
+      color: rgba(98, 124, 163, 1);
+      margin-left: 6px;
+    }
+  }
+}
+
+.link {
+  color: #0a68f5;
+  text-align: center;
+  font-size: 16px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.linkSign {
+}
+.inputWr {
+  input {
+    background: transparent;
+    transition: 0.3s;
+    border: 1px solid #16263d;
+    height: 40px;
+    &:focus {
+      border-color: #0a68f5;
+    }
+  }
+  h2 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 5px;
+  }
+}
+.overflow-y {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .bodyPopUp {
+    padding: 83px 67px;
+    height: 749px;
+  }
+  .popUp__title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+  }
+  .buttonPopUp {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .loginViaText {
+    font-size: 14px;
+  }
+  .links {
+    margin-top: 21px;
+  }
+  .link {
+    font-size: 14px;
+  }
+}

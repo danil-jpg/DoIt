@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './popUpSignIn.module.scss';
 import PopUpTemp from '../PopUpTemp';
 import logo from '../../../../assets/images/PopUps/logo.png';
 import logoW from '../../../../assets/images/PopUps/logo.png?as=webp';
@@ -13,19 +12,21 @@ import steam from '../../../../assets/images/PopUps/steam.png';
 import steamW from '../../../../assets/images/PopUps/steam.png?as=webp';
 import Picture from '../../../UI/Picture/Picture';
 import InputFormContainer from '../../../UI/forms/InputFormContainer/InputFormContainer';
+import s from './popUpSignIn.module.scss';
 import { useState } from 'react';
-import Button from '../../../UI/buttons/Button/Button';
 
 const PopUpSignIn = () => {
+  const [visible, setVisible] = useState(true);
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
 
   return (
-    <PopUpTemp>
-      <div className={s.body}>
-        <Picture img={logo} webp={logoW} className={s.logo} />
-        <p className={s.title}>Login</p>
+    <PopUpTemp visible={visible} setVisible={setVisible}>
+      <div className='bodyPopUp'>
+        <Picture style={{ margin: '0 auto' }} img={logo} webp={logoW} classname={'popUpLogo'} />
+        <p className='popUp__title'>Login</p>
         <InputFormContainer
+          className={'inputWr'}
           style={{ width: '100%' }}
           ph={'google@gmail.com'}
           title={'Username or Email'}
@@ -33,35 +34,36 @@ const PopUpSignIn = () => {
           setValue={setUser}
         />
         <InputFormContainer
+          className={'inputWr'}
           style={{ width: '100%' }}
           title={'Password'}
           type={'password'}
           value={password}
           setValue={setPassword}
         />
-        <button className={s.button}>Login</button>
-        <div className={s.loginVia}>
-          <p className={s.loginViaText}>or login with</p>
-          <div className={s.loginViaLine}>
-            <div className={s.viaWr}>
+        <button className='buttonPopUp'>Login</button>
+        <div className='loginVia'>
+          <p className='loginViaText'>or login with</p>
+          <div className='loginViaLine'>
+            <div className='viaWr'>
               <Picture img={face} webp={faceW} />
             </div>
-            <div className={s.viaWr}>
+            <div className='viaWr'>
               <Picture img={bliz} webp={blizW} />
             </div>
-            <div className={s.viaWr}>
+            <div className='viaWr'>
               <Picture img={google} webp={googleW} />
             </div>
-            <div className={s.viaWr}>
+            <div className='viaWr'>
               <Picture img={steam} webp={steamW} />
             </div>
           </div>
         </div>
-        <div className={s.links}>
-          <button className={s.link}>Forgot password?</button>
-          <button className={s.link}>
-            Don't have an account?<p className={s.linkSign}>Sign up!</p>
-          </button>
+        <div className='links'>
+          <p className='link'>Forgot password?</p>
+          <p className='link'>
+            Don't have an account?<span className='linkSign'>Sign up!</span>
+          </p>
         </div>
       </div>
     </PopUpTemp>
