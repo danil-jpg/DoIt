@@ -12,11 +12,10 @@ import steam from '../../../../assets/images/PopUps/steam.png';
 import steamW from '../../../../assets/images/PopUps/steam.png?as=webp';
 import Picture from '../../../UI/Picture/Picture';
 import InputFormContainer from '../../../UI/forms/InputFormContainer/InputFormContainer';
-import s from './popUpSignIn.module.scss';
 import { useState } from 'react';
 
 const PopUpSignIn = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
 

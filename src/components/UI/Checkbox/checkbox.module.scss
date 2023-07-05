@@ -4,10 +4,12 @@
   user-select: none;
   cursor: pointer;
   position: relative;
+  transition: 0.3s;
 }
 
 .customCheckboxLabel::before {
   content: '';
+  transition: 0.3s;
   display: inline-block;
   border: 1px solid #67707a;
   width: 16px;
@@ -21,6 +23,7 @@
 
 .customCheckboxLabel.active {
   position: relative;
+  transition: 0.3s;
   &::before {
     content: '';
     border-color: #0a68f5;

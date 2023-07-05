@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import s from './Main.module.scss';
 import Header from '../../common/Header/Header';
 import PopUpSignIn from '../../common/PopUp/PopUpSingIn/PopUpSignIn';
+import PopUpSignUp from '../../common/PopUp/PopUpSignUp/PopUpSignUp';
+import PopUpReset from '../../common/PopUp/PopUpReset/PopUpReset';
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
@@ -50,6 +52,8 @@ const Main = (props) => {
         </Routes>
       </Suspense>
       <PopUpSignIn />
+      <PopUpSignUp />
+      <PopUpReset />
     </main>
   );
 };

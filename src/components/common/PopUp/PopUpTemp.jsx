@@ -4,7 +4,7 @@ import { useScrollbarWidth } from '../../utils/useScrollbarWidth';
 import closeIcon from '../../../assets/icons/close.svg';
 import './popUp.scss';
 
-const PopUpTemp = ({ visible = true, setVisible, modalClass = '', children }) => {
+const PopUpTemp = ({ visible, setVisible, modalClass = '', children }) => {
   const res = useScrollbarWidth();
 
   const cssStyles = ['subStrate'];
@@ -20,15 +20,16 @@ const PopUpTemp = ({ visible = true, setVisible, modalClass = '', children }) =>
 
   if (visible === true) {
     cssStyles.push('active');
-    bodyScroll(res);
   }
+  useEffect(() => {
+    bodyScroll(res);
+  }, [visible]);
 
   return (
     <div
       className={`${cssStyles.join(' ')}`}
       onClick={() => {
         setVisible(false);
-        bodyScroll(res);
       }}>
       <div
         className={`${s.modal} ${modalClass}`}
@@ -42,7 +43,6 @@ const PopUpTemp = ({ visible = true, setVisible, modalClass = '', children }) =>
             className={s.cross}
             onClick={() => {
               setVisible(false);
-              bodyScroll(res);
             }}></img>
         </div>
         {children}
