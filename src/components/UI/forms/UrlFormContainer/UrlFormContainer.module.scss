@@ -8,13 +8,12 @@
 	}
 	&__wrap {
 		position: relative;
-		padding: 0 0 0 90px;
 	}
 	&__label {
 		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
+		top: 1px;
+		left: 1px;
+		height: calc(100% - 2px);
 		padding: 0 16px;
 		color: #78828F;
 		font-size: 16px;

@@ -11,6 +11,7 @@ const UrlFormContainer = ({ style, title, name, type, ph, value, setValue, label
 			<h2 className={`${s.inputContainer__title}`}>{title}</h2>
 			<div className={`${s.inputContainer__wrap}`}>
 				<InputForm
+					style={{paddingLeft: '110px'}}
 					name={name}
 					ph={ph}
 					type={type}
