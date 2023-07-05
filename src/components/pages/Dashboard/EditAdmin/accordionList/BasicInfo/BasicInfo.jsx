@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Accordion from "../../../../../common/Accordion/Accordion";
-import InputFormContainer from "../../../../../UI/forms/InputFormContainer/InputFormContainer";
+import InputFormContainer from "../../../../../UI/forms/CheckboxAdmin/CheckboxAdmin";
 import SelectFormContainer from "../../../../../UI/forms/SelectFormContainer/SelectFormContainer";
 import TextareaFormContainer from "../../../../../UI/forms/TextareaFormContainer/TextareaFormContainer";
 import UrlFormContainer from "../../../../../UI/forms/UrlFormContainer/UrlFormContainer";
