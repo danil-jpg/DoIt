@@ -64,6 +64,8 @@
   border-radius: 2px;
   border: 1px solid #16263d;
   background: #0b1729;
+  display: flex;
+  align-items: center;
 }
 
 .links {
@@ -192,7 +194,7 @@
   }
 }
 .buttonPopUp {
-  margin-top: 21px;
+  // margin-top: 21px;
 }
 .popUp__title_sm {
   font-size: 28px;
@@ -200,6 +202,9 @@
 .bodyPopUpSm {
   height: auto;
   padding: 62px 228px 62px;
+}
+.buttonPopUpStep2 {
+  margin-top: 21px;
 }
 // <p className='date-text'>Date of birth</p>
 // <div className='date'>

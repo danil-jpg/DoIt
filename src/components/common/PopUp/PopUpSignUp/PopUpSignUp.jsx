@@ -16,14 +16,13 @@ import { useState } from 'react';
 import SelectFormContainer from '../../../UI/forms/SelectFormContainer/SelectFormContainer';
 import Checkbox from '../../../UI/Checkbox/Checkbox';
 
-const PopUpSignUp = () => {
-  const [visible, setVisible] = useState(false);
+const PopUpSignUp = ({ signUp = false, setSignUp, setLogin, setSignIn }) => {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   const [step, setStep] = useState(1);
 
   return (
-    <PopUpTemp visible={visible} setVisible={setVisible}>
+    <PopUpTemp visible={signUp} setVisible={setSignUp}>
       {step === 1 ? (
         <div className='bodyPopUp'>
           <Picture style={{ margin: '0 auto' }} img={logo} webp={logoW} classname={'popUpLogo'} />
@@ -64,7 +63,14 @@ const PopUpSignUp = () => {
               </div>
             </div>
           </div>
-          <div className='links'>
+          <div
+            className='links'
+            onClick={() => {
+              setSignUp(false);
+              document.body.style = 'padding-right:0';
+              document.body.classList.remove('overflow-y');
+              setSignIn(true);
+            }}>
             <p className='link'>Already have an account?</p>
           </div>
         </div>
@@ -99,7 +105,16 @@ const PopUpSignUp = () => {
               I’m have at least 13 years of age and agree to the <span>terms of service</span>
             </p>
           </div>
-          <button className='buttonPopUp'>Create an account</button>
+          <button
+            className='buttonPopUp buttonPopUpStep2'
+            onClick={() => {
+              setLogin(true);
+              setSignUp(false);
+              document.body.style = 'padding-right:0';
+              document.body.classList.remove('overflow-y');
+            }}>
+            Create an account
+          </button>
         </div>
       )}
     </PopUpTemp>

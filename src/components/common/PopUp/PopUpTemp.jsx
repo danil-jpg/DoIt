@@ -22,7 +22,9 @@ const PopUpTemp = ({ visible, setVisible, modalClass = '', children }) => {
     cssStyles.push('active');
   }
   useEffect(() => {
-    bodyScroll(res);
+    if (visible === true) {
+      bodyScroll(res);
+    }
   }, [visible]);
 
   return (
@@ -30,6 +32,7 @@ const PopUpTemp = ({ visible, setVisible, modalClass = '', children }) => {
       className={`${cssStyles.join(' ')}`}
       onClick={() => {
         setVisible(false);
+        bodyScroll(res);
       }}>
       <div
         className={`${s.modal} ${modalClass}`}
@@ -43,6 +46,7 @@ const PopUpTemp = ({ visible, setVisible, modalClass = '', children }) => {
             className={s.cross}
             onClick={() => {
               setVisible(false);
+              bodyScroll(res);
             }}></img>
         </div>
         {children}

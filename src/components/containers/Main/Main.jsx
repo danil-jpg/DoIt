@@ -5,6 +5,7 @@ import Header from '../../common/Header/Header';
 import PopUpSignIn from '../../common/PopUp/PopUpSingIn/PopUpSignIn';
 import PopUpSignUp from '../../common/PopUp/PopUpSignUp/PopUpSignUp';
 import PopUpReset from '../../common/PopUp/PopUpReset/PopUpReset';
+import { useState } from 'react';
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
@@ -30,9 +31,36 @@ const TournamentsBracket = React.lazy(() =>
 );
 
 const Main = (props) => {
+  const [login, setLogin] = useState(false);
+
+  const [signIn, setSignIn] = useState(false);
+  const [signUp, setSignUp] = useState(false);
+  const [reset, setReset] = useState(false);
+
   return (
     <main className={s.main}>
-      <Header />
+      <Header
+        login={login}
+        setLogin={setLogin}
+        signIn={signIn}
+        setSignIn={setSignIn}
+        signUp={signUp}
+        setSignUp={setSignUp}
+      />
+      <PopUpSignIn
+        signIn={signIn}
+        setSignIn={setSignIn}
+        setSignUp={setSignUp}
+        setLogin={setLogin}
+        setReset={setReset}
+      />
+      <PopUpSignUp
+        setSignIn={setSignIn}
+        signUp={signUp}
+        setSignUp={setSignUp}
+        setLogin={setLogin}
+      />
+      <PopUpReset reset={reset} setReset={setReset} setSignIn={setSignIn} />
       <Suspense fallback={<>Loading</>}>
         <Routes>
           <Route index element={<Home />} />
@@ -51,9 +79,6 @@ const Main = (props) => {
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
         </Routes>
       </Suspense>
-      <PopUpSignIn />
-      <PopUpSignUp />
-      <PopUpReset />
     </main>
   );
 };

@@ -14,13 +14,12 @@ import Picture from '../../../UI/Picture/Picture';
 import InputFormContainer from '../../../UI/forms/InputFormContainer/InputFormContainer';
 import { useState } from 'react';
 
-const PopUpSignIn = () => {
-  const [visible, setVisible] = useState(false);
+const PopUpSignIn = ({ signIn = false, setSignIn, setLogin, setSignUp, setReset }) => {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
 
   return (
-    <PopUpTemp visible={visible} setVisible={setVisible}>
+    <PopUpTemp visible={signIn} setVisible={setSignIn}>
       <div className='bodyPopUp'>
         <Picture style={{ margin: '0 auto' }} img={logo} webp={logoW} classname={'popUpLogo'} />
         <p className='popUp__title'>Login</p>
@@ -40,7 +39,16 @@ const PopUpSignIn = () => {
           value={password}
           setValue={setPassword}
         />
-        <button className='buttonPopUp'>Login</button>
+        <button
+          className='buttonPopUp'
+          onClick={() => {
+            setSignIn(false);
+            setLogin(true);
+            document.body.style = 'padding-right:0';
+            document.body.classList.remove('overflow-y');
+          }}>
+          Login
+        </button>
         <div className='loginVia'>
           <p className='loginViaText'>or login with</p>
           <div className='loginViaLine'>
@@ -59,8 +67,24 @@ const PopUpSignIn = () => {
           </div>
         </div>
         <div className='links'>
-          <p className='link'>Forgot password?</p>
-          <p className='link'>
+          <p
+            className='link'
+            onClick={() => {
+              setReset(true);
+              setSignIn(false);
+              document.body.style = 'padding-right:0';
+              document.body.classList.remove('overflow-y');
+            }}>
+            Forgot password?
+          </p>
+          <p
+            className='link'
+            onClick={() => {
+              setSignIn(false);
+              document.body.style = 'padding-right:0';
+              document.body.classList.remove('overflow-y');
+              setSignUp(true);
+            }}>
             Don't have an account?<span className='linkSign'>Sign up!</span>
           </p>
         </div>

@@ -9,10 +9,9 @@ import Button from '../../UI/buttons/Button/Button';
 import { isActive } from '../../utils/isActive';
 import { onClickActiveHandler } from '../../utils/onClickActiveHandler';
 
-const Header = ({ loginPopUp, setLoginPopUp, ...props }) => {
+const Header = ({ login, setLogin, signIn, setSignIn, signUp, setSignUp, ...props }) => {
   const [state, setState] = useState(headerData);
   const [activeBurger, setActiveBurger] = useState(false);
-  const [login, setLogin] = useState(false);
 
   return (
     <header className={s.header}>
@@ -50,13 +49,18 @@ const Header = ({ loginPopUp, setLoginPopUp, ...props }) => {
           ) : (
             <div className={s.buttonList}>
               <Button
-                // onClick={() => onClickActiveHandler(login, setLogin)}
                 onClick={() => {
-                  setLoginPopUp(!loginPopUp);
+                  setSignIn(!signIn);
                 }}>
                 Login
               </Button>
-              <Button color={'blue'}>Sign up</Button>
+              <Button
+                color={'blue'}
+                onClick={() => {
+                  setSignUp(true);
+                }}>
+                Sign up
+              </Button>
             </div>
           )}
         </div>
