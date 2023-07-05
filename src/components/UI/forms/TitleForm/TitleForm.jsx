@@ -3,7 +3,12 @@ import s from './TitleForm.module.scss';
 
 const TitleForm = ({ title, style }) => {
 	return (
-		<h2 className={s.title} style={style ? style : {}}>{title}</h2>
+		<>
+			{title
+				? <h2 className={s.title} style={style ? style : {}}>{title}</h2>
+				: <></>}
+		</>
+
 	)
 }
 
