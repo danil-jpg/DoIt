@@ -106,6 +106,17 @@ import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 // 
 import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
 import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
+// 
+import gameDota from '../assets/images/GameSubscribe/dota.png'
+import gameDotaW from '../assets/images/GameSubscribe/dota.png?as=webp'
+import cs from '../assets/images/GameSubscribe/cs.png'
+import csW from '../assets/images/GameSubscribe/cs.png?as=webp'
+import starCr from '../assets/images/GameSubscribe/starCr.png'
+import starCrW from '../assets/images/GameSubscribe/starCr.png?as=webp'
+import valorant from '../assets/images/GameSubscribe/valorant.png'
+import valorantW from '../assets/images/GameSubscribe/valorant.png?as=webp'
+import fifa from '../assets/images/GameSubscribe/fifa.png'
+import fifaW from '../assets/images/GameSubscribe/fifa.png?as=webp'
 
 
 export const headerData = {
@@ -117,12 +128,12 @@ export const headerData = {
 		{
 			id: v1(),
 			title: 'Play',
-			link: ''
+			link: './tournamentsMain'
 		},
 		{
 			id: v1(),
 			title: 'News',
-			link: ''
+			link: './news'
 		},
 		{
 			id: v1(),
@@ -132,7 +143,7 @@ export const headerData = {
 		{
 			id: v1(),
 			title: 'Shop',
-			link: ''
+			link: './premium'
 		},
 		{
 			id: v1(),
@@ -1051,4 +1062,63 @@ export const tournamentBet = {
 		shrigma: shrigma,
 		shrigmaW: shrigmaW
 	}
+}
+
+export const gameSub = {
+	cards: [
+		{
+			name: 'Dota II',
+			key: v1(),
+			img: gameDota,
+			webp: gameDotaW
+		},
+		{
+			name: 'CS:GO',
+			key: v1(),
+			img: cs,
+			webp: csW,
+		},
+		{
+			name: 'StarCraft II',
+			key: v1(),
+			img: starCr,
+			webp: starCrW,
+		},
+		{
+			name: 'WarCraft III',
+			key: v1(),
+			img: gameDota,
+			webp: gameDotaW,
+		},
+		{
+			name: 'FIFA 2020',
+			key: v1(),
+			img: fifa,
+			webp: fifaW,
+		},
+		{
+			name: 'Valorant',
+			key: v1(),
+			img: valorant,
+			webp: valorantW,
+		},
+		{
+			name: 'WarCraft III',
+			key: v1(),
+			img: gameDota,
+			webp: gameDotaW,
+		},
+		{
+			name: 'StarCraft II',
+			key: v1(),
+			img: starCr,
+			webp: starCrW,
+		},
+		{
+			name: 'StarCraft II',
+			key: v1(),
+			img: gameDota,
+			webp: gameDotaW,
+		}
+	]
 }

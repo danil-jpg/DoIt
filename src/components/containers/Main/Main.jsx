@@ -6,7 +6,6 @@ import PopUpSignIn from '../../common/PopUp/PopUpSingIn/PopUpSignIn';
 import PopUpSignUp from '../../common/PopUp/PopUpSignUp/PopUpSignUp';
 import PopUpReset from '../../common/PopUp/PopUpReset/PopUpReset';
 import { useState } from 'react';
-import TournamentBet from '../../pages/TournamentsBet/TournamentsBet.jsx';
 
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
@@ -24,12 +23,11 @@ const TournamentsPlayer = React.lazy(() =>
 const TournamentsStanding = React.lazy(() =>
   import('../../pages/TournamentsStanding/TournamentStanding.jsx')
 );
-// const TournamentBet = React.lazy(() => {
-//   import('../../pages/TournamentsBet/TournamentsBet.jsx');
-// });
+const TournamentBet = React.lazy(() => import('../../pages/TournamentsBet/TournamentsBet.jsx'));
 const TournamentsBracket = React.lazy(() =>
   import('../../pages/TournamentsBracket/TournamentsBracket.jsx')
 );
+const GamePage = React.lazy(() => import('../../pages/GamesSub/GameSub.jsx'));
 
 const Main = (props) => {
   const [login, setLogin] = useState(false);
@@ -78,6 +76,7 @@ const Main = (props) => {
           <Route path='/tournamentsStanding' element={<TournamentsStanding />} />
           <Route path='/tournamentsBet' element={<TournamentBet />} />
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
+          <Route path='/games' element={<GamePage />} />
         </Routes>
       </Suspense>
     </main>
