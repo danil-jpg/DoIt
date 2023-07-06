@@ -1,7 +1,6 @@
 import React from "react";
 import Accordion from "../../../../../common/Accordion/Accordion";
 import s from './Streams.module.scss';
-import CheckboxAdmin from "../../../../../UI/forms/CheckboxAdmin/CheckboxAdmin";
 import { useState } from "react";
 import InputFormContainer from "../../../../../UI/forms/InputFormContainer/InputFormContainer";
 import SelectForm from "../../../../../UI/forms/SelectForm/SelectForm";
@@ -35,8 +34,8 @@ const Streams = ({ state }) => {
 				<InputFormContainer
 					style={inputStyle}
 					title={state.stream2.title}
-					value={firstStream}
-					setValue={setFirstStream}
+					value={secondStream}
+					setValue={setSecondStream}
 				/>
 				<SelectForm
 					style={selectStyle}
@@ -47,15 +46,15 @@ const Streams = ({ state }) => {
 				<InputFormContainer
 					style={inputStyle}
 					title={state.stream3.title}
-					value={firstStream}
-					setValue={setFirstStream}
+					value={thirdStream}
+					setValue={setThirdStream}
 				/>
 				<SelectForm
 					style={selectStyle}
 					list={state.stream3.list} />
 			</div>
 			<Button to=''
-			style={{maxWidth: '187px', margin: '0 auto'}}>{state.titleBtn}</Button>
+				style={{ maxWidth: '187px', margin: '0 auto' }}>{state.titleBtn}</Button>
 		</Accordion>
 	)
 }

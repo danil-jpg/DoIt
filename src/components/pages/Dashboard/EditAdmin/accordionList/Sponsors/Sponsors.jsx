@@ -1,8 +1,9 @@
 import React from "react";
 import Accordion from "../../../../../common/Accordion/Accordion";
 import s from './Sponsors.module.scss';
-import CheckboxAdmin from "../../../../../UI/forms/CheckboxAdmin/CheckboxAdmin";
 import { useState } from "react";
+import UploadForm from "../../../../../UI/forms/UploadForm/UploadForm";
+import Button from "../../../../../UI/buttons/Button/Button";
 
 const Sponsors = ({ state }) => {
 	const [lobbyValue, setLobbyValue] = useState();
@@ -11,7 +12,17 @@ const Sponsors = ({ state }) => {
 		<Accordion
 			header={state.title}
 		>
-
+			<div className={s.sponsors}>
+				{state.list.map((el, index) => (
+					<UploadForm
+						key={el.id}
+						title={el.title}
+						text={el.ph}
+					/>
+				))}
+			</div>
+			<Button to=''
+				style={{ maxWidth: '187px', margin: '40px auto 0' }}>{state.titleBtn}</Button>
 		</Accordion>
 	)
 }
