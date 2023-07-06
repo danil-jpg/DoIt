@@ -71,12 +71,13 @@ const Main = (props) => {
           <Route path='/edit/*' element={<EditAdmin />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/tournamentsMain' element={<TournamentsMain />} />
+          {/* <Route path='/tournamentsMain' element={<TournamentsMain />} />
           <Route path='/tournamentsInfo' element={<TournamentsInfo />} />
           <Route path='/tournamentsPlayer' element={<TournamentsPlayer />} />
           <Route path='/tournamentsStanding' element={<TournamentsStanding />} />
-          <Route path='/tournamentsBet' element={<TournamentBet />} />
-          <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
+          <Route path='/tournamentBet' element={<TournamentBet />} />
+          <Route path='/tournamentsBracket' element={<TournamentsBracket />} /> */}
+
         </Routes>
       </Suspense>
     </main>

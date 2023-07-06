@@ -1,9 +1,11 @@
 import React, { Children } from "react";
 import s from '../Accordion.module.scss';
 
-const AccordionHeader = ({ children }) => {
+const AccordionHeader = ({ children, onClick, opened }) => {
 	return (
-		<div className={s.accordeon__header}>
+		<div className={`${s.accordion__header}`}
+			onClick={onClick}
+		>
 			{children}
 		</div>
 	)

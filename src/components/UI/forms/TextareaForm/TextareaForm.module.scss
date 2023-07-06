@@ -1,0 +1,21 @@
+.textarea {
+	padding: 9px 16px 8px;
+	color: #CCCDCD;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 2px solid #20252B;
+	background: #0F1215;
+	display: block;
+	width: 100%;
+	resize: none;
+	height: 184px;
+	&::placeholder {
+		color: #20252B;
+	}
+	&:hover {
+		box-shadow: 0 0 5px rgb(42, 51, 66);
+	}
+	&:focus {
+		border-color: rgb(42, 51, 66);
+	}
+}

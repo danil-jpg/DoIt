@@ -1,30 +1,17 @@
 import React from "react";
-import { useState } from "react";
-import Accordion from "../../../../common/Accordion/Accordion";
-import InputFormContainer from "../../../../UI/forms/InputFormContainer/InputFormContainer";
-import SelectFormContainer from "../../../../UI/forms/SelectFormContainer/SelectFormContainer";
+import EditAdminBtn from "../../../../UI/buttons/EditAdminBtn/EditAdminBtn";
+import BasicInfo from "../accordionList/BasicInfo/BasicInfo";
+import GameInfo from "../accordionList/GameInfo/GameInfo";
+import RegInfo from "../accordionList/RegInfo/RegInfo";
 import s from './EditTournamentsAdmin.module.scss';
 
-const EditTournamentsAdmin = () => {
-	const [hostValue, setHostValue] = useState('');
-
+const EditTournamentsAdmin = ({ state }) => {
 	return (
 		<>
-			<Accordion
-				header='Basic info'
-			>
-				<SelectFormContainer
-					list={['Tournament name*', 'Basic info', 3]}
-					title='Host'
-				/>
-
-				<InputFormContainer
-					title='Tournament name*'
-					name='Tournament name*'
-					value={hostValue}
-					setValue={setHostValue}
-				/>
-			</Accordion>
+			<EditAdminBtn>New/Edit Tournament</EditAdminBtn>
+			<BasicInfo state={state.basic} />
+			<GameInfo state={state.game}/>
+			<RegInfo state={state.reg}/>
 		</>
 	)
 }

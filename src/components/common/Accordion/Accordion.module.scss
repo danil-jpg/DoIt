@@ -1,0 +1,55 @@
+.accordion {
+	border: 1px solid #20252B;
+	background: #0F1215;
+	margin: 0 0 28px;
+	&:last-child{
+		margin: 0;
+	}
+	&__header {
+		padding: 31px 70px 31px 30px;
+		cursor: pointer;
+		color: #CCCDCD;
+		font-size: 22px;
+		font-weight: 500;
+		position: relative;
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 30px;
+			width: 17px;
+			height: 3px;
+			border-radius: 4px;
+			background: #CCCDCD;
+			transition: transform .2s;
+			transform: rotate(0);
+		}
+		&::before {
+			transform: rotate(90deg);
+		}
+	}
+	&__body {
+		display: grid;
+		grid-template-rows: 0fr;
+		overflow: hidden;
+		opacity: 0;
+		transition: all .2s ease;
+	}
+	&__container {
+		padding: 0 44px;
+		min-height: 0;
+	}
+	&.active {
+		& .accordion__body {
+			grid-template-rows: 1fr;
+			opacity: 1;
+		}
+		& .accordion__header::before {
+			transform: rotate(0);
+		}
+		& .accordion__header::after {
+			transform: rotate(180deg);
+		}
+	}
+}
