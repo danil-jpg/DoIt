@@ -1,7 +1,19 @@
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
+  entry: path.resolve(__dirname, '../src/index.jsx'),
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.jsx']
+  },
+  output: {
+    path: path.resolve(__dirname, '..', 'docs/'),
+    filename: 'scripts/bundle[hash].js',
+    clean: true,
+    publicPath: '/'
+  },
   devServer: {
     hot: true,
     open: true,
@@ -40,12 +52,31 @@ module.exports = {
         'sass-loader',
       ],
     },
+    {
+      test: /\.(tsx|jsx|js)$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: 'babel-loader'
+        }
+      ]
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+      type: 'asset/resource',
+      generator: {
+        filename: 'fonts/[name][hash][ext]'
+      }
+    }
     ]
   },
 
   devtool: 'cheap-module-source-map',
   plugins: [
     new ReactRefreshWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, '..', './src/index.html')
+    }),
   ],
 }
 

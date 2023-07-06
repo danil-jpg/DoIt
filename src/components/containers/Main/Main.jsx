@@ -7,6 +7,7 @@ import PopUpSignUp from '../../common/PopUp/PopUpSignUp/PopUpSignUp';
 import PopUpReset from '../../common/PopUp/PopUpReset/PopUpReset';
 import { useState } from 'react';
 import TournamentBet from '../../pages/TournamentsBet/TournamentsBet.jsx';
+
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
 const Premium = React.lazy(() => import('../../pages/Premium/Premium.jsx'));
