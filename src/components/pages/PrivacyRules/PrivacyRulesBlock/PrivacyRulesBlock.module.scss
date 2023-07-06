@@ -1,0 +1,36 @@
+@import "..//..//..//..//styles/breakpoint.scss";
+
+.main{
+    &__blok{
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    &__number{
+        color: #67707A;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    &__descr{
+        color: #67707A;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    &__right{
+        max-width: 600px;
+    }
+}
+
+@include media-breakpoint-down(xs){
+    .main__blok{
+        flex-direction: column;
+        gap: 10px;
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+    .main__right{
+       
+    }
+}

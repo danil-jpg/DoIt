@@ -1098,3 +1098,15 @@ export const leaguesPageData ={
 		title:'StarCraft II:   Leagues'
 	}
 }
+
+export const privacyData ={
+	title:{
+		title:"Terms of Use"
+	},
+	subtitle:{
+		subtitle:'The purpose'
+	},
+	descr:{
+		descr:"A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company."
+	}
+}

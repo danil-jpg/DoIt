@@ -14,6 +14,7 @@ const EditAdmin = React.lazy(() => import('../../pages/Dashboard/EditAdmin/EditA
 const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
 const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
 const Leagues = React.lazy(()=> import('../../pages/Leagues/Leagues'))
+const PrivacyRules = React.lazy(()=> import('../../pages/PrivacyRules/PrivacyRules.jsx'))
 const TournamentsPlayer = React.lazy(() =>
   import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
 );
@@ -48,6 +49,7 @@ const Main = (props) => {
           <Route path='/tournamentBet' element={<TournamentBet />} />
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
           <Route path='/leagues' element ={<Leagues/>}/>
+          <Route path='/privacy' element ={<PrivacyRules/>}/>
         </Routes>
       </Suspense>
     </main>
