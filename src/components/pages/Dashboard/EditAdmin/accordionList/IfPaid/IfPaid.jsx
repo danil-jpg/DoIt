@@ -13,7 +13,7 @@ const IfPaid = ({ state }) => {
 			<div className={s.paid}>
 				<p className={s.paid__text}>{state.text}</p>
 				<InputForm
-					style={{maxWidth: '214px', margin: '0 0 22px'}}
+					style={{maxWidth: '214px'}}
 					value={value}
 					setValue={setValue} />
 			</div>

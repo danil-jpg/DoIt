@@ -72,9 +72,42 @@ const gameTour = {
 	},
 }
 
-const IfPaid = {
+const IfPaidTour = {
 	title: 'if Paid',
 	text: 'Register cost'
+}
+
+const playerListTour = {
+	title: 'Player list',
+	btnList: [
+		{
+			id: v1(),
+			title: 'List of players',
+			link: '',
+		},
+		{
+			id: v1(),
+			title: 'Edit list of players',
+			link: '',
+		}
+	],
+	checkbox: {
+		title: 'Don’t show tournament on website',
+		checked: false,
+	}
+}
+
+const leaguesTour = {
+	title: 'Leagues',
+	text: 'Connect tournament with league',
+	titleBtn: {
+		title: 'Choose League',
+		link: ''
+	},
+	checkbox: {
+		title: 'Only League System',
+		checked: false,
+	}
 }
 
 const regTour = {
@@ -127,5 +160,7 @@ export const tournamentEditData = {
 	basic: basicTour,
 	game: gameTour,
 	reg: regTour,
-	ifPaid: IfPaid,
+	ifPaid: IfPaidTour,
+	players: playerListTour,
+	leagues: leaguesTour,
 }

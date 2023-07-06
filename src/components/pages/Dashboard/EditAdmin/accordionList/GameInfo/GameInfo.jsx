@@ -67,6 +67,7 @@ const GameInfo = ({ state }) => {
 			/>
 
 			<UploadForm
+				style={{ margin: 0 }}
 				title={gameData.bgUpload.title}
 				text={gameData.bgUpload.ph}
 				titleBtn={gameData.bgUpload.titleBtn}

@@ -44,6 +44,7 @@
 		& .accordion__body {
 			grid-template-rows: 1fr;
 			opacity: 1;
+			padding: 0 0 22px;
 		}
 		& .accordion__header::before {
 			transform: rotate(0);
