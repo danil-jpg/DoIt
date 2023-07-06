@@ -30,6 +30,7 @@ const gameTour = {
 	},
 	type: {
 		title: 'Type',
+		name: 'gameType',
 		default: 'single',
 		radios: [
 			{
@@ -213,6 +214,7 @@ const prizePoolTour = {
 	type: {
 		title: 'Type',
 		default: 'money',
+		name: 'prizeType',
 		list: [
 			{
 				id: v1(),
@@ -244,6 +246,7 @@ const prizePoolTour = {
 	donate: {
 		title: 'Donate',
 		default: 'notActive',
+		name:'prizeDonate',
 		list: [
 			{
 				id: v1(),
@@ -263,6 +266,64 @@ const prizePoolTour = {
 	},
 }
 
+const votingTour = {
+	title: 'VOTING',
+	check1: {
+		title: 'Allow registred users in tournamnet to provide scores for every match',
+		checked: false,
+	},
+	check2: {
+		title: 'Allow regsitred users only in their match to provide scores',
+		checked: false,
+	}
+}
+
+const additionalTour = {
+	title: 'Additional requirements',
+	country: {
+		title: 'Country:',
+		titleBtn: 'Choose country',
+		link: ''
+	},
+	age: {
+		title: 'Min Age:',
+		value: ''
+	},
+	list: [
+		{
+			id: v1(),
+			title: 'PSN Account',
+			checked: false
+		},
+		{
+			id: v1(),
+			title: 'Xbox Account',
+			checked: false
+		},
+		{
+			id: v1(),
+			title: 'Steam Account',
+			checked: false
+		},
+		{
+			id: v1(),
+			title: 'League of Legends',
+			checked: false
+		},
+		{
+			id: v1(),
+			title: 'Blizzard Account',
+			checked: false
+		},
+		{
+			id: v1(),
+			title: 'Steam Account',
+			checked: false
+		},
+
+	]
+}
+
 export const tournamentEditData = {
 	basic: basicTour,
 	game: gameTour,
@@ -271,4 +332,6 @@ export const tournamentEditData = {
 	players: playerListTour,
 	leagues: leaguesTour,
 	prize: prizePoolTour,
+	voting: votingTour,
+	additional: additionalTour,
 }

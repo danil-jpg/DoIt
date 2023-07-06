@@ -98,6 +98,7 @@ const PrizePool = ({ state }) => {
 						<RadioFormContainer
 							title={state.type.title}
 							list={state.type.list}
+							name={state.type.name}
 							checked={typeChecked}
 							setChecked={setTypeChecked}
 						/>
@@ -165,6 +166,7 @@ const PrizePool = ({ state }) => {
 						<RadioFormContainer
 							title={state.donate.title}
 							list={state.donate.list}
+							name={state.donate.name}
 							checked={donateChecked}
 							setChecked={setDonateChecked}
 						/>

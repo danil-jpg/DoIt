@@ -3,7 +3,7 @@ import RadioForm from "../RadioForm/RadioForm";
 import TitleForm from "../TitleForm/TitleForm";
 import s from './RadioFormContainer.module.scss';
 
-const RadioFormContainer = ({ style, list, title, checked, setChecked}) => {
+const RadioFormContainer = ({ style, list, name, title, checked, setChecked }) => {
 
 	return (
 		<div
@@ -13,7 +13,7 @@ const RadioFormContainer = ({ style, list, title, checked, setChecked}) => {
 				{list.map(el => (
 					<RadioForm
 						key={el.id}
-						name={title}
+						name={name ? name : title}
 						title={el.title}
 						value={el.value}
 						checked={checked}

@@ -8,7 +8,7 @@ import s from './GameInfo.module.scss';
 
 const GameInfo = ({ state }) => {
 	const [gameData, setGameData] = useState(state);
-	const [typeChecked, setTypeChecked] = useState(gameData.type.default);
+	const [typeGChecked, setTypeGChecked] = useState(gameData.type.default);
 
 	return (
 		<Accordion
@@ -23,9 +23,10 @@ const GameInfo = ({ state }) => {
 
 			<RadioFormContainer
 				title={gameData.type.title}
+				name={gameData.type.name}
 				list={gameData.type.radios}
-				checked={typeChecked}
-				setChecked={setTypeChecked}
+				checked={typeGChecked}
+				setChecked={setTypeGChecked}
 			/>
 
 			<SelectFormContainer
