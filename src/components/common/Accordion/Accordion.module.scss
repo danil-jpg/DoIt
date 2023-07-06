@@ -1,7 +1,7 @@
 .accordion {
 	border: 1px solid #20252B;
 	background: #0F1215;
-	margin: 0 0 28px;
+	margin: 0 0 30px;
 	&:last-child{
 		margin: 0;
 	}
@@ -44,6 +44,7 @@
 		& .accordion__body {
 			grid-template-rows: 1fr;
 			opacity: 1;
+			padding: 0 0 22px;
 		}
 		& .accordion__header::before {
 			transform: rotate(0);

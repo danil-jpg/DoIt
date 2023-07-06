@@ -37,6 +37,7 @@ const BasicInfo = ({ state }) => {
 			/>
 
 			<TextareaFormContainer
+				style={{ margin: 0 }}
 				title={state.rules.title}
 				name={state.rules.title}
 				ph={state.rules.ph}

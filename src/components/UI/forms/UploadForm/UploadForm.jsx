@@ -4,7 +4,7 @@ import TitleForm from "../TitleForm/TitleForm";
 import s from './UploadForm.module.scss';
 import { isActive } from "../../../utils/isActive";
 
-const UploadForm = ({ title, text, style }) => {
+const UploadForm = ({ title, text, titleBtn = 'Upload', style }) => {
 	const [fieldText, setFieldText] = useState(text);
 	const [fileSelected, setFileSelected] = useState(false);
 
@@ -26,7 +26,7 @@ const UploadForm = ({ title, text, style }) => {
 				<p className={`${s.upload__field} ${isActive(fileSelected, s.selected)}`}>
 					{fieldText}
 				</p>
-				<div className={`${s.upload__btn} button`}>Upload</div>
+				<div className={`${s.upload__btn} button`}>{titleBtn}</div>
 			</label>
 		</>
 	)

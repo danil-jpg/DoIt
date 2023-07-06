@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import Accordion from "../../../../../common/Accordion/Accordion";
 import CheckboxAdmin from "../../../../../UI/forms/CheckboxAdmin/CheckboxAdmin";
-import RadioForm from "../../../../../UI/forms/RadioForm/RadioForm";
 import RadioFormContainer from "../../../../../UI/forms/RadioFormContainer/RadioFormContainer";
 import SelectFormContainer from "../../../../../UI/forms/SelectFormContainer/SelectFormContainer";
-import TitleForm from "../../../../../UI/forms/TitleForm/TitleForm";
 import UploadForm from "../../../../../UI/forms/UploadForm/UploadForm";
 import s from './GameInfo.module.scss';
 
 const GameInfo = ({ state }) => {
 	const [gameData, setGameData] = useState(state);
-	const [typeChecked, setTypeChecked] = useState(gameData.type.default);
+	const [typeGChecked, setTypeGChecked] = useState(gameData.type.default);
 
 	return (
 		<Accordion
@@ -25,9 +23,10 @@ const GameInfo = ({ state }) => {
 
 			<RadioFormContainer
 				title={gameData.type.title}
+				name={gameData.type.name}
 				list={gameData.type.radios}
-				checked={typeChecked}
-				setChecked={setTypeChecked}
+				checked={typeGChecked}
+				setChecked={setTypeGChecked}
 			/>
 
 			<SelectFormContainer
@@ -67,6 +66,7 @@ const GameInfo = ({ state }) => {
 			/>
 
 			<UploadForm
+				style={{ margin: 0 }}
 				title={gameData.bgUpload.title}
 				text={gameData.bgUpload.ph}
 				titleBtn={gameData.bgUpload.titleBtn}

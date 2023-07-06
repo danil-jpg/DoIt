@@ -1,0 +1,10 @@
+.paid {
+	display: flex;
+	align-items: center;
+	&__text {
+		white-space: nowrap;
+		margin: 0 15px 0 0;
+		font-size: 16px;
+		color: #CCCDCD;
+	}
+}
