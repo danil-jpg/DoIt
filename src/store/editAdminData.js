@@ -246,7 +246,7 @@ const prizePoolTour = {
 	donate: {
 		title: 'Donate',
 		default: 'notActive',
-		name:'prizeDonate',
+		name: 'prizeDonate',
 		list: [
 			{
 				id: v1(),
@@ -324,6 +324,166 @@ const additionalTour = {
 	]
 }
 
+const extraTour = {
+	title: 'Extra',
+	lobby: {
+		title: 'Lobby',
+		value: 'OCR32'
+	},
+	mode: {
+		title: 'Mode',
+		value: 'OCR32'
+	},
+	veto: {
+		title: 'VETO',
+		value: 'ABABABA'
+	},
+	discord: {
+		title: 'Discord URL',
+		value: 'https://discord.gg/dfsdfas'
+	},
+	facebook: {
+		title: 'Facebook URL',
+		value: 'https://discord.gg/dfsdfas'
+	},
+	twitter: {
+		title: 'Twitter URL',
+		value: 'https://discord.gg/dfsdfas'
+	},
+	twitch: {
+		title: 'Twitch URL',
+		value: 'https://discord.gg/dfsdfas'
+	},
+	youtube: {
+		title: 'Youtube URL',
+		value: 'https://discord.gg/dfsdfas'
+	},
+
+	server: {
+		title: 'Server region',
+		list: [
+			{
+				id: v1(),
+				title: 'europe nordic & east',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'Europe West',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'Australia & Oceania',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'china',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'Asia',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'Amercia',
+				checked: false,
+			},
+		]
+	},
+	platform: {
+		title: 'Platform',
+		list: [
+			{
+				id: v1(),
+				title: 'PC',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'Xbox one',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'ps4',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'nintendo switch',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'PS5',
+				checked: false,
+			},
+			{
+				id: v1(),
+				title: 'Xbox Series X',
+				checked: false,
+			},
+		]
+	},
+}
+
+const streamsTour = {
+	title: 'Streams',
+	titleBtn: '+ Add Stream',
+	stream1: {
+		title: 'Twitch Stream',
+		value: 'https://player.twitch.tv/dssadsa',
+		list: ['Ukraine', 'Polish', 'England']
+	},
+	stream2: {
+		title: 'Twitch Stream',
+		value: 'https://player.twitch.tv/dssadsa',
+		list: ['Brazil', 'Scotland', 'USA']
+	},
+	stream3: {
+		title: 'Twitch Stream',
+		value: 'https://player.twitch.tv/dssadsa',
+		list: ['Spain', 'Polish', 'Latvia']
+	},
+}
+
+const sponsorsTour = {
+	title: 'Sponsors',
+	titleBtn: '+ Add Stream',
+	list: [
+		{
+			id: v1(),
+			title: 'Sponsor logo #1',
+			titleBtn: 'Upload',
+			ph: 'banner url'
+		},
+		{
+			id: v1(),
+			title: 'Sponsor logo #2',
+			titleBtn: 'Upload',
+			ph: 'banner url'
+		},
+		{
+			id: v1(),
+			title: 'Sponsor logo #3',
+			titleBtn: 'Upload',
+			ph: 'banner url'
+		},
+	]
+}
+
+const rulesTour = {
+	title: 'Rules',
+	field: {
+		title: 'Rules',
+		ph: 'You can write here somebody about your tournament....'
+	}
+}
+
 export const tournamentEditData = {
 	basic: basicTour,
 	game: gameTour,
@@ -334,4 +494,8 @@ export const tournamentEditData = {
 	prize: prizePoolTour,
 	voting: votingTour,
 	additional: additionalTour,
+	extra: extraTour,
+	streams: streamsTour,
+	sponsors: sponsorsTour,
+	rules: rulesTour
 }

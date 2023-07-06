@@ -2,12 +2,16 @@ import React from "react";
 import EditAdminBtn from "../../../../UI/buttons/EditAdminBtn/EditAdminBtn";
 import AdditionalInfo from "../accordionList/AdditionalInfo/AdditionalInfo";
 import BasicInfo from "../accordionList/BasicInfo/BasicInfo";
+import ExtraInfo from "../accordionList/ExtraInfo/ExtraInfo";
 import GameInfo from "../accordionList/GameInfo/GameInfo";
 import IfPaid from "../accordionList/IfPaid/IfPaid";
 import LeagueInfo from "../accordionList/LeagueInfo/LeagueInfo";
 import PlayerList from "../accordionList/PlayerList/PlayerList";
 import PrizePool from "../accordionList/PrizePool/PrizePool";
 import RegInfo from "../accordionList/RegInfo/RegInfo";
+import Rules from "../accordionList/Rules/Rules";
+import Sponsors from "../accordionList/Sponsors/Sponsors";
+import Streams from "../accordionList/Streams/Streams";
 import VotingInfo from "../accordionList/VotingInfo/VotingInfo";
 import s from './EditTournamentsAdmin.module.scss';
 
@@ -24,6 +28,10 @@ const EditTournamentsAdmin = ({ state }) => {
 			<PrizePool state={state.prize} />
 			<VotingInfo state={state.voting} />
 			<AdditionalInfo state={state.additional} />
+			<ExtraInfo state={state.extra} />
+			<Streams state={state.streams} />
+			<Sponsors state={state.sponsors} />
+			<Rules state={state.rules} />
 		</>
 	)
 }
