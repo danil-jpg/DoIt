@@ -156,6 +156,113 @@ const regTour = {
 	},
 }
 
+const prizePoolTour = {
+	title: 'Prize pool',
+	prize: {
+		title: 'Prize pool:',
+		value: '$ 100'
+	},
+	players: {
+		title: 'MAX players/teams number:',
+		value: ''
+	},
+	first: {
+		title: '1st   place:',
+		value: '30%'
+	},
+	second: {
+		title: '2nd place:',
+		value: '20%'
+	},
+	third: {
+		title: '3rd place:',
+		value: '10%'
+	},
+	fourth: {
+		title: '4th place:',
+		value: ''
+	},
+	ro8: {
+		title: 'Ro8',
+		value: ''
+	},
+	ro16: {
+		title: 'Ro16',
+		value: ''
+	},
+	ro32: {
+		title: 'Ro32',
+		value: ''
+	},
+	ro64: {
+		title: 'Ro64',
+		value: ''
+	},
+	ro128: {
+		title: 'Ro128',
+		value: ''
+	},
+	ro256: {
+		title: 'Ro256',
+		value: ''
+	},
+	ro512: {
+		title: 'Ro512',
+		value: ''
+	},
+	type: {
+		title: 'Type',
+		default: 'money',
+		list: [
+			{
+				id: v1(),
+				title: 'Money',
+				value: 'money'
+			},
+			{
+				id: v1(),
+				title: 'Thing',
+				value: 'thing'
+			},
+			{
+				id: v1(),
+				title: 'Money + Thing',
+				value: 'moneyThing'
+			},
+			{
+				id: v1(),
+				title: 'Nothing',
+				value: 'nothing'
+			},
+			{
+				id: v1(),
+				title: 'Qualifiers',
+				value: 'qualifiers'
+			},
+		]
+	},
+	donate: {
+		title: 'Donate',
+		default: 'notActive',
+		list: [
+			{
+				id: v1(),
+				title: 'Active',
+				value: 'active'
+			},
+			{
+				id: v1(),
+				title: 'No Active',
+				value: 'notActive'
+			},
+		]
+	},
+	checkPlace: {
+		title: '3rd place turn on?',
+		checked: false,
+	},
+}
+
 export const tournamentEditData = {
 	basic: basicTour,
 	game: gameTour,
@@ -163,4 +270,5 @@ export const tournamentEditData = {
 	ifPaid: IfPaidTour,
 	players: playerListTour,
 	leagues: leaguesTour,
+	prize: prizePoolTour,
 }

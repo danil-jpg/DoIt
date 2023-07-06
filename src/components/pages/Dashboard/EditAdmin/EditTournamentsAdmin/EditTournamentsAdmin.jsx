@@ -5,6 +5,7 @@ import GameInfo from "../accordionList/GameInfo/GameInfo";
 import IfPaid from "../accordionList/IfPaid/IfPaid";
 import LeagueInfo from "../accordionList/LeagueInfo/LeagueInfo";
 import PlayerList from "../accordionList/PlayerList/PlayerList";
+import PrizePool from "../accordionList/PrizePool/PrizePool";
 import RegInfo from "../accordionList/RegInfo/RegInfo";
 import s from './EditTournamentsAdmin.module.scss';
 
@@ -18,6 +19,7 @@ const EditTournamentsAdmin = ({ state }) => {
 			<IfPaid state={state.ifPaid} />
 			<PlayerList state={state.players} />
 			<LeagueInfo state={state.leagues} />
+			<PrizePool state={state.prize}/>
 		</>
 	)
 }
