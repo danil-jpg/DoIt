@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../../../UI/buttons/Button/Button";
 import EditAdminBtn from "../../../../UI/buttons/EditAdminBtn/EditAdminBtn";
 import AdditionalInfo from "../accordionList/AdditionalInfo/AdditionalInfo";
 import BasicInfo from "../accordionList/BasicInfo/BasicInfo";
@@ -32,6 +33,15 @@ const EditTournamentsAdmin = ({ state }) => {
 			<Streams state={state.streams} />
 			<Sponsors state={state.sponsors} />
 			<Rules state={state.rules} />
+
+			<div className={s.buttons}>
+				{state.buttonList.map(el => (
+					<Button
+						style={{padding: '16px 10px'}}
+						to={el.title}
+						key={el.id}>{el.title}</Button>
+				))}
+			</div>
 		</>
 	)
 }

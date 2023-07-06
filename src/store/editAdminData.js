@@ -484,6 +484,24 @@ const rulesTour = {
 	}
 }
 
+const buttonListTour = [
+	{
+		id: v1(),
+		title: 'Delete Tournament',
+		link: ''
+	},
+	{
+		id: v1(),
+		title: 'Finish Tournament',
+		link: ''
+	},
+	{
+		id: v1(),
+		title: 'Save Tournament',
+		link: ''
+	},
+]
+
 export const tournamentEditData = {
 	basic: basicTour,
 	game: gameTour,
@@ -497,5 +515,6 @@ export const tournamentEditData = {
 	extra: extraTour,
 	streams: streamsTour,
 	sponsors: sponsorsTour,
-	rules: rulesTour
+	rules: rulesTour,
+	buttonList: buttonListTour,
 }
