@@ -8,7 +8,6 @@ import s from './RegInfo.module.scss';
 import { Link } from "react-router-dom";
 
 const RegInfo = ({ state }) => {
-	const [plan, setPlan] = useState('free')
 
 	return (
 		<Accordion

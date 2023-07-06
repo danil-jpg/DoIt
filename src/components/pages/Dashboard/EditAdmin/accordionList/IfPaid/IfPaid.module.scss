@@ -1,10 +1,9 @@
-.text {
-	font-size: 16px;
-	color: #3C434D;
-	margin: 0 0 22px;
-	a  {
-		display: inline-block;
-		margin: 0 0 0 6px;
-		color: #2281F2;
+.paid {
+	display: flex;
+	align-items: center;
+	&__text {
+		white-space: nowrap;
+		margin: 0 15px 0 0;
+		font-size: 16px;
 	}
 }

@@ -72,6 +72,11 @@ const gameTour = {
 	},
 }
 
+const IfPaid = {
+	title: 'if Paid',
+	text: 'Register cost'
+}
+
 const regTour = {
 	title: 'Registration',
 	plan: {
@@ -122,4 +127,5 @@ export const tournamentEditData = {
 	basic: basicTour,
 	game: gameTour,
 	reg: regTour,
+	ifPaid: IfPaid,
 }
