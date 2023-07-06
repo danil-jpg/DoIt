@@ -99,8 +99,24 @@ const regTour = {
 				value: 'private'
 			},
 		]
-	}
-} 
+	},
+	start: {
+		title: 'Start time*'
+	},
+	estimate: {
+		title: 'Estimated end*'
+	},
+	checkTime: {
+		title: 'Checking Time',
+		checked: false
+	},
+	timeList: ['30 minute', '15 minute'],
+	text: '(GMT -05:00) Eastern time — set the time zone from your',
+	settingLink: {
+		link: '',
+		title: 'settings'
+	},
+}
 
 export const tournamentEditData = {
 	basic: basicTour,
