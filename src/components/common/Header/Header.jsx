@@ -8,6 +8,7 @@ import Container from '../../containers/Container/Container';
 import Button from '../../UI/buttons/Button/Button';
 import { isActive } from '../../utils/isActive';
 import { onClickActiveHandler } from '../../utils/onClickActiveHandler';
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({ login, setLogin, signIn, setSignIn, signUp, setSignUp, ...props }) => {
   const [state, setState] = useState(headerData);
