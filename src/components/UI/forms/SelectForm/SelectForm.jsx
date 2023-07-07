@@ -42,7 +42,7 @@ const SelectForm = ({ style, list, def }) => {
 				onClick={onHeaderClickHandler}
 				ref={selectHeader}>
 				{def
-					? <span>{def}</span>
+					? <span className={`${s.select__default}`}>{def}</span>
 					: <>
 						<span className={`${s.select__text}`}>
 							{list[0]}
