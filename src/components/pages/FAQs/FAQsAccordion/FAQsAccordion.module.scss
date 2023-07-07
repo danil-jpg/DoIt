@@ -1,0 +1,57 @@
+@import "..//..//..//..//styles/breakpoint.scss";
+.main{
+    &__accordion{
+        display: flex;
+        align-items: center;
+        background-color: #151A1F;
+        justify-content: space-between;
+        padding: 30px;
+        border: 1px solid #20252B;
+    }
+    &__title{
+        font-size: 18px;
+        font-weight: 400;
+        color: #E6E8EB;
+    }
+    &__circle{
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #CCC;
+    }
+    &__btn{
+        color: #CCC;
+    }
+    &__info{
+        padding: 30px;
+    }
+    &__descr{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+}
+@include media-breakpoint-down(xs){
+    .main{
+        &__accordion{
+            padding: 15px;
+        }
+        &__title{
+            font-size: 14px;
+            max-width: 225px;
+        }
+        &__descr{
+            font-size: 10px;
+        }
+        &__circle{
+            width: 15px;
+            height: 15px;
+        }
+        &__info{
+            padding: 15px;
+        }
+    }
+}

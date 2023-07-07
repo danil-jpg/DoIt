@@ -107,7 +107,7 @@ import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
 import leaguesStarCraftLogo from "../assets/images/leagues/starCraftLogo.png"
 import leaguesStarCraftLogoWebp from "../assets/images/leagues/starCraftLogo.png?as=webp"
-
+import loupeIcon from "../assets/icons/loupe.svg"
 import topArrow from "../assets/icons/Top/arrow.svg"
 import topArrowSmall from "../assets/icons/Top/arrowSmall.svg"
 
@@ -1135,6 +1135,24 @@ export const topPageData ={
 
 export const faqData= {
 	icon:{
-		arrow:smallArrow
+		arrow:smallArrow,
+		loupeIcon:loupeIcon,
+	},
+	item:{
+		item1:"Events, apps, promos, & merch",
+		item2:'Account recovery, safety',
+		item3:'Ranked gameplay, honor',
+		item4:'Lag, low FPS, hardware, & bugs',
+		item5:'Login, patching, crashing',
+		item6:'League store, gifting',
+		item7:'Reporting, suspensions, & bans',
+	},
+	descr:{
+		descr1:'Over the past few months, we’ve been transitioning all players from League of Legends accounts to Riot Accounts. Now that most players have made the transition, we’re going to be taking the next step towards enabling.'
+	},
+	descrTitle:{
+		descrTitle1:'Where is the region selector?',
+		descrTitle2:'So wait ... How do i know what region i am in?',
+		descrTitle3:'Will i still be able to play cs go in other regions?',
 	}
 }
