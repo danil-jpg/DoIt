@@ -107,6 +107,10 @@ import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
 import leaguesStarCraftLogo from "../assets/images/leagues/starCraftLogo.png"
 import leaguesStarCraftLogoWebp from "../assets/images/leagues/starCraftLogo.png?as=webp"
+
+import topArrow from "../assets/icons/Top/arrow.svg"
+import topArrowSmall from "../assets/icons/Top/arrowSmall.svg"
+
 // import streamIcon from '../assets/images/homePage/stream.svg';
 import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png';
 import dotaInGameMobW from '../assets/images/tournamentsMain/dotaInGameMob.png?as=webp'
@@ -122,7 +126,7 @@ import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
 import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
 
-
+import smallArrow from "../assets/icons/arrow.svg"
 export const headerData = {
 	logo: {
 		img: logo,
@@ -1108,5 +1112,29 @@ export const privacyData ={
 	},
 	descr:{
 		descr:"A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company."
+	}
+}
+
+
+export const topPageData ={
+	icon:{
+		topArrow:topArrow,
+		topArrowSmall:topArrowSmall
+	},
+	totalTitle:{
+		totalTitle1:"Total Tournaments:",
+		totalTitle2:'Total Prize money:',
+		totalTitle3:'Total Players:'
+	},
+	numbers:{
+		number1:'157,260,352',
+		number2:'$157,260,352.09',
+		number3:'322'
+	}
+}
+
+export const faqData= {
+	icon:{
+		arrow:smallArrow
 	}
 }

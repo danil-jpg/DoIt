@@ -1,0 +1,32 @@
+.main{
+
+    &__dropdown{
+        border: 2px solid #20252B;
+        max-width: 400px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #E6E8EB;
+        padding: 16px 30px;
+
+    }
+    &__btn{
+        font-size: 20px;
+        font-weight: 500;
+        color: #E6E8EB;
+        line-height: 1.2;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__list{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        cursor: pointer;
+    }
+
+}

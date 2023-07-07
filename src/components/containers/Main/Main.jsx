@@ -15,6 +15,8 @@ const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/Tournam
 const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
 const Leagues = React.lazy(()=> import('../../pages/Leagues/Leagues'))
 const PrivacyRules = React.lazy(()=> import('../../pages/PrivacyRules/PrivacyRules.jsx'))
+const Error = React.lazy(()=>import('..//..//pages/404/404'))
+const FAQs = React.lazy(()=>import('../../pages/FAQs/FAQs'))
 const TournamentsPlayer = React.lazy(() =>
   import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
 );
@@ -50,6 +52,8 @@ const Main = (props) => {
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
           <Route path='/leagues' element ={<Leagues/>}/>
           <Route path='/privacy' element ={<PrivacyRules/>}/>
+          <Route path='/404' element={<Error/>}/>
+          <Route path='/faqs' element={<FAQs/>}/>
         </Routes>
       </Suspense>
     </main>
