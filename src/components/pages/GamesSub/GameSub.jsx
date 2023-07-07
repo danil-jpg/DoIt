@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './gameSub.module.scss';
 import { gameSub } from '../../../store/store';
 import Picture from '../../UI/Picture/Picture';
@@ -8,12 +8,18 @@ import { useNavigate } from 'react-router-dom';
 
 const GameSub = () => {
   const nav = useNavigate();
+  const [input, setInput] = useState('');
 
   return (
     <Container>
       <div className={s.gameTop}>
         <p className={s.gameTopText}>Games</p>
-        <InputForm ph={'Search the game'} className={s.gameSearch} />
+        <InputForm
+          value={input}
+          setValue={setInput}
+          ph={'Search the game'}
+          className={s.gameSearch}
+        />
       </div>
       <ul className={s.ul}>
         {gameSub.cards.map((el) => {

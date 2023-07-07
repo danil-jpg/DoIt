@@ -138,7 +138,7 @@ export const headerData = {
 		{
 			id: v1(),
 			title: 'Games',
-			link: ''
+			link: './games'
 		},
 		{
 			id: v1(),
