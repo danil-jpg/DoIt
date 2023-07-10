@@ -28,6 +28,7 @@ const TournamentsBracket = React.lazy(() =>
   import('../../pages/TournamentsBracket/TournamentsBracket.jsx')
 );
 const GamePage = React.lazy(() => import('../../pages/GamesSub/GameSub.jsx'));
+const UserPan = React.lazy(() => import('../../pages/Dashboard/UserPanel/UserPanel.jsx'));
 
 const Main = (props) => {
   const [login, setLogin] = useState(false);
@@ -77,6 +78,7 @@ const Main = (props) => {
           <Route path='/tournamentsBet' element={<TournamentBet />} />
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
           <Route path='/games' element={<GamePage />} />
+          <Route path='/userPanel/*' element={<UserPan />} />
         </Routes>
       </Suspense>
     </main>
