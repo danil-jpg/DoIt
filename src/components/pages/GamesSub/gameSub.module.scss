@@ -46,6 +46,10 @@
   line-height: 100%;
 }
 
+.gameImg {
+  aspect-ratio: 387/500;
+}
+
 @media screen and (max-width: 1400px) {
   .gameTop {
     margin-top: 50px;

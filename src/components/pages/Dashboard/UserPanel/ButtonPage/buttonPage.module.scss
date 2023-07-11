@@ -1,0 +1,23 @@
+.title {
+  color: #f5f5f5;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.5%;
+  width: 100%;
+  text-align: center;
+}
+.buttonBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 64px;
+  row-gap: 50px;
+  margin-top: 59px;
+}
+.lastBtn {
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  display: block;
+}
