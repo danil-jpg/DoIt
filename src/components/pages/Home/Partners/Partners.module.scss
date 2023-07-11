@@ -1,3 +1,5 @@
+@import "..//..//..//..//styles/breakpoint.scss";
+
 .main{
 
     &__top{
@@ -13,8 +15,7 @@
         flex-wrap: wrap;
     }
 }
-
-@media (max-width:375px) {
+@include media-breakpoint-down(xs){
     .disable{
         display: none;
     }
@@ -29,3 +30,18 @@
         }
     }
 }
+// @media (max-width:375px) {
+//     .disable{
+//         display: none;
+//     }
+//     .main{
+
+//         &__partners{
+//             display: grid;
+//             grid-template-columns: repeat(3,1fr);
+//             grid-template-rows: repeat(3,1fr);
+//             column-gap: 57px;
+//             row-gap: 25px;
+//         }
+//     }
+// }

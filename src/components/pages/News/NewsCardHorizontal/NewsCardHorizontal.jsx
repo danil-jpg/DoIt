@@ -12,7 +12,7 @@ const NewsCardHorizontal = (props) => {
                  alt={props.alt} 
                  imgMob={props.imgMob}
                  webpMob={props.webpMob} 
-                 widthMob='375'
+                 widthMob='490'
                  />
                 </div>
                 <div className={s.card__bottom}>

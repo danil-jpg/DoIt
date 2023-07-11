@@ -1,3 +1,4 @@
+@import "..//..//..//..//styles/breakpoint.scss";
 .main{
     
     &__wrapper{
@@ -67,7 +68,7 @@
     display: flex;
     gap:16px
 }
-@media (min-width:320px) and (max-width:375px) {
+@include media-breakpoint-down(xs){
     .main{
         &__top{
             padding-left: 0px;
@@ -88,3 +89,24 @@
         }
     }
 }
+// @media (min-width:320px) and (max-width:375px) {
+//     .main{
+//         &__top{
+//             padding-left: 0px;
+//         }
+//         &__data{
+//             gap: 47px;
+//         }
+//         &__border{
+//             min-height: 48px;
+//             min-width: 48px;
+//         }
+//         &__wrapper{
+//             gap: 40px;
+//         }
+//         &__support{
+//             padding-top: 0px;
+//             gap: 10px;
+//         }
+//     }
+// }

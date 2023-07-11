@@ -1,11 +1,19 @@
+@import "..//..//..//..//..//styles/breakpoint.scss";
+
 .main{
     display: flex;
     align-items: center;
     gap: 2px;
 }
-@media (max-width:375px) {
+@include media-breakpoint-down(xs){
     .main{
         flex-wrap: wrap;
         gap: 7px;
     }
 }
+// @media (max-width:375px) {
+//     .main{
+//         flex-wrap: wrap;
+//         gap: 7px;
+//     }
+// }

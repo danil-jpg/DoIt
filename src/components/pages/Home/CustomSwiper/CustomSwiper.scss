@@ -1,3 +1,5 @@
+@import "..//..//..//..//styles/breakpoint.scss";
+
 .swiper-pagination {
 
     .swiper-pagination-bullet {
@@ -13,19 +15,35 @@
       background-color: #4F5F70 
     }
   }
-@media (max-width:375px) {
-    .swiper-pagination {
+@include media-breakpoint-down(xs){
+  .swiper-pagination {
 
-        .swiper-pagination-bullet {
-            background-color: #20272E;
-            width: 6px;
-            height: 8px;
-            border-radius: 0;
-        }
+    .swiper-pagination-bullet {
+        background-color: #20272E;
+        width: 6px;
+        height: 8px;
+        border-radius: 0;
+    }
+
+  
+    .swiper-pagination-bullet-active {
+      background-color: #4F5F70 
+    }
+  }
+}
+// @media (max-width:375px) {
+//     .swiper-pagination {
+
+//         .swiper-pagination-bullet {
+//             background-color: #20272E;
+//             width: 6px;
+//             height: 8px;
+//             border-radius: 0;
+//         }
     
       
-        .swiper-pagination-bullet-active {
-          background-color: #4F5F70 
-        }
-      }
-}
+//         .swiper-pagination-bullet-active {
+//           background-color: #4F5F70 
+//         }
+//       }
+// }
