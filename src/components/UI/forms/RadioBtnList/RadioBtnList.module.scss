@@ -1,0 +1,22 @@
+.list {
+	display: flex;
+	margin: 0 0 22px;
+}
+
+.item {
+	padding: 12px 22px;
+	background: #1A222D;
+	margin: 0 12px 0 0;
+	color: #0A61E1;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all .2s;
+	&:last-child {
+		margin: 0;
+	}
+	&.active {
+		color: #fff;
+		background: #0A61E1;
+	}
+}

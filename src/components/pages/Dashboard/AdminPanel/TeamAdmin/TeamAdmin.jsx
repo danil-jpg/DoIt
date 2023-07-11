@@ -1,5 +1,13 @@
 import React, { useState } from "react";
+import AdminButtonContainer from "../../../../containers/AdminContainers/AdminButtonContainer/AdminButtonContainer";
+import AdminTableContainer from "../../../../containers/AdminContainers/AdminTableContainer/AdminTableContainer";
+import BodyContainerAdmin from "../../../../containers/AdminContainers/AdminTableContainer/BodyContainerAdmin/BodyContainerAdmin";
+import HeaderAdminContainer from "../../../../containers/AdminContainers/AdminTableContainer/HeaderAdminContainer/HeaderAdminContainer";
+import SearchAdminPanel from "../../../../UI/forms/SearchAdminPanel/SearchAdminPanel";
+import { IconRenderer } from "../../../../UI/IconRenderer/IconRenderer";
+import ScItemsAdmin from "../ScItemsAdmin/ScItemsAdmin";
 import s from './TeamAdmin.module.scss';
+import { isActive } from "../../../../utils/isActive";
 
 
 const TeamAdmin = ({ state, icons, search, buttonList }) => {

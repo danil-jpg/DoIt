@@ -6,7 +6,7 @@
   display: grid;
   row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 20px;
 }
 
 .contentClassLorem {
@@ -240,6 +240,8 @@
   font-weight: 500;
   line-height: 100%;
   margin-bottom: 11px;
+
+  text-align: center;
 }
 .sign {
   color: #67707a;

@@ -1,0 +1,16 @@
+.additional {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	&__wrap {
+		display: flex;
+		align-items: center;
+		margin: 0 0 10px;
+	}
+	&__text {
+		white-space: nowrap;
+		font-size: 16px;
+		margin: 0 10px 0;
+		color: #CCCDCD;
+	}
+}
