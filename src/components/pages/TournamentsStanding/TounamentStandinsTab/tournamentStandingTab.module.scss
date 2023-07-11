@@ -238,6 +238,12 @@
   .name1 {
     margin-right: 10%;
   }
+  .tableCenter {
+    background: none;
+  }
+  .tableLine {
+    border: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -271,6 +277,13 @@
   }
   .tableTitle {
     flex-shrink: 0;
+  }
+  .tableTop {
+    align-items: center;
+    padding: 15px 5px;
+  }
+  .tableToggleTitle {
+    padding: 7px;
   }
 }
 
