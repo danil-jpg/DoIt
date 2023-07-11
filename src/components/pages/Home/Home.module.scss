@@ -1,3 +1,5 @@
+@import "..//..//..//styles/breakpoint.scss";
+
 .main__hero{
  margin-top: 65px;
 }
@@ -16,7 +18,23 @@
     margin-top: 180px;
     padding: 0 23px;
 }
-@media  (max-width:1440px) {
+.main__partners{
+    margin-top: 183px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+// @media  (max-width:1440px) {
+//     .main__hero{
+//         margin-top: 70px;
+       
+//     }
+//     .main__doit{
+//         padding-left: 250px;
+       
+//     }
+// }
+
+@include media-breakpoint-down(l){
     .main__hero{
         margin-top: 70px;
        
@@ -27,7 +45,8 @@
     }
 }
 
-@media (max-width:768px) {
+
+@include media-breakpoint-down(md){
     .main__tournaments{
         padding-left: 0px;
     }
@@ -35,7 +54,7 @@
         padding-left: 120px;
     }
 }
-@media (max-width:375px) {
+@include media-breakpoint-down(xs){
     .main__hero{
         padding-left: 0px;
         margin-top: 225px;
@@ -57,4 +76,38 @@
         padding-left: 15px;
         padding-right: 0px;
     }
+    .main__partners{
+        padding-left: 15px;
+        padding-right: 0;
+        margin-top: 82px;
+    }
 }
+// @media (max-width:375px) {
+//     .main__hero{
+//         padding-left: 0px;
+//         margin-top: 225px;
+//         margin-left: -15px;
+//     }
+//     .main__doit{
+//         padding-left: 20px;
+//     }
+//     .main__tournaments{
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+//     .main__news{
+//         padding-left: 0px;
+//         margin-top: 88px;
+//     }
+//     .main__streams{
+//         margin-top: 85px;
+//         padding-left: 15px;
+//         padding-right: 0px;
+//     }
+//     .main__partners{
+//         padding-left: 15px;
+//         padding-right: 0;
+//         margin-top: 82px;
+//     }
+
+// }

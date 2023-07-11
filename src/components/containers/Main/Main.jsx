@@ -1,12 +1,11 @@
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import s from './Main.module.scss';
-import Header from '../../common/Header/Header';
+import Header from '../../common/Header/Header';  
 import PopUpSignIn from '../../common/PopUp/PopUpSingIn/PopUpSignIn';
 import PopUpSignUp from '../../common/PopUp/PopUpSignUp/PopUpSignUp';
 import PopUpReset from '../../common/PopUp/PopUpReset/PopUpReset';
 import { useState } from 'react';
-
 const Home = React.lazy(() => import('../../pages/Home/Home.jsx'));
 const News = React.lazy(() => import('../../pages/News/News.jsx'));
 const Premium = React.lazy(() => import('../../pages/Premium/Premium.jsx'));
@@ -17,6 +16,10 @@ const Contact = React.lazy(() => import('../../pages/ContactUs/ContactUs.jsx'));
 const EditAdmin = React.lazy(() => import('../../pages/Dashboard/EditAdmin/EditAdmin'));
 const TournamentsMain = React.lazy(() => import('../../pages/Tournaments/TournamentsMain.jsx'));
 const TournamentsInfo = React.lazy(() => import('../../pages/TournamentsInfo/TournamentsInfo.jsx'));
+const Leagues = React.lazy(()=> import('../../pages/Leagues/Leagues'))
+const PrivacyRules = React.lazy(()=> import('../../pages/PrivacyRules/PrivacyRules.jsx'))
+const Error = React.lazy(()=>import('..//..//pages/404/404'))
+const FAQs = React.lazy(()=>import('../../pages/FAQs/FAQs'))
 const TournamentsPlayer = React.lazy(() =>
   import('../../pages/TournamentsPlayer/TournamentsPlayer.jsx')
 );
@@ -77,6 +80,10 @@ const Main = (props) => {
           <Route path='/tournamentsStanding' element={<TournamentsStanding />} />
           <Route path='/tournamentsBet' element={<TournamentBet />} />
           <Route path='/tournamentsBracket' element={<TournamentsBracket />} />
+          <Route path='/leagues' element ={<Leagues/>}/>
+          <Route path='/privacy' element ={<PrivacyRules/>}/>
+          <Route path='/404' element={<Error/>}/>
+          <Route path='/faqs' element={<FAQs/>}/>
           <Route path='/games' element={<GamePage />} />
           <Route path='/userPanel/*' element={<UserPan />} />
         </Routes>

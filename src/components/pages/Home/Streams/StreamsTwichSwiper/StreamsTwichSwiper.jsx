@@ -22,7 +22,7 @@ const TwitchSwiper = () => {
            <div className={s.slider}>
               <div className={s.slider__top}>
                 <TwitchEmbed
-          channel={"fandercs"}
+          channel={"esl_dota2"}
           width="583px"
           height="320px"
           withChat={false}
@@ -31,7 +31,7 @@ const TwitchSwiper = () => {
          />
           <div className={s.slide__video__dis}>
           <TwitchEmbed
-          channel={"lenagol0vach"}
+          channel={"esl_csgo"}
           width="583px"
           height="320px"
           withChat={false}
@@ -42,21 +42,21 @@ const TwitchSwiper = () => {
               </div>
               <div className={s.slider__bottom}>
               <TwitchEmbed
-          channel={"elmiillor"}
+          channel={"faxuty"}
           withChat={false}
           id="3"
           height="152px"
           className={s.slide__video__small}
          />
                <TwitchEmbed
-          channel={"cadenzie"}
+          channel={"otplol_"}
           withChat={false}
           id="4"
           height="152px"
           className={s.slide__video__small}
          />
                <TwitchEmbed
-          channel={"nefrizi4"}
+          channel={"just_ns"}
           withChat={false}
           id="5"
           height="152px"
@@ -76,25 +76,27 @@ const TwitchSwiper = () => {
            <div className={s.slider}>
               <div className={s.slider__top}>
                 <TwitchEmbed
-          channel={"fandercs"}
+          channel={"esl_dota2"}
           width="583px"
           height="320px"
           withChat={false}
           id="7"
           className={s.slide__video__big}
          />
+          <div className={s.slide__video__dis}>
           <TwitchEmbed
-          channel={"lenagol0vach"}
+          channel={"esl_csgo"}
           width="583px"
           height="320px"
           withChat={false}
           id="8"
           className={`${s.slide__video__big}`}
          />
+          </div>
               </div>
               <div className={s.slider__bottom}>
               <TwitchEmbed
-          channel={"elmiillor"}
+          channel={"nix"}
           withChat={false}
           id="9"
           height="152px"
