@@ -108,7 +108,7 @@ import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
 import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
 
 //edit admin data
-import { tournamentEditData } from './editAdminData';
+import { playersEditData, tournamentEditData } from './editAdminData';
 
 
 export const headerData = {
@@ -1339,5 +1339,6 @@ export const tournamentBet = {
 }
 
 export const editAdminData = {
-	tournaments: tournamentEditData
+	tournaments: tournamentEditData,
+	players: playersEditData,
 }
