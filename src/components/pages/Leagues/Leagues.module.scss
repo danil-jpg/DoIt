@@ -1,0 +1,51 @@
+@import '..//..//../styles/breakpoint.scss';
+
+.main{
+    &__wrapper{
+    padding-top: 95px;
+    padding-left: 10px;
+    padding-bottom: 243px;
+    }
+    &__top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    &__title{
+        color: #F5F5F5;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.1
+    }
+    &__features{
+        margin-top: 21px;
+    }
+
+    &__news{
+        margin-top: 65px;
+    }
+}
+@include media-breakpoint-down(lg){
+    .main__title{
+        font-size: 38px;
+    }
+    .main__wrapper{
+        padding-bottom: 143px;
+    }
+}
+
+@include media-breakpoint-down(xs){
+    .card__picture{
+        max-width: 132px;
+        max-height: 40px;
+    }
+    .main__title{
+        font-size: 16px;
+    }
+    .main__wrapper{
+        padding-left: 0px;
+        padding-bottom: 80px;
+    }
+}

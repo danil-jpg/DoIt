@@ -1,3 +1,5 @@
+@import "..//..//..//..//..//styles/breakpoint.scss";
+
 .slider{
     height: 100%;
     display: flex;
@@ -17,7 +19,7 @@
 .slide__dis{
     display: flex;
 }
-@media (min-width:320px)  and (max-width:375px){
+@include media-breakpoint-down(xs){
     .slide__video__small{
         display: none;
     }
@@ -28,5 +30,40 @@
     .slide__video__dis{
         display: none;
     }
-
 }
+// @media (min-width:320px)  and (max-width:375px){
+//     .slide__video__small{
+//         display: none;
+//     }
+//     .slide__video__big{
+//         width: 329px;
+//         height:256px ;
+//     }
+//     .slide__video__dis{
+//         display: none;
+//     }
+
+// }
+
+@include media-breakpoint-down(md){
+    .slide__video__dis{
+        display: none;
+    }
+    .slide__video__small{
+        display: none;
+    }
+    .slide__video__big{
+        width: 100%;
+    }
+}
+// @media (max-width:768px) {
+//     .slide__video__dis{
+//         display: none;
+//     }
+//     .slide__video__small{
+//         display: none;
+//     }
+//     .slide__video__big{
+//         width: 100%;
+//     }
+// }

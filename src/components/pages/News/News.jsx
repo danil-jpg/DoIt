@@ -5,9 +5,11 @@ import ButtonSliderAll from "../Home/ButtonSlider/ButtonSliderAll/ButtonSliderAl
 import { newsData } from "../../../store/store";
 import NewsCardVertical from "./NewsCardVertical/NewsCardVertical";
 import NewsCardHorizontal from "./NewsCardHorizontal/NewsCardHorizontal";
+import Container from "../../containers/Container/Container";
 const News = (props) => {
     return (
         <div className={s.main}>
+            {/* <Container> */}
             <div className={s.main__container}>
                 <div className={s.main__nav}>
                     <TitleSliders title={"News"} />
@@ -78,6 +80,7 @@ const News = (props) => {
                     </div>
                 </div>
             </div>
+            {/* </Container> */}
         </div>
     );
 }

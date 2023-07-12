@@ -1,3 +1,6 @@
+@import "..//..//..//..//styles/breakpoint.scss";
+
+
 .main{
     &__wrapper{
         width: 100%;
@@ -17,7 +20,7 @@
         margin-top: 44px;
     }
 }
-@media (min-width:320px) and (max-width:375px) {
+@include media-breakpoint-down(xs){
     .main{
         &__actions{
             display: none;
@@ -28,3 +31,14 @@
         }
     }
 }
+// @media (min-width:320px) and (max-width:375px) {
+//     .main{
+//         &__actions{
+//             display: none;
+//         }
+//         &__slider{
+//             margin-top:30px;
+//             max-height: 256px   ;
+//         }
+//     }
+// }

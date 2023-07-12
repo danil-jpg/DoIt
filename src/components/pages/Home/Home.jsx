@@ -6,7 +6,6 @@ import Tournaments from "./Tournaments/Tournaments";
 import News from "./News/News";
 import Partners from "./Partners/Partners";
 import Streams from "./Streams/Streams";
-
 const Home = (props) => {
   return (
     <div className={s.main}>
@@ -26,7 +25,7 @@ const Home = (props) => {
             <Streams/>
             </div>
             <div className={s.main__partners}>
-
+            <Partners/>
             </div>
           </div>
         </Container>

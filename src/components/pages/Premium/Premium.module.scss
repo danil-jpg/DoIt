@@ -1,3 +1,4 @@
+@import "..//..//..//styles/breakpoint.scss";
 .main{
     padding-top: 90px;
     &__wrapper{
@@ -19,8 +20,7 @@
         margin-top: 42px;
     }
 }
-
-@media (min-width: 320px) and (max-width: 375px) {
+@include media-breakpoint-down(xs){
     .main{
         padding-top: 50px;
         &__wrapper{
@@ -30,4 +30,15 @@
             display: none;
         }
     }
-  }
+}
+// @media (min-width: 320px) and (max-width: 375px) {
+//     .main{
+//         padding-top: 50px;
+//         &__wrapper{
+//                 padding: 0px;
+//         }
+//         &__title{
+//             display: none;
+//         }
+//     }
+//   }

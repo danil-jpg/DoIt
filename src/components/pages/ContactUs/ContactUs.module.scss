@@ -1,20 +1,38 @@
+
+@import "..//..//..//styles/breakpoint.scss";
 .main{
     padding-top: 226px;
     padding-left: 25px;
 }
-@media (min-width:1024px) and (max-width:1440px) {
+@include media-breakpoint-down(lg){
     .main{
         padding-top: 100px;
     }
 }
-@media (min-width:768px) and (max-width:991px) {
+@include media-breakpoint-down(md){
     .main{
         padding-top: 80px;
     }
 }
-@media (min-width:320px) and (max-width:375px) {
+// @media (min-width:1024px) and (max-width:1440px) {
+//     .main{
+//         padding-top: 100px;
+//     }
+// }
+// @media (min-width:768px) and (max-width:991px) {
+//     .main{
+//         padding-top: 80px;
+//     }
+// }
+@include media-breakpoint-down(xs){
     .main{
         padding-left: 0px;
         padding-top: 180px;
     }
 }
+// @media (min-width:320px) and (max-width:375px) {
+//     .main{
+//         padding-left: 0px;
+//         padding-top: 180px;
+//     }
+// }

@@ -5,7 +5,7 @@ import Button from "../../UI/buttons/Button/Button";
 import CustomSwiper from "../Home/CustomSwiper/CustomSwiper";
 import PremiumCard from "../../common/PremiumCards/PremiumCardsBlueOrGreen/PremiumCard";
 import PremiumCardsYellow from "../../common/PremiumCards/PremiumCardsYellow/PremiumCardsYellow";
-
+import Container from "../../containers/Container/Container";
 const Premium = (props) => {
     const styleCard ={
         free:{
@@ -72,6 +72,7 @@ const Premium = (props) => {
     ]
     return ( 
         <div  className={s.main}>
+            <Container>
             <div className={s.main__wrapper}>
                 <div className={s.main__top}>
                     <h1 className={s.main__title}>{premiumData.title.title}</h1>
@@ -80,6 +81,7 @@ const Premium = (props) => {
                 <CustomSwiper slides={slides}/>
                 </div>
             </div>
+            </Container>
         </div>
      );
 }
