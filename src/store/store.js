@@ -125,7 +125,7 @@ import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 // 
 import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
 import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
-// 
+
 import gameDota from '../assets/images/GameSubscribe/dota.png'
 import gameDotaW from '../assets/images/GameSubscribe/dota.png?as=webp'
 import cs from '../assets/images/GameSubscribe/cs.png'
