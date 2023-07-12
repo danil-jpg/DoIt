@@ -88,28 +88,28 @@ import mailIcon from '../assets/icons/Aboute/mailIcon.svg'
 import phoneIcon from '../assets/icons/Aboute/phoneIcon.svg'
 import avatarProfile from '../assets/images/Profile/avatar.png';
 import avatarProfileWebp from '../assets/images/Profile/avatar.png?as=webp';
-import streamIcon from "../assets/images/homePage/stream.svg"
-import gameCard1 from "../assets/images/homePage/Games/game1.png"
-import gameCard1Webp from "../assets/images/homePage/Games/game1.png?as=webp"
-import gameCard1Mob from "../assets/images/homePage/Games/game1-mob.png"
-import gameCard1MobWebp from "../assets/images/homePage/Games/game1-mob.png?as=webp"
-import gameCard2 from "../assets/images/homePage/Games/game2.png"
-import gameCard2Webp from "../assets/images/homePage/Games/game2.png?as=webp"
-import gameCard2Mob from "../assets/images/homePage/Games/game2-mob.png"
-import gameCard2MobWebp from "../assets/images/homePage/Games/game2-mob.png?as=webp"
-import gameCard3 from "../assets/images/homePage/Games/game3.png"
-import gameCard3Webp from "../assets/images/homePage/Games/game3.png?as=webp"
-import gameCard3Mob from "../assets/images/homePage/Games/game3-mob.png"
-import gameCard3MobWebp from "../assets/images/homePage/Games/game3-mob.png?as=webp"
+import streamIcon from '../assets/images/homePage/stream.svg'
+import gameCard1 from '../assets/images/homePage/Games/game1.png'
+import gameCard1Webp from '../assets/images/homePage/Games/game1.png?as=webp'
+import gameCard1Mob from '../assets/images/homePage/Games/game1-mob.png'
+import gameCard1MobWebp from '../assets/images/homePage/Games/game1-mob.png?as=webp'
+import gameCard2 from '../assets/images/homePage/Games/game2.png'
+import gameCard2Webp from '../assets/images/homePage/Games/game2.png?as=webp'
+import gameCard2Mob from '../assets/images/homePage/Games/game2-mob.png'
+import gameCard2MobWebp from '../assets/images/homePage/Games/game2-mob.png?as=webp'
+import gameCard3 from '../assets/images/homePage/Games/game3.png'
+import gameCard3Webp from '../assets/images/homePage/Games/game3.png?as=webp'
+import gameCard3Mob from '../assets/images/homePage/Games/game3-mob.png'
+import gameCard3MobWebp from '../assets/images/homePage/Games/game3-mob.png?as=webp'
 import dotaLogo from '../assets/images/tournamentsMain/dota_logo.png'
 import dotaLogoWeb from '../assets/images/tournamentsMain/dota_logo.png?as=webp'
 import dotaInGame from '../assets/images/tournamentsMain/dotaInGame.png'
 import dotaInGameW from '../assets/images/tournamentsMain/dotaInGame.png?as=webp'
-import leaguesStarCraftLogo from "../assets/images/leagues/starCraftLogo.png"
-import leaguesStarCraftLogoWebp from "../assets/images/leagues/starCraftLogo.png?as=webp"
-import loupeIcon from "../assets/icons/loupe.svg"
-import topArrow from "../assets/icons/Top/arrow.svg"
-import topArrowSmall from "../assets/icons/Top/arrowSmall.svg"
+import leaguesStarCraftLogo from '../assets/images/leagues/starCraftLogo.png'
+import leaguesStarCraftLogoWebp from '../assets/images/leagues/starCraftLogo.png?as=webp'
+import loupeIcon from '../assets/icons/loupe.svg'
+import topArrow from '../assets/icons/Top/arrow.svg'
+import topArrowSmall from '../assets/icons/Top/arrowSmall.svg'
 
 // import streamIcon from '../assets/images/homePage/stream.svg';
 import dotaInGameMob from '../assets/images/tournamentsMain/dotaInGameMob.png';
@@ -140,7 +140,7 @@ import fifaW from '../assets/images/GameSubscribe/fifa.png?as=webp'
 //edit admin data
 import { tournamentEditData } from './editAdminData';
 
-import smallArrow from "../assets/icons/arrow.svg"
+import smallArrow from '../assets/icons/arrow.svg'
 export const headerData = {
 	logo: {
 		img: logo,
@@ -170,7 +170,7 @@ export const headerData = {
 		{
 			id: v1(),
 			title: 'Sponsorship',
-			link: ''
+			link: '404'
 		},
 	],
 	user: {
@@ -186,49 +186,49 @@ export const headerData = {
 			{
 				id: v1(),
 				title: 'My profile',
-				to: ''
+				to: 'profile'
 			},
 			{
 				id: v1(),
 				title: 'My team',
-				to: ''
+				to: 'tournamentsPlayer'
 			},
 			{
 				id: v1(),
 				title: 'Withdraw',
-				to: ''
+				to: 'tournamentsBet'
 			},
 			{
 				id: v1(),
 				title: 'Deposit',
-				to: ''
+				to: 'tournamentsInfo'
 			},
 			{
 				id: v1(),
 				title: 'Premium',
-				to: ''
+				to: 'Premium'
 			},
 			{
 				id: v1(),
 				title: 'Statistics',
-				to: ''
+				to: 'tournamentsStanding'
 			},
 		],
 		bottomList: [
 			{
 				id: v1(),
-				title: 'Support',
-				to: ''
+				title: 'Edit',
+				to: 'edit/tournaments'
 			},
 			{
 				id: v1(),
-				title: 'Settings',
-				to: ''
+				title: 'Admin',
+				to: 'admin'
 			},
 			{
 				id: v1(),
 				title: 'Logout',
-				to: ''
+				to: 'Profile'
 			},
 		],
 
@@ -240,32 +240,32 @@ export const navbar = {
 		{
 			id: v1(),
 			iconId: 'horse',
-			link: ''
+			link: 'LEAGUES'
 		},
 		{
 			id: v1(),
 			iconId: 'cup',
-			link: ''
+			link: 'tournamentsMain'
 		},
 		{
 			id: v1(),
 			iconId: 'rating',
-			link: ''
+			link: 'tournamentsInfo'
 		},
 		{
 			id: v1(),
 			iconId: 'community',
-			link: ''
+			link: 'faqs'
 		},
 		{
 			id: v1(),
 			iconId: 'target',
-			link: ''
+			link: 'About '
 		},
 		{
 			id: v1(),
 			iconId: 'megaphone',
-			link: ''
+			link: 'CONTACT '
 		},
 	]
 }
@@ -1150,7 +1150,7 @@ export const sliderCards = {
 		title: 'Tournament’s name will be here, maybe, in two lines',
 		title2: 'Fortnitity evolution X',
 		title3: 'CS:GO Mirageby tournament',
-		title4:'StarCraft II Europe League'
+		title4: 'StarCraft II Europe League'
 	},
 	subtitle1: 'Start',
 	subtitle2: 'Mode',
@@ -1290,23 +1290,23 @@ export const abouteData = {
 	}
 }
 
-export const gamesData={
-	title:{
-		title:"Games"
+export const gamesData = {
+	title: {
+		title: 'Games'
 	},
-	image:{
-		gameCard1:gameCard1,
-		gameCard1Webp:gameCard1Webp,
-		gameCard1Mob:gameCard1Mob,
-		gameCard1MobWebp:gameCard1MobWebp,
-		gameCard2:gameCard2,
-		gameCard2Webp:gameCard2Webp,
-		gameCard2Mob:gameCard2Mob,
-		gameCard2MobWebp:gameCard2MobWebp,
-		gameCard3:gameCard3,
-		gameCard3Webp:gameCard3Webp,
-		gameCard3Mob:gameCard3Mob,
-		gameCard3MobWebp:gameCard3MobWebp
+	image: {
+		gameCard1: gameCard1,
+		gameCard1Webp: gameCard1Webp,
+		gameCard1Mob: gameCard1Mob,
+		gameCard1MobWebp: gameCard1MobWebp,
+		gameCard2: gameCard2,
+		gameCard2Webp: gameCard2Webp,
+		gameCard2Mob: gameCard2Mob,
+		gameCard2MobWebp: gameCard2MobWebp,
+		gameCard3: gameCard3,
+		gameCard3Webp: gameCard3Webp,
+		gameCard3Mob: gameCard3Mob,
+		gameCard3MobWebp: gameCard3MobWebp
 	}
 
 }
@@ -1389,67 +1389,67 @@ export const tournamentBet = {
 	}
 }
 
-export const leaguesPageData ={
-	img:{
-		leaguesStarCraftLogo:leaguesStarCraftLogo,
-		leaguesStarCraftLogoWebp:leaguesStarCraftLogoWebp
+export const leaguesPageData = {
+	img: {
+		leaguesStarCraftLogo: leaguesStarCraftLogo,
+		leaguesStarCraftLogoWebp: leaguesStarCraftLogoWebp
 	},
-	title:{
-		title:'StarCraft II:   Leagues'
+	title: {
+		title: 'StarCraft II:   Leagues'
 	}
 }
 
-export const privacyData ={
-	title:{
-		title:"Terms of Use"
+export const privacyData = {
+	title: {
+		title: 'Terms of Use'
 	},
-	subtitle:{
-		subtitle:'The purpose'
+	subtitle: {
+		subtitle: 'The purpose'
 	},
-	descr:{
-		descr:"A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company."
+	descr: {
+		descr: 'A night to remember for Brazil. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company. Drama is never too far away at Copa America and this final had it by the bucketlad. Thanks for your company.'
 	}
 }
 
 
-export const topPageData ={
-	icon:{
-		topArrow:topArrow,
-		topArrowSmall:topArrowSmall
+export const topPageData = {
+	icon: {
+		topArrow: topArrow,
+		topArrowSmall: topArrowSmall
 	},
-	totalTitle:{
-		totalTitle1:"Total Tournaments:",
-		totalTitle2:'Total Prize money:',
-		totalTitle3:'Total Players:'
+	totalTitle: {
+		totalTitle1: 'Total Tournaments:',
+		totalTitle2: 'Total Prize money:',
+		totalTitle3: 'Total Players:'
 	},
-	numbers:{
-		number1:'157,260,352',
-		number2:'$157,260,352.09',
-		number3:'322'
+	numbers: {
+		number1: '157,260,352',
+		number2: '$157,260,352.09',
+		number3: '322'
 	}
 }
 
-export const faqData= {
-	icon:{
-		arrow:smallArrow,
-		loupeIcon:loupeIcon,
+export const faqData = {
+	icon: {
+		arrow: smallArrow,
+		loupeIcon: loupeIcon,
 	},
-	item:{
-		item1:"Events, apps, promos, & merch",
-		item2:'Account recovery, safety',
-		item3:'Ranked gameplay, honor',
-		item4:'Lag, low FPS, hardware, & bugs',
-		item5:'Login, patching, crashing',
-		item6:'League store, gifting',
-		item7:'Reporting, suspensions, & bans',
+	item: {
+		item1: 'Events, apps, promos, & merch',
+		item2: 'Account recovery, safety',
+		item3: 'Ranked gameplay, honor',
+		item4: 'Lag, low FPS, hardware, & bugs',
+		item5: 'Login, patching, crashing',
+		item6: 'League store, gifting',
+		item7: 'Reporting, suspensions, & bans',
 	},
-	descr:{
-		descr1:'Over the past few months, we’ve been transitioning all players from League of Legends accounts to Riot Accounts. Now that most players have made the transition, we’re going to be taking the next step towards enabling.'
+	descr: {
+		descr1: 'Over the past few months, we’ve been transitioning all players from League of Legends accounts to Riot Accounts. Now that most players have made the transition, we’re going to be taking the next step towards enabling.'
 	},
-	descrTitle:{
-		descrTitle1:'Where is the region selector?',
-		descrTitle2:'So wait ... How do i know what region i am in?',
-		descrTitle3:'Will i still be able to play cs go in other regions?',
+	descrTitle: {
+		descrTitle1: 'Where is the region selector?',
+		descrTitle2: 'So wait ... How do i know what region i am in?',
+		descrTitle3: 'Will i still be able to play cs go in other regions?',
 	}
 }
 export const gameSub = {
