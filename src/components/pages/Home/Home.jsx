@@ -23,7 +23,7 @@ const Home = (props) => {
               <News />
             </div>
             <div className={s.main__streams}>
-            <Streams/>
+            {/* <Streams/> */}
             </div>
             <div className={s.main__partners}>
 

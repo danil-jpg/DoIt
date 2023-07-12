@@ -15,9 +15,9 @@ const EditAdmin = () => {
 		<Container className={s.container}>
 			<Routes>
 				<Route index element={<>
-					<Link to='/edit/tournaments'>EditTournamentsAdmin</Link>
-					<Link to='/edit/league'>EditLeagueAdmin</Link>
-					<Link to='/edit/players'>EditLeagueAdmin</Link>
+					<Link to='/edit/tournaments' className={s.link}>EditTournamentsAdmin</Link>
+					<Link to='/edit/league' className={s.link}>EditLeagueAdmin</Link>
+					<Link to='/edit/players' className={s.link}>EditLeagueAdmin</Link>
 				</>} />
 				<Route path='tournaments' element={
 					<EditTournamentsAdmin state={state.tournaments} />
