@@ -89,9 +89,15 @@
 }
 @include media-breakpoint-down(xxs){
     .main__doit{
+        padding-left: 30px;
+    }
+}
+@include media-breakpoint-down(small){
+    .main__doit{
         padding-left: 20px;
     }
 }
+
 // @media (max-width:375px) {
 //     .main__hero{
 //         padding-left: 0px;
