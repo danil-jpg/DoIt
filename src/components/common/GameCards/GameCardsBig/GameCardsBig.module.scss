@@ -74,6 +74,14 @@
         }
     }
 }
+@include media-breakpoint-down(xxs){
+    .card{
+        min-width: 300px;
+        &__bottom{
+            padding-right: 0px;
+        }
+    }
+}
 // @media (max-width:375px) {
 //     .card{
 //         min-width: 325px;

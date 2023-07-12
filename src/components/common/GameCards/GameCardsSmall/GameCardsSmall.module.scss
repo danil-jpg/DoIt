@@ -55,9 +55,9 @@
 }
 @include media-breakpoint-down(xs){
     .card{
-        min-width: 325px;
+        min-width: 358px;
         &__picture{
-            min-width: 330px;
+            min-width: 100%;
         }
         &__title{
             font-size: 16px;
@@ -112,6 +112,16 @@
         }
         &__status{
             font-size: 14px;
+        }
+    }
+}
+@include media-breakpoint-down(xxs){
+    .card{
+       
+
+        &__bottom{
+            max-width: 320px;
+            padding: 0 15px 15px 15px;
         }
     }
 }

@@ -40,11 +40,15 @@
        
     }
     .main__doit{
-        padding-left: 250px;
+        padding-left: 300px;
        
     }
 }
-
+@include media-breakpoint-down(lg){
+    .main__doit{
+        padding-left: 320px;
+    }
+}
 
 @include media-breakpoint-down(md){
     .main__tournaments{
@@ -61,7 +65,7 @@
         margin-left: -15px;
     }
     .main__doit{
-        padding-left: 20px;
+        padding-left: 45px;
     }
     .main__tournaments{
         padding-left: 0;
@@ -80,6 +84,12 @@
         padding-left: 15px;
         padding-right: 0;
         margin-top: 82px;
+    }
+ 
+}
+@include media-breakpoint-down(xxs){
+    .main__doit{
+        padding-left: 20px;
     }
 }
 // @media (max-width:375px) {

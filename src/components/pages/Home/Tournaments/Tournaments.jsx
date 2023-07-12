@@ -5,6 +5,7 @@ import ButtonSliderAll from "../ButtonSlider/ButtonSliderAll/ButtonSliderAll";
 import { sliderCards } from "../../../../store/store";
 import GameCardsSmall from "../../../common/GameCards/GameCardsSmall/GameCardsSmall";
 import CustomSwiper from "../CustomSwiper/CustomSwiper";
+import Container from "../../../containers/Container/Container";
 const Tournaments = (props) => {
     
     const slide =[<GameCardsSmall 
