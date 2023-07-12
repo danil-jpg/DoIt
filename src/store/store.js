@@ -138,7 +138,7 @@ import fifa from '../assets/images/GameSubscribe/fifa.png'
 import fifaW from '../assets/images/GameSubscribe/fifa.png?as=webp'
 
 //edit admin data
-import { tournamentEditData } from './editAdminData';
+import { playersEditData, tournamentEditData } from './editAdminData';
 
 import smallArrow from "../assets/icons/arrow.svg"
 export const headerData = {
@@ -1511,5 +1511,6 @@ export const gameSub = {
 	]
 }
 export const editAdminData = {
-	tournaments: tournamentEditData
+	tournaments: tournamentEditData,
+	players: playersEditData,
 }
