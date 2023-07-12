@@ -50,12 +50,14 @@ const Header = ({ login, setLogin, signIn, setSignIn, signUp, setSignUp, ...prop
           ) : (
             <div className={s.buttonList}>
               <Button
+                className={s.btn}
                 onClick={() => {
                   setSignIn(!signIn);
                 }}>
                 Login
               </Button>
               <Button
+                className={s.btn}
                 color={'blue'}
                 onClick={() => {
                   setSignUp(true);

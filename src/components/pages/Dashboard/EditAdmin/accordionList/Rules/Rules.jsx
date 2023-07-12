@@ -5,7 +5,7 @@ import { useState } from "react";
 import TextareaFormContainer from "../../../../../UI/forms/TextareaFormContainer/TextareaFormContainer";
 
 const Rules = ({ state }) => {
-	const [lobbyValue, setLobbyValue] = useState();
+	const [rulesValue, setRulesValue] = useState();
 
 	return (
 		<Accordion
@@ -16,6 +16,8 @@ const Rules = ({ state }) => {
 				height='348px'
 				title={state.field.title}
 				ph={state.field.ph}
+				value={rulesValue}
+				setValue={setRulesValue}
 			/>
 		</Accordion>
 	)

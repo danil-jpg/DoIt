@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Button.scss';
 
-const Button = ({ to, style, children, onClick, color }) => {
+const Button = ({ to, style, children, onClick, color, className }) => {
 
 	const getColor = (color) => {
 		switch (color) {
@@ -20,7 +20,7 @@ const Button = ({ to, style, children, onClick, color }) => {
 	return (
 		<Link to={to}
 			style={style ? style: {}}
-			className={`button ${getColor(color)}`}
+			className={`button ${getColor(color)} ${className ? className : ''}`}
 			onClick={onClick ? onClick : () => { }}
 		>
 			{children}
