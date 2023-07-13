@@ -7,7 +7,6 @@
 .main__block{
     width: 1008px;
     position: relative;
-    
 }
 .main__triangle{
     position: absolute;
@@ -90,7 +89,7 @@
 
 @include media-breakpoint-down(l){
     .main__block{
-        width: 900px;
+        max-width: 900px;
     }
     .triangle{
         max-width: 600px;
@@ -144,6 +143,14 @@
     //         margin-left: -20px;
     //     }
     //   }
+@include media-breakpoint-down(lg){
+    .main__block{
+        width: 600px;
+    }
+    .small__triangle{
+        left: 17%;
+    }
+}
  @include media-breakpoint-down(md){
     .main__block{
         width: 500px;
