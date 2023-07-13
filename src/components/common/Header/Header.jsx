@@ -38,7 +38,7 @@ const Header = ({ login, setLogin, signIn, setSignIn, signUp, setSignUp, ...prop
           <ul className={s.list}>
             {state.links.map((el) => (
               <li className={s.item} key={el.id}>
-                <Link to={el.link} className={s.link}>
+                <Link to={el.link} className={s.link} onClick={() => { setActiveBurger(false) }}>
                   {el.title}
                 </Link>
               </li>
