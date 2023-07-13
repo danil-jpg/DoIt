@@ -14,7 +14,7 @@
 	&__body,
 	&__info,
 	&__level {
-		transition: all .2s;
+		transition: all 0.2s;
 	}
 	&__header {
 		cursor: pointer;
@@ -28,7 +28,7 @@
 		overflow: hidden;
 		&.active {
 			padding: 8px 40px 32px 8px;
-			background: #161A1F;
+			background: #161a1f;
 		}
 	}
 	&__imageWrap {
@@ -42,11 +42,11 @@
 	}
 	&__name {
 		font-weight: 500;
-		color: #F5F5F5;
+		color: #f5f5f5;
 		margin: 0 0 8px;
 	}
 	&__money {
-		color: #55AAFF;
+		color: #55aaff;
 		font-size: 12px;
 		font-weight: 500;
 		column-gap: 4px;
@@ -74,13 +74,13 @@
 		}
 	}
 	&__list {
-		border: 2px solid #0F1215;
+		border: 2px solid #0f1215;
 		border-width: 2px 0 2px 0;
 	}
 	&__list,
 	&__bottomList {
 		padding: 6px 0;
-		background: #161A1F;
+		background: #161a1f;
 		width: 100%;
 	}
 
@@ -95,7 +95,7 @@
 
 	&__link {
 		display: block;
-		color: #F5F5F5;
+		color: #f5f5f5;
 		padding: 8px 12px;
 		text-transform: uppercase;
 		&:hover {
@@ -103,7 +103,7 @@
 		}
 	}
 	&__bottomLink {
-		color: #969BA3;
+		color: #969ba3;
 		padding: 14px 12px;
 		&:hover {
 			color: #fff;
@@ -136,7 +136,7 @@
 		height: 2px;
 		width: 100%;
 		border-radius: 2px;
-		background: #2B353F;
+		background: #2b353f;
 		position: relative;
 		overflow: hidden;
 		&::after {
@@ -144,7 +144,42 @@
 			position: absolute;
 			width: 60%;
 			height: 100%;
-			background: #F5F5F5;
+			background: #f5f5f5;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.user {
+		position: static;
+		width: 100%;
+		max-width: 500px;
+		&__body {
+			position: static;
+			opacity: 1;
+		}
+		&__info {
+			padding: 8px 40px 32px 8px;
+			background: #161a1f;
+		}
+		&__icon {
+			display: none;
+		}
+		&__level {
+			width: 100%;
+			opacity: 1;
+			z-index: 1;
+			position: absolute;
+			pointer-events: all;
+			transform: translateY(0);
+		}
+		&__levelValue {
+			font-size: 12px;
+		}
+
+		&__link {
+			padding: 12px;
+			font-size: 16px;
 		}
 	}
 }

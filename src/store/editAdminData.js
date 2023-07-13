@@ -518,3 +518,51 @@ export const tournamentEditData = {
 	rules: rulesTour,
 	buttonList: buttonListTour,
 }
+
+const basicPlayers = {
+	title: 'Basic info',
+	name: {
+		title: 'Name',
+		value: 'Nikodem Swider',
+	},
+	id: {
+		title: 'ID',
+		value: '123213423',
+	},
+	sex: {
+		title: 'SEX',
+		value: 'Male',
+	},
+	age: {
+		title: 'Age',
+		value: '22',
+	},
+	country: {
+		title: 'Country',
+		value: 'Poland',
+	},
+	national: {
+		title: 'Nationality',
+		value: 'Poland',
+	},
+	site: {
+		title: 'Web-site',
+		value: 'TeamBlacer.com',
+	},
+	url: {
+		title: 'URL',
+		value: '23241232',
+		label: 'Doit.gg/'
+	},
+}
+
+const advancePlayers = {
+	title: 'Avatar 128 x 128',
+	ph: 'avatar url',
+}
+
+export const playersEditData = {
+	basic: basicPlayers,
+	advance: advancePlayers,
+	buttonList: buttonListTour,
+}

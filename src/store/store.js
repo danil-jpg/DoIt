@@ -125,7 +125,7 @@ import japanW from '../assets/images/TournamentsPlayer/japan.png?as=webp'
 // 
 import shrigma from '../assets/images/TournamentsBet/shrigma.jpg'
 import shrigmaW from '../assets/images/TournamentsBet/shrigma.jpg?as=webp'
-// 
+
 import gameDota from '../assets/images/GameSubscribe/dota.png'
 import gameDotaW from '../assets/images/GameSubscribe/dota.png?as=webp'
 import cs from '../assets/images/GameSubscribe/cs.png'
@@ -138,7 +138,7 @@ import fifa from '../assets/images/GameSubscribe/fifa.png'
 import fifaW from '../assets/images/GameSubscribe/fifa.png?as=webp'
 
 //edit admin data
-import { tournamentEditData } from './editAdminData';
+import { playersEditData, tournamentEditData } from './editAdminData';
 
 import smallArrow from '../assets/icons/arrow.svg'
 export const headerData = {
@@ -1511,5 +1511,6 @@ export const gameSub = {
 	]
 }
 export const editAdminData = {
-	tournaments: tournamentEditData
+	tournaments: tournamentEditData,
+	players: playersEditData,
 }

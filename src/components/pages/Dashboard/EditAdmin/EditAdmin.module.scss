@@ -3,3 +3,17 @@
 	max-width: 600px;
 	margin: 0 auto;
 }
+
+.link {
+	border: 1px solid #fff;
+	background: black;
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	padding: 10px;
+	text-align: center;
+	&:hover {
+		color: black;
+		background: #fff;
+	}
+}

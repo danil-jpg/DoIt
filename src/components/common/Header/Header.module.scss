@@ -119,12 +119,18 @@
 		top: 78px;
 		left: 0;
 		width: 100%;
+		height: calc(100vh - 80px);
+		overflow: auto;
 		z-index: 9;
-		transform: translateY(-200%);
-		padding: 0 23px;
+		padding: 0 12px;
 		z-index: 50;
+		position: fixed;
+		justify-content: flex-start;
+		opacity: 0;
+		pointer-events: none;
 		&.active {
-			transform: translateY(0);
+			pointer-events: all;
+			opacity: 1;
 		}
 	}
 
@@ -172,7 +178,7 @@
 		width: 100%;
 	}
 	.list {
-		margin: 0 0 69px;
+		margin: 0 0 25px;
 	}
 	.link {
 		display: block;
@@ -183,7 +189,10 @@
 	.buttonList {
 		flex-direction: column;
 		gap: 12px;
-		max-width: 400px;
 		margin: 0 auto;
+		width: 100%;
+	}
+	.btn {
+		flex: 0 1 100%;
 	}
 }

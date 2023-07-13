@@ -15,15 +15,13 @@
 
 .wrap {
   border-right: 2px solid #20252B;
-  position: absolute;
+  position: fixed;
   background: #0F1215;
   z-index: 10;
   left: 0;
   top: 0;
   min-height: 100vh;
   display: flex;
-  // flex-direction: column;
-  // justify-content: center;
 }
 
 .btn {
@@ -31,10 +29,10 @@
   pointer-events: none;
   top: 50%;
   left: 100%;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #20252B;
-  background: #0F1215;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(32, 37, 43, 0.357);
+  background: rgba(15, 18, 21, 0.2);
   border-left: 0;
   transform: translateY(-50%);
   display: flex;
@@ -53,7 +51,7 @@
   span::before,
   span::after {
     content: "";
-    background: #9FB1CC;
+    background: rgba(159, 177, 204, 0.259);
   }
   span::before {
     top: -3px;
