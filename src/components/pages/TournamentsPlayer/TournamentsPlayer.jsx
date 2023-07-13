@@ -3,7 +3,7 @@ import s from './tournamentsPlayer.module.scss';
 import Container from '../../containers/Container/Container';
 import TournamentsTop from '../../common/TournamentsTop/TournamentsTop';
 import TournamentsReturn from '../../common/TournamentsTop/tournamentsReturn/TournamentsReturn';
-import TournamentRight from '../../common/tournamentRight/tournamentRight';
+import TournamentRight from '../../common/tournamentRight/TournamentRight';
 import TournamentPlayerTab from './TournamentPlayerTab/TournamentsPlayerTab';
 
 const TournamentsPlayer = () => {

@@ -127,7 +127,9 @@
 		position: fixed;
 		justify-content: flex-start;
 		opacity: 0;
+		pointer-events: none;
 		&.active {
+			pointer-events: all;
 			opacity: 1;
 		}
 	}
