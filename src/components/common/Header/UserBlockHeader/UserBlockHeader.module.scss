@@ -69,6 +69,7 @@
 		width: 100%;
 		opacity: 0;
 		z-index: 9;
+		padding: 0 0 70px;
 		&.active {
 			opacity: 1;
 		}
@@ -180,6 +181,20 @@
 		&__link {
 			padding: 12px;
 			font-size: 16px;
+		}
+		&__bottomList {
+			justify-content: center;
+		}
+		&__bottomItem {
+			margin: 0 10px 0 0;
+			&:last-child {
+				margin: 0;
+			}
+		}
+		&__bottomLink {
+			padding: 8px 12px;
+			font-size: 14px;
+			display: block;
 		}
 	}
 }
