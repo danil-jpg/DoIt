@@ -7,6 +7,7 @@ import UserPanelTemp from './UserPanelTemp/UserPanelTemp';
 import ButtonPage from './ButtonPage/ButtonPage';
 import SettingPage from './SettingPage/SettingPage';
 import TeamPage from './TeamPage/TeamPage';
+import PremiumPage from './PremiumPage/PremiumPage';
 
 const UserPanel = () => {
   return (
@@ -16,6 +17,7 @@ const UserPanel = () => {
           <Route index element={<ButtonPage />}></Route>
           <Route path='/settingPage' element={<SettingPage />}></Route>
           <Route path='/teamPage' element={<TeamPage />}></Route>
+          <Route path='/premiumPage' element={<PremiumPage />}></Route>
         </Route>
       </Routes>
     </Container>
