@@ -5,9 +5,15 @@ import { streamsData } from "../../../../store/store";
 import TitleSliders from "../TitleSlider/TitleSliders";
 import ButtonSliderAll from "../ButtonSlider/ButtonSliderAll/ButtonSliderAll";
 import TwitchSwiper from "./StreamsTwichSwiper/StreamsTwichSwiper";
-
+import { useState } from "react";
 const Streams = (props) => {
+    const [showContent, setShowContent] = useState(false);
+
+    const handleClick = () => {
+      setShowContent(!showContent);
+    }
     return ( 
+
         <div className={s.main}>
           
            <div className={s.main__wrapper}>
@@ -23,8 +29,11 @@ const Streams = (props) => {
                         </div>
                     </div>
                     <div className={s.main__slider}>
-                        <TwitchSwiper/>
-                       
+                        {/* <TwitchSwiper/> */}
+                        <div>
+                        <button className={s.main__btn} onClick={handleClick}>Start Streams</button>
+                        {showContent && <div style={{ display: 'block' }}><TwitchSwiper/></div>}
+                        </div>
                     </div>
                 </div>
            

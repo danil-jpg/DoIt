@@ -5,3 +5,25 @@
   position: relative;
   padding: 0 0 60px;
 }
+
+.main {
+  height: auto;
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 23px;
+  border: 1px solid orange;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.content {
+  margin: 0 0 0 112px;
+  height: 300px;
+  border: 1px solid yellow;
+}
+

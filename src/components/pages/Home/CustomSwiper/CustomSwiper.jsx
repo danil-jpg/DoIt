@@ -12,7 +12,10 @@ const CustomSwiper = ({ slides}) => {
         },
         375:{
             slidesPerView:1,
-            
+            spaceBetween:0
+        },
+        320:{
+            slidesPerView:1
         },
         1920:{
             slidesPerView:3
@@ -22,6 +25,9 @@ const CustomSwiper = ({ slides}) => {
         },
         960:{
             slidesPerView:3
+        },
+        820:{
+            slidesPerView:1
         }
     }
   return (

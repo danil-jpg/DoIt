@@ -1,3 +1,5 @@
+@import "..//..//..//..//styles/breakpoint.scss";
+
 .main{
     &__top{
         display: flex;
@@ -11,7 +13,7 @@
         margin-top: 37px;
     }
 }
-@media (max-width:375px) {
+@include media-breakpoint-down(xs){
     .main__actions{
         display: none;
     }
@@ -24,5 +26,19 @@
         padding-left: 15px;
         margin-top: 30px;
     }
-
 }
+// @media (max-width:375px) {
+//     .main__actions{
+//         display: none;
+//     }
+//     .main__top{
+//         padding-right: 0px;
+//         padding-left: 15px;
+//     }
+//     .main__bottom{
+//         padding-right: 0px;
+//         padding-left: 15px;
+//         margin-top: 30px;
+//     }
+
+// }
