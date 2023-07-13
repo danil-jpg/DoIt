@@ -9,7 +9,7 @@ import Container from "../../containers/Container/Container";
 const News = (props) => {
     return (
         <div className={s.main}>
-            {/* <Container> */}
+            <Container>
             <div className={s.main__container}>
                 <div className={s.main__nav}>
                     <TitleSliders title={"News"} />
@@ -80,7 +80,7 @@ const News = (props) => {
                     </div>
                 </div>
             </div>
-            {/* </Container> */}
+            </Container>
         </div>
     );
 }

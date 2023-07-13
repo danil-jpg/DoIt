@@ -3,8 +3,8 @@ import s from './tournamentsInfo.module.scss';
 import Container from '../../containers/Container/Container';
 import TournamentsTop from '../../common/TournamentsTop/TournamentsTop';
 import TournamentsReturn from '../../common/TournamentsTop/tournamentsReturn/TournamentsReturn';
-import TournamentRight from '../../common/tournamentRight/tournamentRight';
 import TournamentInfoTab from './TournamentInfoTab/TournamentInfoTab';
+import TournamentRight from '../../common/tournamentRight/TournamentRight'
 
 const TournamentsInfo = () => {
   return (
