@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import s from './Header.module.scss';
 import { headerData } from '../../../store/store';
@@ -8,11 +8,18 @@ import Container from '../../containers/Container/Container';
 import Button from '../../UI/buttons/Button/Button';
 import { isActive } from '../../utils/isActive';
 import { onClickActiveHandler } from '../../utils/onClickActiveHandler';
-import { useNavigate } from 'react-router-dom';
 
 const Header = ({ login, setLogin, signIn, setSignIn, signUp, setSignUp, ...props }) => {
   const [state, setState] = useState(headerData);
   const [activeBurger, setActiveBurger] = useState(false);
+
+  useEffect(() => {
+    if (activeBurger) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'auto';
+    }
+  }, [activeBurger])
 
   return (
     <header className={s.header}>
