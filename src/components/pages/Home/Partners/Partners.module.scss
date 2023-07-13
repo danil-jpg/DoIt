@@ -30,6 +30,13 @@
         }
     }
 }
+@include media-breakpoint-down(extraSmall){
+    .main{
+        &__partners{
+            column-gap: 35px;
+        }
+    }
+}
 // @media (max-width:375px) {
 //     .disable{
 //         display: none;

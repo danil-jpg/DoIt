@@ -233,6 +233,29 @@
         min-height: 505px;
     }
 }
+@include media-breakpoint-down(extraSmall){
+    .main__title{
+        font-size: 70px;
+        margin-left: -30px;
+    }
+    .main__block{
+        max-width: 280px;
+    }
+    .main{
+        max-width: 280px;
+    }
+    .main__triangle{
+       max-width: 280px;
+    }
+    .main__desc{
+        max-width: 200px;
+        font-size: 10px;
+        margin-left: -35px;
+    }
+    .small__triangle{
+        left: 15%;
+    }
+}
     // @media (max-width:375px) {
     //     .main__block{
     //         max-width: 310px;
