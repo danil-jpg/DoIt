@@ -1,9 +1,10 @@
 import React from "react";
+import Container from "../../containers/Container/Container";
 import s from "./NotFoundPage.module.scss"
 
 const NotFoundPage = (props) => {
     return (
-        <div className={s.main}>
+        <Container className={s.main}>
             <div className={s.main__wrapper}>
                 <div className={s.main__block}>
                     <div className={s.main__left}>
@@ -14,7 +15,7 @@ const NotFoundPage = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Container>
     );
 }
 
