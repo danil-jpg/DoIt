@@ -33,6 +33,7 @@ const Streams = (props) => {
                         <div>
                         <button className={s.main__btn} onClick={handleClick}>Start Streams</button>
                         {showContent && <div style={{ display: 'block' }}><TwitchSwiper/></div>}
+                        
                         </div>
                     </div>
                 </div>
