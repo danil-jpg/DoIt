@@ -102,6 +102,22 @@
         padding-left: 12px;
     }
 }
+@media (width:1024px) {
+    .main__doit{
+        padding-left: 200px;
+    }
+    .main__hero{
+        margin-top: 20px;
+    }
+    .main__tournaments{
+        margin-left: 40px;
+    }
+    .main__news{
+        margin-left: 40px;
+    }
+    
+}
+
 
 // @media (max-width:375px) {
 //     .main__hero{
