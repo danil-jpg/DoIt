@@ -82,6 +82,21 @@
         }
     }
 }
+@include media-breakpoint-down(extraSmall){
+    .card{
+        max-width: 260px;
+        &__top{
+            max-width: 260px;
+        }
+        &__picture{
+          
+        }
+        &__bottom{
+            padding:10px 10px 20px 10px;
+            max-width: 250px;
+        }
+    }
+}
 // @media (max-width:375px) {
 //     .card{
 //         min-width: 325px;

@@ -1325,7 +1325,7 @@ export const tournamentsMain = {
 		enterFee: `${Math.round(Math.random() * 100)}$`,
 		platform: 'PS4',
 		server: 'Europe',
-		key: v1(),
+			
 	},
 	{
 		status: 'Started',

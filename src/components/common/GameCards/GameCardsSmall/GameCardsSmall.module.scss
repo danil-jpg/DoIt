@@ -125,6 +125,27 @@
         }
     }
 }
+@include media-breakpoint-down(extraSmall){
+    .card{
+        max-width: 220px;
+        &__top{
+            max-width: 260px;
+        }
+        &__bottom{
+            max-width: 220px;
+        }
+        &__name{
+            max-width: 260px;
+        }
+        &__descr{
+            max-width: 250px;
+            padding-bottom: 20px;
+        }
+        &__picture{
+            max-width: 223px;
+        }
+    }
+}
 // @media (max-width:768px) {
 //     .card{
 //         max-width: 300px;
