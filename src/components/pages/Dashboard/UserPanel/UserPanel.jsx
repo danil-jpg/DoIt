@@ -8,6 +8,7 @@ import ButtonPage from './ButtonPage/ButtonPage';
 import SettingPage from './SettingPage/SettingPage';
 import TeamPage from './TeamPage/TeamPage';
 import PremiumPage from './PremiumPage/PremiumPage';
+import CreatePage from './CreatePage/CreatePage';
 
 const UserPanel = () => {
   return (
@@ -18,6 +19,7 @@ const UserPanel = () => {
           <Route path='/settingPage' element={<SettingPage />}></Route>
           <Route path='/teamPage' element={<TeamPage />}></Route>
           <Route path='/premiumPage' element={<PremiumPage />}></Route>
+          <Route path='/create' element={<CreatePage />}></Route>
         </Route>
       </Routes>
     </Container>

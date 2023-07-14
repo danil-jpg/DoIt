@@ -5,12 +5,16 @@ import AdvanceInfo from "../accordionList/AdvanceInfo/AdvanceInfo";
 import BasicInfoPlayers from "../accordionList/BasicInfo/BasicInfoPlayers";
 import s from './EditPlayersAdmin.module.scss';
 
-const EditPlayersAdmin = ({ state }) => {
+const EditPlayersAdmin = ({ state, btnOff }) => {
 	return (
 		<>
-			<EditAdminBtn>New/Edit Players</EditAdminBtn>
+			{btnOff
+				? <></>
+				: <EditAdminBtn>New/Edit Players</EditAdminBtn>
+			}
+
 			<BasicInfoPlayers state={state.basic} />
-			<AdvanceInfo state={state.advance}/>
+			<AdvanceInfo state={state.advance} />
 
 			<div className={s.buttons}>
 				{state.buttonList.map(el => (
