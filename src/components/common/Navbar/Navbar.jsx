@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Navbar.module.scss';
-import { navbar } from '../../../store/store';
+import { navbar } from '../../../redux/store';
 import { IconRenderer } from '../../UI/IconRenderer/IconRenderer';
 
 const Navbar = (props) => {

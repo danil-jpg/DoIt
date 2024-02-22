@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import s from './Header.module.scss';
-import { headerData } from '../../../store/store';
+import { headerData } from '../../../redux/store';
 import Picture from '../../UI/Picture/Picture';
 import UserBlockHeader from './UserBlockHeader/UserBlockHeader';
 import Container from '../../containers/Container/Container';
